@@ -23,7 +23,7 @@ Shows how to use Qt widgets only by programming code (c++14).
 
 [RadioButton](src/RadioButton) Shows how to create a RadioButton with QRadioButton.
 
-[TextBox](src/TextBox) Shows how to create a TextBox with QEdit.
+[TextBox](src/TextBox) Shows how to create a TextBox with QLineEdit.
 
 [TrackBar](src/TrackBar) Shows how to create a TrackBar with QSlider.
 
