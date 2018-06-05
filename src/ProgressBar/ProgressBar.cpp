@@ -48,7 +48,6 @@ private:
   QProgressBar progressBar4 {&this->centralWidget};
   QProgressBar progressBar5 {&this->centralWidget};
   QTimer timer {this};
-  int counter = 0;
 };
 
 int main(int argc, char *argv[]) {
