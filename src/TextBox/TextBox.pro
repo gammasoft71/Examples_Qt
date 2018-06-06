@@ -1,13 +1,4 @@
-QT += core gui widgets
-
 TARGET = TextBox
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += \
-    TextBox.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = TextBox.cpp

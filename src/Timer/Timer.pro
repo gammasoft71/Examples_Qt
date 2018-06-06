@@ -1,13 +1,4 @@
-QT += core gui widgets
-
 TARGET = Timer
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += \
-    Timer.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = Timer.cpp

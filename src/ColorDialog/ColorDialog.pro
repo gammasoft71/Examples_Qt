@@ -1,12 +1,4 @@
-QT += core gui widgets
-
 TARGET = ColorDialog
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += ColorDialog.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = ColorDialog.cpp

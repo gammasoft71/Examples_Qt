@@ -1,12 +1,4 @@
-QT += core gui widgets
-
 TARGET = MessageBox
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += MessageBox.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = MessageBox.cpp

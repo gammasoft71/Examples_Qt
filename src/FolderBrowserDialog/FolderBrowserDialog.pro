@@ -1,12 +1,4 @@
-QT += core gui widgets
-
 TARGET = FolderBrowserDialog
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += FolderBrowserDialog.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = FolderBrowserDialog.cpp

@@ -1,13 +1,4 @@
-QT += core gui widgets
-
 TARGET = GroupBox
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += \
-    GroupBox.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = GroupBox.cpp

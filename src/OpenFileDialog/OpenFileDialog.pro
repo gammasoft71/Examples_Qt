@@ -1,12 +1,4 @@
-QT += core gui widgets
-
 TARGET = OpenFileDialog
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += OpenFileDialog.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = OpenFileDialog.cpp

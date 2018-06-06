@@ -1,13 +1,4 @@
-QT += core gui widgets
-
 TARGET = ProgressBar
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += \
-    ProgressBar.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = ProgressBar.cpp

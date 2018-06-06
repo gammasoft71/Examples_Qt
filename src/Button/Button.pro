@@ -1,13 +1,4 @@
-QT += core gui widgets
-
 TARGET = Button
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += \
-    Button.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = Button.cpp

@@ -1,13 +1,4 @@
-QT += core gui widgets
-
 TARGET = CheckBox
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += \
-    CheckBox.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = CheckBox.cpp

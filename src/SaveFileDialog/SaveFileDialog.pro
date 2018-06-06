@@ -1,12 +1,4 @@
-QT += core gui widgets
-
 TARGET = SaveFileDialog
+QT += core gui widgets
 TEMPLATE = app
-
-DEFINES += QT_DEPRECATED_WARNINGS
-
-SOURCES += SaveFileDialog.cpp
-
-HEADERS +=
-
-FORMS =
+SOURCES = SaveFileDialog.cpp
