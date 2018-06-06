@@ -31,7 +31,7 @@ add_subdirectory("src/GroupBox")
 add_subdirectory("src/TabControl")
 
 # Menus and Toolbars
-#add_subdirectory("src/MainMenu")
+add_subdirectory("src/MainMenu")
 
 # Components
 add_subdirectory("src/Timer")
