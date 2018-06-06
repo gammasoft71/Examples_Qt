@@ -68,8 +68,36 @@ git clone https://github.com/gammasoft71/QtExamples QtExamples
 
 ## Generate and build
 
+### Qt Creator
+
 To build these projects, open each project.pro file with Qt Creator.
+
+### CMake
+
+To build this project, open "Terminal" and type following lines:
+
+Set "CMAKE_PREFIX_PATH" with Qt5 install path.
+
+#### macOS :
+
+``` cmake
+mkdir build
+cd build
+cmake .. -G "Xcode"
+open ./CocoaExamples.xcodeproj
+```
+
+
+#### Linux :
+
+``` cmake
+mkdir build
+cd build
+cmake .. 
+cmake --build . --config Debug
+```
+
 
 ## Remarks
 
-This project run with [Qt](https://www.qt.io).
+This project run with [Qt](https://www.qt.io) (and [CMake](https://cmake.org)).
