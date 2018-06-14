@@ -27,7 +27,7 @@ public:
     editMenu->addAction("&Paste", this, &Form::EditPaste, QKeySequence(Qt::CTRL + Qt::Key_V));
     editMenu->addAction("&Delete", this, &Form::EditDeleta, QKeySequence(Qt::CTRL + Qt::Key_Backspace));
     editMenu->addSeparator();
-    editMenu->addAction("&Select All", this, &Form::EditSelectAll, QKeySequence(Qt::CTRL + Qt::Key_A));
+    editMenu->addAction("Select &All", this, &Form::EditSelectAll, QKeySequence(Qt::CTRL + Qt::Key_A));
 
     QMenu* helpMenu = this->menuBar()->addMenu("&Help");
     helpMenu->addAction("&About", this, &Form::HelpAbout);
