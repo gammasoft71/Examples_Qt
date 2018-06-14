@@ -3,8 +3,6 @@
 #include <QCheckBox>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->checkBox1.setText("Checked");

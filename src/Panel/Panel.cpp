@@ -3,8 +3,6 @@
 #include <QFrame>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->panel1.setFrameStyle(QFrame::StyledPanel | QFrame::Plain);

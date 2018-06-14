@@ -5,8 +5,6 @@
 #include <QSlider>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->trackBar.setOrientation(Qt::Horizontal);

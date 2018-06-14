@@ -6,8 +6,6 @@
 #include <QTimer>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->label.setText(QString("%1").number((float)(this->counter) / 10, 'f', 1));

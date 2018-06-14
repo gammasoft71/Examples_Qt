@@ -7,8 +7,6 @@
 #include <QStandardPaths>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->buttonFolderBrowser.setText("Folder...");

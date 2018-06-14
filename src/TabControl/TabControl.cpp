@@ -4,8 +4,6 @@
 #include <QTabWidget>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->tabControl1.move(10, 10);

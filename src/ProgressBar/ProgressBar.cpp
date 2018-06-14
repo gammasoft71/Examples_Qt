@@ -4,8 +4,6 @@
 #include <QTimer>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->progressBar1.move(50, 50);
