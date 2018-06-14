@@ -3,8 +3,6 @@
 #include <QFrame>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->panel1.setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
@@ -17,7 +15,7 @@ public:
     this->panel2.resize(305, 460);
 
     this->setCentralWidget(&this->centralWidget);
-    this->setWindowTitle("Label example");
+    this->setWindowTitle("Panel example");
     this->resize(640, 480);
   }
 

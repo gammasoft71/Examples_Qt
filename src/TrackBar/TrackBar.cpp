@@ -5,8 +5,6 @@
 #include <QSlider>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->trackBar.setOrientation(Qt::Horizontal);
@@ -23,6 +21,7 @@ public:
     this->progressBar.move(20, 100);
     this->progressBar.resize(200, 25);
     this->progressBar.setValue(this->trackBar.value());
+    this->progressBar.setTextVisible(false);
 
     this->label.setText(QString("%1").arg(this->trackBar.value()));
     this->label.move(20, 150);

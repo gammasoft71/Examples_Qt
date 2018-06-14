@@ -3,8 +3,6 @@
 #include <QRadioButton>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->radioButton1.setText("radioButton 1");

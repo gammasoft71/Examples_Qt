@@ -6,14 +6,12 @@
 #include <QTimer>
 
 class Form : public QMainWindow {
-  //Q_OBJECT
-
 public:
   explicit Form(QWidget* parent = 0) : QMainWindow(parent) {
     this->label.setText(QString("%1").number((float)(this->counter) / 10, 'f', 1));
     this->label.move(10, 10);
     this->label.resize(210, 70);
-    this->label.setFont(QFont("Arial", 64, QFont::Bold, true));
+    this->label.setFont(QFont("Arial", 64, QFont::Normal, true));
     QPalette palette;
     palette.setColor(QPalette::WindowText, QColor::fromRgb(30, 144, 255));
     this->label.setPalette(palette);
