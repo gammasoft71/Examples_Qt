@@ -9,7 +9,7 @@ public:
     QPalette palette;
     palette.setColor(QPalette::WindowText, Qt::darkGreen);
     this->label1.setPalette(palette);
-    this->label1.setFont(QFont("Arial", 45, QFont::Bold, true));
+    this->label1.setFont(QFont("Arial", 34, QFont::Bold, true));
     this->label1.move(5, 100);
     this->resize(290, 100);
 
