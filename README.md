@@ -1,7 +1,7 @@
 
 # Qt Examples
 
-Shows how to use Qt widgets only by programming code (c++14).
+Shows how to use Qt widgets only by programming code (c++17).
 
 ## Hello World
 
