@@ -1,4 +1,5 @@
 TEMPLATE = subdirs
 SUBDIRS = Qt.Core \
-          Qt.Widgets \
+          Qt.Quick \
           Qt.Tests \
+          Qt.Widgets \
