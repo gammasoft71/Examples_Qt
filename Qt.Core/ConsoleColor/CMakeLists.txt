@@ -9,5 +9,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(ConsoleColor src/main.cpp)
+add_executable(ConsoleColor src/ConsoleColor.cpp)
 target_link_libraries(ConsoleColor Qt5::Core)

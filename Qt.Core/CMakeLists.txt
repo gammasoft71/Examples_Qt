@@ -5,3 +5,4 @@ project(Qt.Core)
 
 # Projects
 add_subdirectory(ConsoleColor)
+add_subdirectory(HelloWorld)

@@ -1,4 +1,5 @@
-#include <QtCore>
+#include <QString>
+#include <QTextStream>
 
 int main() {
     QTextStream out(stdout);

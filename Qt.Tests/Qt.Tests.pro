@@ -1,3 +1,4 @@
 TEMPLATE = subdirs
-SUBDIRS = TestConsole \
-          TestGui
+SUBDIRS = \
+    TestConsole \
+    TestGui

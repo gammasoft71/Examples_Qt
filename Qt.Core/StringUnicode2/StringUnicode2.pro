@@ -1,4 +1,5 @@
 CONFIG += console c++17
 CONFIG -= app_bundle
 QT = core
-SOURCES = src/ConsoleColor.cpp
+SOURCES = \
+    src/StringUnicode2.cpp

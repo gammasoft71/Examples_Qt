@@ -1,5 +1,6 @@
 TEMPLATE = subdirs
-SUBDIRS = ButtonQuick \
-          CheckBoxQuick \
-          HelloWorldMessageQuick \
-          HelloWorldQuick
+SUBDIRS = \
+    ButtonQuick \
+    CheckBoxQuick \
+    HelloWorldMessageQuick \
+    HelloWorldQuick

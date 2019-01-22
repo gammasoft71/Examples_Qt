@@ -1,2 +1,8 @@
 TEMPLATE = subdirs
-SUBDIRS = ConsoleColor
+SUBDIRS = \
+    Console \
+    ConsoleColor \
+    HelloWorld \
+    StringSplit \
+    StringUnicode \
+    StringUnicode2
