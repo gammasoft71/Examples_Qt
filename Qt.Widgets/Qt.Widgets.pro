@@ -15,6 +15,7 @@ SUBDIRS = \
     OpenFileDialog \
     Panel \
     PictureBox \
+    PictureBox2 \
     ProgressBar \
     RadioButton \
     SaveFileDialog \

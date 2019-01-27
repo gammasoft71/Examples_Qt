@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QPixmap>
 
+using QPictureBox = QLabel;
+
 class Form : public QMainWindow {
 public:
   Form() {
@@ -20,7 +22,7 @@ public:
 
 private:
   QFrame panel;
-  QLabel pictureBox1 {&this->panel};
+  QPictureBox pictureBox1 {&this->panel};
 };
 
 int main(int argc, char *argv[]) {
