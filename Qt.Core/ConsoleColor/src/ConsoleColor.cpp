@@ -1,42 +1,103 @@
 #include <QString>
 #include <QTextStream>
+#include <QVector>
 
 int main() {
-    QTextStream out(stdout);
-    QString backgroundWhite = "\033[107m";
-    QString foregroundGreen = "\033[92m";
-    QString foregroundDarkGray = "\033[90m";
-    QString backgroundReset = "\033[49m";
-    QString foregroundReset = "\033[39m";
+  const QVector<QString> logo = {
+    "████████████████████████████████████████████████████████████",
+    "██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░██████",
+    "██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████",
+    "██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░██████████",
+    "██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████████",
+    "██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████████",
+    "██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████████",
+    "███████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░█████████████",
+    "██████████████████████████████████████████████████████████████████████",
+    "██████████████████████████████████████████████████████████████████████",
+    "██████████████████████████▀▄▄▄▄▀███████▀▄▄▄▄▀█████████████████████████",
+    "███████████████████████████▀▀▀▀███████▀▀▀▀▀███████████████████████████",
+    "██████████████████████████      ▀████       ▀█████████████████████████",
+    "███████████             ▐         ▀▀         ▐              ██████████",
+    "█████████               ▐   ███   ▌▐   ███   ▐               █████████",
+    "█████████               ▐   █▄▄▌  ▌▐  ▐▄▄█   ▐               █████████",
+    "█████████                ▐▄  ▀▀ ▄▀  ▀▄ ▀▀  ▄▀                █████████",
+    "█████████                  ▀▀▄▄▀      ▀▀▄▄▀                  █████████",
+    "█████████                                                    █████████",
+    "█████████                 █▄                ▌                █████████",
+    "█████████                  ▌▀▀▄          ▄██                 █████████",
+    "█████████                  ▐   ▀▀▄▄▄▄▄▄█▀ █▌                 █████████",
+    "█████████                   ▐            ▄█                  █████████",
+    "█████████                    █          ▄█                   █████████",
+    "█████████                     ▀▄       █▀                    █████████",
+    "█████████                       ▀▄▄▄▄██▀                     █████████",
+    "█████████                                                    █████████",
+    "█████████                                                    █████████",
+    "█████████                                                    █████████",
+    "█████████                                                    █████████",
+    "█████████                                                    █████████",
+    "██████████████████████████████████████████████████████████████████",
+  };
 
-    out << QString("          %1%2██████████████████████████████████████████████████████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("        %1%2████████████████████████████████████████████████████████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("      %1%2██████████████████████████████████████████████████████████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("    %1%2████████████████████████████████████████████████████████████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("  %1%2█████████████████████████▀▀▀▀▀▀███████████████████████████████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2█████████████████████▀                ▀████████████▀▀▀▀▀████████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2███████████████████▀                    ▀██████████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2██████████████████       ▄████████▄       █████████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2█████████████████      █████████████▄      ████████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2████████████████▌     ███████████████▄     ████                ▐████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2████████████████      ████████████████     ▐███                ▐████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2████████████████     ▐████████████████      ███████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2███████████████▌     ▐████████████████      ███████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2███████████████▌     ▐████████████████      ███████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2████████████████     ▐████████████████      ███████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2████████████████      ████████████████     ▐███████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2████████████████▌     ▐██████████████      ████████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2█████████████████      ▀████████████▀      ████████     ▐███████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2██████████████████        ▀▀▀▀▀▀▀▀       ▄█████████▄      ▀▀▀▀▀▀████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2███████████████████▄                   ▄████████████           ▐████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2██████████████████████▄▄               ▀██████████████▄▄▄   ▄▄▄▄████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2██████████████████████████████████      ▀███████████████████████████████████████%3%4").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2███████████████████████████████████       ████████████████████████████████████%3%4  ").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2████████████████████████████████████▄   ▄▄██████████████████████████████████%3%4    ").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2██████████████████████████████████████████████████████████████████████████%3%4      ").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2████████████████████████████████████████████████████████████████████████%3%4        ").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1%2██████████████████████████████████████████████████████████████████████%3%4          ").arg(backgroundWhite).arg(foregroundGreen).arg(backgroundReset).arg(foregroundReset) << endl;
-    out << QString("%1                                          Qt                                    %2").arg(foregroundGreen).arg(foregroundReset) << endl;
-    out << QString("%1  Create fluid, high-performance and intuitive UIs, applications, and embedded  %2").arg(foregroundDarkGray).arg(foregroundReset) << endl;
-    out << QString("%1                devices – with the same code base for all platforms.            %2").arg(foregroundDarkGray).arg(foregroundReset) << endl;
+  const auto backgroundWhite = "\033[47m";
+  const auto backgroundReset = "\033[49m";
+  const auto foregroundDarkGray = "\033[90m";
+  const auto foregroundDarkBlue = "\033[94m";
+  const auto foregroundReset = "\033[39m";
+
+  QTextStream out(stdout);
+
+  for (int index = 0; index < logo.size(); ++index) {
+    out << (index == 0 || index == logo.size() - 1 ? "       " : "     ");
+    out << foregroundDarkBlue;
+    out << backgroundWhite;
+    out << logo[index];
+    out << foregroundReset;
+    out << backgroundReset;
+    out << endl;
+  }
+
+  out << foregroundDarkBlue;
+  out << "                                    Gammasoft                                   " << endl;
+  out << foregroundDarkGray;
+  out << " More than thirty years of passion for high technology especially in development" << endl;
+  out << " (c++, c#, objective-c, ...)." << endl;
+  out << foregroundReset;
 }
+
+// This code produces the following output with colors:
+//
+//        ████████████████████████████████████████████████████████████
+//      ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░██████
+//      ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████
+//      ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░██████████
+//      ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████████
+//      ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████████
+//      ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████████
+//      ███████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░█████████████
+//      ██████████████████████████████████████████████████████████████████████
+//      ██████████████████████████████████████████████████████████████████████
+//      ██████████████████████████▀▄▄▄▄▀███████▀▄▄▄▄▀█████████████████████████
+//      ███████████████████████████▀▀▀▀███████▀▀▀▀▀███████████████████████████
+//      ██████████████████████████      ▀████       ▀█████████████████████████
+//      ███████████             ▐         ▀▀         ▐              ██████████
+//      █████████               ▐   ███   ▌▐   ███   ▐               █████████
+//      █████████               ▐   █▄▄▌  ▌▐  ▐▄▄█   ▐               █████████
+//      █████████                ▐▄  ▀▀ ▄▀  ▀▄ ▀▀  ▄▀                █████████
+//      █████████                  ▀▀▄▄▀      ▀▀▄▄▀                  █████████
+//      █████████                                                    █████████
+//      █████████                 █▄                ▌                █████████
+//      █████████                  ▌▀▀▄          ▄██                 █████████
+//      █████████                  ▐   ▀▀▄▄▄▄▄▄█▀ █▌                 █████████
+//      █████████                   ▐            ▄█                  █████████
+//      █████████                    █          ▄█                   █████████
+//      █████████                     ▀▄       █▀                    █████████
+//      █████████                       ▀▄▄▄▄██▀                     █████████
+//      █████████                                                    █████████
+//      █████████                                                    █████████
+//      █████████                                                    █████████
+//      █████████                                                    █████████
+//      █████████                                                    █████████
+//        ██████████████████████████████████████████████████████████████████
+//                                      Gammasoft
+//      More than thirty years of passion for high technology especially in development
+//      (c++, c#, objective-c, ...).
