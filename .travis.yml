@@ -9,5 +9,5 @@ before_install:
 os: linux
 script:
   - qmake -project
-  - qmake Ultron.pro
+  - qmake Qt.Examples.pro
   - make
