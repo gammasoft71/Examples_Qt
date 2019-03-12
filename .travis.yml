@@ -8,6 +8,12 @@ before_install:
   - sudo apt-get install qt5-default qttools5-dev-tools
 os: linux
 script:
+  - cd Qt.Core
   - qmake -project
-  - qmake Qt.Examples.pro
+  - qmake Qt.Core.pro
   - make
+  - cd ../Qt.Widgets
+  - qmake -project
+  - qmake Qt.Widgets.pro
+  - make
+  - cd ..
