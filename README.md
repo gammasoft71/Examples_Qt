@@ -5,59 +5,59 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 ## Hello World
 
-["Hello World"](src/HelloWorld) The classic first application HelloWorld with QLabel.
+["Hello World"](Qt.Widgets/HelloWorldForm) The classic first application HelloWorld with QLabel.
 
 ## Application and messages
 
-[Application](src/Application) Shows how to create an Application with QApplication.
+[Application](Qt.Widgets/Application) Shows how to create an Application with QApplication.
 
 ## Common Controls
 
-[Button](src/Button) Shows how to create a Button and Event Click with QButton.
+[Button](Qt.Widgets/Button) Shows how to create a Button and Event Click with QButton.
 
-[CheckBox](src/CheckBox) Shows how to create a CheckBox with QCheckBox.
+[CheckBox](Qt.Widgets/CheckBox) Shows how to create a CheckBox with QCheckBox.
+Qt.Widgets
+[Label](Qt.Widgets/Label) Shows how to create a Label with QLabel.
 
-[Label](src/Label) Shows how to create a Label with QLabel.
+[ProgressBar](Qt.Widgets/ProgressBar) Shows how to create a ProgressBar with QProgress.
 
-[ProgressBar](src/ProgressBar) Shows how to create a ProgressBar with QProgress.
+[RadioButton](Qt.Widgets/RadioButton) Shows how to create a RadioButton with QRadioButton.
 
-[RadioButton](src/RadioButton) Shows how to create a RadioButton with QRadioButton.
+[TextBox](Qt.Widgets/TextBox) Shows how to create a TextBox with QLineEdit.
 
-[TextBox](src/TextBox) Shows how to create a TextBox with QLineEdit.
-
-[TrackBar](src/TrackBar) Shows how to create a TrackBar with QSlider.
+[TrackBar](Qt.Widgets/TrackBar) Shows how to create a TrackBar with QSlider.
 
 ## Containers
 
-[Form](src/Form) Shows how to create a Form with QWindow.
+[Form](Qt.Widgets/Form) Shows how to create a Form with QWindow.
 
-[GroupBox](src/GroupBox) Shows how to create a GroupBox with QGroupBox.
+[GroupBox](Qt.Widgets/GroupBox) Shows how to create a GroupBox with QGroupBox.
 
-[Panel](src/Panel) Shows how to create a Panel with QFrame.
+[Panel](Qt.Widgets/Panel) Shows how to create a Panel with QFrame.
 
-[TabControl](src/TabControl) Shows how to create a TabControl with TabPages with QTabWidget.
+[TabControl](Qt.Widgets/TabControl) Shows how to create a TabControl with TabPages with QTabWidget.
 
 ## Menus and toolbars
 
-[MainMenu](src/MainMenu) Shows how to create a MainMenu with QMenu and QAction.
+[MainMenu](Qt.Widgets/MainMenu) Shows how to create a MainMenu with QMenu and QAction.
 
 ## Components
 
-[Timer](src/Timer) Shows how to create a Timer with QTimer.
+[Timer](Qt.Widgets/Timer) Shows how to create a Timer with QTimer.
 
 ## Dialogs
 
-[ColorDialog](src/ColorDialog) Shows how to create a ColorDialog with QColorDalog.
+[ColorDialog](Qt.Widgets/ColorDialog) Shows how to create a ColorDialog with QColorDalog.
 
-[FolderBrowserDialog](src/FolderBrowserDialog) Shows how to create a FolderBrowserDialog with QFileDialog.
+[FolderBrowserDialog](Qt.Widgets/FolderBrowserDialog) Shows how to create a FolderBrowserDialog with QFileDialog.
 
-[FontDialog](src/FontDialog) Shows how to create a FontDialog with Qfontdialog.
+[FontDialog](Qt.Widgets/FontDialog) Shows how to create a FontDialog with Qfontdialog.
 
-[OpenFileDialog](src/OpenFileDialog) Shows how to create an OpenFileDialog with QFileDialog.
+[OpenFileDialog](Qt.Widgets/OpenFileDialog) Shows how to create an OpenFileDialog with QFileDialog.
 
-[MessageBox](src/MessageBox) Shows how to create a MessageBox with QMessageBox.
+[MessageBox](Qt.Widgets/MessageBox) Shows how to create a MessageBox with QMessageBox.
 
-[SaveFileDialog](src/SaveFileDialog) Shows how to create an SaveFileDialog with QFileDialog.
+[SaveFileDialog](Qt.Widgets/SaveFileDialog) Shows how to create an SaveFileDialog with QFileDialog.
 
 ## Download
 

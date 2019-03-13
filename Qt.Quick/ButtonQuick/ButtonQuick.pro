@@ -1,5 +1,5 @@
 QT += quick
-CONFIG += c++17
+CONFIG += c++14
 
 QML_IMPORT_PATH =
 QML_DESIGNER_IMPORT_PATH =

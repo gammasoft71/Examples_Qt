@@ -1,3 +1,3 @@
-CONFIG += c++17
+CONFIG += c++14
 QT = widgets
 SOURCES = src/Button.cpp
