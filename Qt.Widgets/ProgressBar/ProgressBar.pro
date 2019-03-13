@@ -1,3 +1,3 @@
-CONFIG += c++14
+CONFIG += c++17
 QT = widgets
 SOURCES = src/ProgressBar.cpp

@@ -1,4 +1,4 @@
-CONFIG += console c++14
+CONFIG += console c++17
 CONFIG -= app_bundle
 QT = core
 SOURCES = \
