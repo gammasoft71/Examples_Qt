@@ -14,6 +14,7 @@ int main() {
   QString korean = u8"\uB300\uD55C\uBBFC\uAD6D\uC758 \uD55C\uAE00";
   QString russian = u8"\u0420\u0443\u0441\u0441\u043A\u0438\u0439 \u044F\u0437\u044B\u043A";
 
+
   QTextStream out(stdout);
   out << QString("Arabic:         %1").arg(arabic) << endl;
   out << QString("Trad. Chinese:  %1").arg(tradChinese) << endl;
