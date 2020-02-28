@@ -10,6 +10,7 @@ SUBDIRS = \
     GroupBox \
     HelloWorldForm \
     Label \
+    LCDNumber \
     MainMenu \
     MessageBox \
     OpenFileDialog \
