@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <QDebug>
 #include <QFrame>
 #include <QLabel>
 #include <QMainWindow>
@@ -14,6 +15,8 @@ public:
      });
 
     this->button2.setText("button2");
+    this->button1.setFlat(true);
+    this->button2.setAutoRepeat(true);
     this->button2.move(50, 100);
     this->button2.resize(200, 75);
     this->connect(&this->button2, &QPushButton::clicked, [&]() {
