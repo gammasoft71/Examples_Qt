@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 
 # Project
 project(Application)
-find_package(Qt5Widgets CONFIG REQUIRED)
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 # Options
 set(CMAKE_CXX_STANDARD 17)
