@@ -13,6 +13,7 @@ add_subdirectory(Application)
 # Common Controls
 add_subdirectory(Button)
 add_subdirectory(CheckBox)
+add_subdirectory(DarkMode)
 add_subdirectory(Label)
 add_subdirectory(LCDNumber)
 add_subdirectory(PictureBox)
@@ -34,6 +35,7 @@ add_subdirectory(MainMenu)
 add_subdirectory(StatusBar)
 
 # Components
+add_subdirectory(Cursors)
 add_subdirectory(Timer)
 
 # Dialogs

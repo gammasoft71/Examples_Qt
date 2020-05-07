@@ -4,6 +4,8 @@ SUBDIRS = \
     Button \
     CheckBox \
     ColorDialog \
+    Cursors \
+    DarkMode \
     FolderBrowserDialog \
     FontDialog \
     Form \
