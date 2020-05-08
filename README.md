@@ -10,11 +10,10 @@ Shows how to use Qt widgets only by programming code (c++17).
 ## Application and messages
 
 [Application](Qt.Widgets/Application/Application) Shows how to create an application with QApplication.
+
 [DarkMode](Qt.Widgets/Application/DarkMode) Shows how to create a dafrk mode application.
 
 ## Common Controls
-
-[PushButton](Qt.Widgets/CommonControls/PushButton) Shows how to create a button and Event Click with QPushButton.
 
 [CheckBox](Qt.Widgets/CommonControls/CheckBox) Shows how to create a check box with QCheckBox.
 
@@ -27,6 +26,8 @@ Shows how to use Qt widgets only by programming code (c++17).
 [PictureBox2](Qt.Widgets/CommonControls/PictureBox2) Shows how to create a picture box with QGraphicsPixmapItem.
 
 [ProgressBar](Qt.Widgets/ProgressBar) Shows how to create a ProgressBar with QProgress.
+
+[PushButton](Qt.Widgets/CommonControls/PushButton) Shows how to create a button and Event Click with QPushButton.
 
 [RadioButton](Qt.Widgets/CommonControls/RadioButton) Shows how to create a radio button with QRadioButton.
 
