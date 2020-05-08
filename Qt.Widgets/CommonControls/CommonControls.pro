@@ -1,7 +1,9 @@
 TEMPLATE = subdirs
 SUBDIRS = \
     CheckBox \
+    CheckedListWidget \
     Label \
+    LCDNumber \
     LineEdit \
     PictureBox \
     PictureBox2 \

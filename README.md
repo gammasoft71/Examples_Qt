@@ -17,7 +17,13 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [CheckBox](Qt.Widgets/CommonControls/CheckBox) Shows how to create a check box with QCheckBox.
 
+[CheckBox](Qt.Widgets/CommonControls/CheckListWidget) Shows how to create a checked list widget with QListWidget.
+
+[CheckBox](Qt.Widgets/CommonControls/ComboBox) Shows how to create a combo box with QComboBox.
+
 [Label](Qt.Widgets/CommonControls/Label) Shows how to create a label with QLabel.
+
+[LCDNumber](Qt.Widgets/CommonControls/LCDNumber) Shows how to create a LCD number with QLCDNumber.
 
 [LineEdit](Qt.Widgets/CommonControls/LineEdit) Shows how to create a line edit with QLineEdit.
 
@@ -66,6 +72,10 @@ Shows how to use Qt widgets only by programming code (c++17).
 [MessageBox](Qt.Widgets/MessageBox) Shows how to create a MessageBox with QMessageBox.
 
 [SaveFileDialog](Qt.Widgets/SaveFileDialog) Shows how to create an SaveFileDialog with QFileDialog.
+
+## Others
+
+[LCDNumber2](Qt.Widgets/Others/LCDNumber2) Shows how to create a LCD number with QLCDNumber.
 
 ## Download
 

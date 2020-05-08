@@ -9,7 +9,6 @@ SUBDIRS = \
     Form \
     GroupBox \
     HelloWorldForm \
-    LCDNumber \
     MainMenu \
     MessageBox \
     OpenFileDialog \
@@ -18,3 +17,4 @@ SUBDIRS = \
     StatusBar \
     TabControl \
     Timer \
+    Others\

@@ -1,3 +1,3 @@
 CONFIG += c++17
 QT = widgets
-SOURCES = src/TrackBar.cpp
+SOURCES = src/LCDNumber2.cpp

@@ -12,8 +12,6 @@ add_subdirectory(Application)
 # Common Controls
 add_subdirectory(CommonControls)
 
-add_subdirectory(LCDNumber)
-
 # Containers
 #add_subdirectory(ColoredTabPages)
 add_subdirectory(Form)
@@ -38,4 +36,4 @@ add_subdirectory(OpenFileDialog)
 add_subdirectory(SaveFileDialog)
 
 # Others
-#add_subdirectory(Drawing)
+add_subdirectory(Others)

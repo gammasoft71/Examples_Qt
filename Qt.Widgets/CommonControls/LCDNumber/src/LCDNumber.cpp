@@ -36,7 +36,7 @@ public:
     });
 
     setCentralWidget(&panel);
-    setWindowTitle("LCDNumber example");
+    setWindowTitle("LCD number example");
     resize(230, 130);
   }
 

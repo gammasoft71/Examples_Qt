@@ -5,7 +5,10 @@ project(CommonControls)
 
 # Common Controls
 add_subdirectory(CheckBox)
+add_subdirectory(CheckedListWidget)
+add_subdirectory(ComboBox)
 add_subdirectory(Label)
+add_subdirectory(LCDNumber)
 add_subdirectory(LineEdit)
 add_subdirectory(PictureBox)
 add_subdirectory(PictureBox2)
