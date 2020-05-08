@@ -17,7 +17,7 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [CheckBox](Qt.Widgets/CommonControls/CheckBox) Shows how to create a check box with QCheckBox.
 
-[CheckListWidget](Qt.Widgets/CommonControls/CheckListWidget) Shows how to create a checked list widget with QListWidget.
+[CheckedListWidget](Qt.Widgets/CommonControls/CheckedListWidget) Shows how to create a checked list widget with QListWidget.
 
 [ComboBox](Qt.Widgets/CommonControls/ComboBox) Shows how to create a combo box with QComboBox.
 
