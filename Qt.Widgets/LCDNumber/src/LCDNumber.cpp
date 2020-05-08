@@ -7,50 +7,50 @@
 #include <QPushButton>
 #include <QTimer>
 
-class Form : public QMainWindow {
+class Window1 : public QMainWindow {
 public:
-  Form() {
-    this->label.setSegmentStyle(QLCDNumber::SegmentStyle::Flat);
-    this->label.display(QString("%1").number(static_cast<double>(this->counter) / 10, 'f', 1));
-    this->label.move(10, 10);
-    this->label.resize(210, 70);
-    this->label.setFont(QFont("Arial", 64, QFont::Normal, true));
+  Window1() {
+    label.setSegmentStyle(QLCDNumber::SegmentStyle::Flat);
+    label.display(QString("%1").number(static_cast<double>(counter) / 10, 'f', 1));
+    label.move(10, 10);
+    label.resize(210, 70);
+    label.setFont(QFont("Arial", 64, QFont::Normal, true));
     QPalette palette;
     palette.setColor(QPalette::WindowText, QColor::fromRgb(30, 144, 255));
-    this->label.setPalette(palette);
-    this->label.setFrameStyle(QFrame::NoFrame);
+    label.setPalette(palette);
+    label.setFrameStyle(QFrame::NoFrame);
 
-    this->button.setText("Start");
-    this->button.move(10, 90);
-    this->connect(&this->button, &QPushButton::clicked, [&]() {
-      if (this->timer.isActive())
-        this->timer.stop();
+    button.setText("Start");
+    button.move(10, 90);
+    connect(&button, &QPushButton::clicked, [&]() {
+      if (timer.isActive())
+        timer.stop();
       else
-        this->timer.start();
-      this->button.setText(this->timer.isActive() ? "Stop" : "Start");
+        timer.start();
+      button.setText(timer.isActive() ? "Stop" : "Start");
      });
 
-    this->timer.setInterval(100);
-    this->connect(&this->timer, &QTimer::timeout, [&]() {
-      this->label.display(QString("%1").number(static_cast<double>(++this->counter) / 10, 'f', 1));
+    timer.setInterval(100);
+    connect(&timer, &QTimer::timeout, [&]() {
+      label.display(QString("%1").number(static_cast<double>(++counter) / 10, 'f', 1));
     });
 
-    this->setCentralWidget(&this->panel);
-    this->setWindowTitle("LCDNumber example");
-    this->resize(230, 130);
+    setCentralWidget(&panel);
+    setWindowTitle("LCDNumber example");
+    resize(230, 130);
   }
 
 private:
   QFrame panel;
-  QLCDNumber label {&this->panel};
-  QPushButton button {&this->panel};
+  QLCDNumber label {&panel};
+  QPushButton button {&panel};
   QTimer timer {this};
   int counter = 0;
 };
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Form form;
+  Window1 form;
   form.show();
   return application.exec();
 }

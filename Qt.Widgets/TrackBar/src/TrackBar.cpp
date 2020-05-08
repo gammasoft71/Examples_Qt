@@ -5,43 +5,43 @@
 #include <QProgressBar>
 #include <QSlider>
 
-class Form : public QMainWindow {
+class Window1 : public QMainWindow {
 public:
-  Form() {
-    this->trackBar.setOrientation(Qt::Horizontal);
-    this->trackBar.setMaximum(200);
-    this->trackBar.setValue(100);
-    this->trackBar.move(20, 50);
-    this->trackBar.resize(200, 25);
-    this->connect(&this->trackBar, &QSlider::valueChanged, [&]() {
-      this->progressBar.setValue(this->trackBar.value());
-      this->label.setText(QString("%1").arg(this->trackBar.value()));
+  Window1() {
+    trackBar.setOrientation(Qt::Horizontal);
+    trackBar.setMaximum(200);
+    trackBar.setValue(100);
+    trackBar.move(20, 50);
+    trackBar.resize(200, 25);
+    connect(&trackBar, &QSlider::valueChanged, [&]() {
+      progressBar.setValue(trackBar.value());
+      label.setText(QString("%1").arg(trackBar.value()));
     });
 
-    this->progressBar.setMaximum(200);
-    this->progressBar.move(20, 100);
-    this->progressBar.resize(200, 25);
-    this->progressBar.setValue(this->trackBar.value());
-    this->progressBar.setTextVisible(false);
+    progressBar.setMaximum(200);
+    progressBar.move(20, 100);
+    progressBar.resize(200, 25);
+    progressBar.setValue(trackBar.value());
+    progressBar.setTextVisible(false);
 
-    this->label.setText(QString("%1").arg(this->trackBar.value()));
-    this->label.move(20, 150);
+    label.setText(QString("%1").arg(trackBar.value()));
+    label.move(20, 150);
 
-    this->setCentralWidget(&this->panel);
-    this->setWindowTitle("TrackBar example");
-    this->resize(300, 300);
+    setCentralWidget(&panel);
+    setWindowTitle("TrackBar example");
+    resize(300, 300);
   }
 
 private:
   QFrame panel;
-  QSlider trackBar {&this->panel};
-  QProgressBar progressBar {&this->panel};
-  QLabel label {&this->panel};
+  QSlider trackBar {&panel};
+  QProgressBar progressBar {&panel};
+  QLabel label {&panel};
 };
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Form form;
+  Window1 form;
   form.show();
   return application.exec();
 }

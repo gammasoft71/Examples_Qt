@@ -1,26 +1,27 @@
 #include <QApplication>
 #include <QFrame>
 #include <QMainWindow>
-#include <QStatusBar>
+#include <QLabel>
 
 class Window1 : public QMainWindow {
 public:
-  Window1() {
-    QStatusBar* statusBar = this->statusBar();
-    statusBar->showMessage("Status bar...");
+   Window1() {
+    label1.setText("label1");
+    label1.move(10, 10);
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("Label example");
     resize(300, 300);
   }
 
 private:
-  QFrame panel;
+  QFrame frame;
+  QLabel label1 {&frame};
 };
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Window1 form;
-  form.show();
+  Window1 window1;
+  window1.show();
   return application.exec();
 }

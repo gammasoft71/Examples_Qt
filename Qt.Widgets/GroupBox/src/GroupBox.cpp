@@ -3,32 +3,32 @@
 #include <QGroupBox>
 #include <QMainWindow>
 
-class Form : public QMainWindow {
+class Window1 : public QMainWindow {
 public:
-  Form() {
-    this->groupBox1.setTitle("GroupBox 1");
-    this->groupBox1.move(10, 10);
-    this->groupBox1.resize(305, 460);
+  Window1() {
+    groupBox1.setTitle("GroupBox 1");
+    groupBox1.move(10, 10);
+    groupBox1.resize(305, 460);
 
 
-    this->groupBox2.setTitle("GroupBox 2");
-    this->groupBox2.move(325, 10);
-    this->groupBox2.resize(305, 460);
+    groupBox2.setTitle("GroupBox 2");
+    groupBox2.move(325, 10);
+    groupBox2.resize(305, 460);
 
-    this->setCentralWidget(&this->panel);
-    this->setWindowTitle("Label example");
-    this->resize(640, 480);
+    setCentralWidget(&panel);
+    setWindowTitle("Label example");
+    resize(640, 480);
   }
 
 private:
   QFrame panel;
-  QGroupBox groupBox1 {&this->panel};
-  QGroupBox groupBox2 {&this->panel};
+  QGroupBox groupBox1 {&panel};
+  QGroupBox groupBox2 {&panel};
 };
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Form form;
+  Window1 form;
   form.show();
   return application.exec();
 }

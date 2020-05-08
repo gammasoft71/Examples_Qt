@@ -5,34 +5,34 @@
 #include <QMessageBox>
 #include <QPushButton>
 
-class Form : public QMainWindow {
+class Window1 : public QMainWindow {
 public:
-  Form() {
-    this->button.setText("Close");
-    this->button.move(10, 10);
-    this->connect(&this->button, &QPushButton::clicked, [&]() {
-      this->close();
+  Window1() {
+    button.setText("Close");
+    button.move(10, 10);
+    connect(&button, &QPushButton::clicked, [&]() {
+      close();
      });
 
-    this->setCentralWidget(&this->panel);
-    this->setWindowTitle("Form");
-    this->resize(640, 480);
+    setCentralWidget(&panel);
+    setWindowTitle("Form");
+    resize(640, 480);
   }
 
   void closeEvent(QCloseEvent *event) override {
     event->ignore();
     if (QMessageBox::question(this, "Close Form", "Are you sure you want exit?", QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
-      this->QMainWindow::closeEvent(event);
+      QMainWindow::closeEvent(event);
   }
 
 private:
   QFrame panel;
-  QPushButton button {&this->panel};
+  QPushButton button {&panel};
 };
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Form form;
+  Window1 form;
   form.show();
   return application.exec();
 }

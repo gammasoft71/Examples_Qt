@@ -3,23 +3,23 @@
 #include <QMainWindow>
 #include <QTabWidget>
 
-class Form : public QMainWindow {
+class Window1 : public QMainWindow {
 public:
-  Form() {
-    this->tabControl1.move(10, 10);
-    this->tabControl1.resize(370, 250);
-    this->tabControl1.addTab(&this->tabPage1, "tabPage1");
-    this->tabControl1.addTab(&this->tabPage2, "tabPage2");
-    this->tabControl1.addTab(&this->tabPage3, "tabPage3");
+  Window1() {
+    tabControl1.move(10, 10);
+    tabControl1.resize(370, 250);
+    tabControl1.addTab(&tabPage1, "tabPage1");
+    tabControl1.addTab(&tabPage2, "tabPage2");
+    tabControl1.addTab(&tabPage3, "tabPage3");
 
-    this->setCentralWidget(&this->panel);
-    this->setWindowTitle("TabControl example");
-    this->resize(390, 270);
+    setCentralWidget(&panel);
+    setWindowTitle("TabControl example");
+    resize(390, 270);
   }
 
 private:
   QFrame panel;
-  QTabWidget tabControl1 {&this->panel};
+  QTabWidget tabControl1 {&panel};
   QFrame tabPage1;
   QFrame tabPage2;
   QFrame tabPage3;
@@ -27,7 +27,7 @@ private:
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Form form;
+  Window1 form;
   form.show();
   return application.exec();
 }

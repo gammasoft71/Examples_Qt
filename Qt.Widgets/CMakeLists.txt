@@ -6,22 +6,15 @@ project(Qt.Widgets)
 # Hello World
 add_subdirectory(HelloWorldForm)
 
-# Application and messages
+# Application
 add_subdirectory(Application)
-#add_subdirectory(ApplicationWithMessageLoop)
 
 # Common Controls
-add_subdirectory(Button)
-add_subdirectory(CheckBox)
-add_subdirectory(DarkMode)
-add_subdirectory(Label)
-add_subdirectory(LCDNumber)
-add_subdirectory(PictureBox)
-add_subdirectory(PictureBox2)
-add_subdirectory(ProgressBar)
-add_subdirectory(RadioButton)
-add_subdirectory(TextBox)
+add_subdirectory(CommonControls)
+
 add_subdirectory(TrackBar)
+
+add_subdirectory(LCDNumber)
 
 # Containers
 #add_subdirectory(ColoredTabPages)

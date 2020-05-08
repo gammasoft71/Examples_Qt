@@ -8,32 +8,32 @@
 #include <QMenuBar>
 #include <QLabel>
 
-class Form : public QMainWindow {
+class Window1 : public QMainWindow {
 public:
-  Form() {
-    QMenu* menuFile = this->menuBar()->addMenu("&File");
-    menuFile->addAction("&New", this, &Form::OnMenuFileNewClick, QKeySequence(Qt::CTRL + Qt::Key_N));
-    menuFile->addAction("&Open", this, &Form::OnMenuFileOpenClick, QKeySequence(Qt::CTRL + Qt::Key_O));
+  Window1() {
+    QMenu* menuFile = menuBar()->addMenu("&File");
+    menuFile->addAction("&New", this, &Window1::OnMenuFileNewClick, QKeySequence(Qt::CTRL + Qt::Key_N));
+    menuFile->addAction("&Open", this, &Window1::OnMenuFileOpenClick, QKeySequence(Qt::CTRL + Qt::Key_O));
     menuFile->addSeparator();
-    menuFile->addAction("&Close", this, &Form::OnMenuFileCloseClick, QKeySequence(Qt::CTRL + Qt::Key_W));
+    menuFile->addAction("&Close", this, &Window1::OnMenuFileCloseClick, QKeySequence(Qt::CTRL + Qt::Key_W));
     
-    QMenu* menuEdit = this->menuBar()->addMenu("&Edit");
-    menuEdit->addAction("&Undo", this, &Form::OnMenuEditUndoClick, QKeySequence(Qt::CTRL + Qt::Key_Z));
-    menuEdit->addAction("&Redo", this, &Form::OnMenuEditRedoClick, QKeySequence(Qt::CTRL + Qt::Key_Y));
+    QMenu* menuEdit = menuBar()->addMenu("&Edit");
+    menuEdit->addAction("&Undo", this, &Window1::OnMenuEditUndoClick, QKeySequence(Qt::CTRL + Qt::Key_Z));
+    menuEdit->addAction("&Redo", this, &Window1::OnMenuEditRedoClick, QKeySequence(Qt::CTRL + Qt::Key_Y));
     menuEdit->addSeparator();
-    menuEdit->addAction("&Cut", this, &Form::OnMenuEditCutClick, QKeySequence(Qt::CTRL + Qt::Key_X));
-    menuEdit->addAction("&Copy", this, &Form::OnMenuEditCopyClick, QKeySequence(Qt::CTRL + Qt::Key_C));
-    menuEdit->addAction("&Paste", this, &Form::OnMenuEditPasteClick, QKeySequence(Qt::CTRL + Qt::Key_V));
-    menuEdit->addAction("&Delete", this, &Form::OnMenuEditDeletaClick, QKeySequence(Qt::CTRL + Qt::Key_Backspace));
+    menuEdit->addAction("&Cut", this, &Window1::OnMenuEditCutClick, QKeySequence(Qt::CTRL + Qt::Key_X));
+    menuEdit->addAction("&Copy", this, &Window1::OnMenuEditCopyClick, QKeySequence(Qt::CTRL + Qt::Key_C));
+    menuEdit->addAction("&Paste", this, &Window1::OnMenuEditPasteClick, QKeySequence(Qt::CTRL + Qt::Key_V));
+    menuEdit->addAction("&Delete", this, &Window1::OnMenuEditDeletaClick, QKeySequence(Qt::CTRL + Qt::Key_Backspace));
     menuEdit->addSeparator();
-    menuEdit->addAction("Select &All", this, &Form::OnMenuEditSelectAllClick, QKeySequence(Qt::CTRL + Qt::Key_A));
+    menuEdit->addAction("Select &All", this, &Window1::OnMenuEditSelectAllClick, QKeySequence(Qt::CTRL + Qt::Key_A));
 
-    QMenu* menuHelp = this->menuBar()->addMenu("&Help");
-    menuHelp->addAction("&About", this, &Form::OnMenuHelpAboutClick);
+    QMenu* menuHelp = menuBar()->addMenu("&Help");
+    menuHelp->addAction("&About", this, &Window1::OnMenuHelpAboutClick);
 
-    this->setCentralWidget(&this->panel);
-    this->setWindowTitle("MainMenu example");
-    this->resize(300, 300);
+    setCentralWidget(&panel);
+    setWindowTitle("MainMenu example");
+    resize(300, 300);
   }
 
 private:
@@ -50,12 +50,12 @@ private:
   void OnMenuHelpAboutClick() {QMessageBox::about(this, "About", "MainMenu example.\nVersion 1.0.0\n\n@ 2019 by Gammasoft.");}
 
   QFrame panel;
-  //QLabel label1 {&this->panel};
+  //QLabel label1 {&panel};
 };
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Form form;
+  Window1 form;
   form.show();
   return application.exec();
 }

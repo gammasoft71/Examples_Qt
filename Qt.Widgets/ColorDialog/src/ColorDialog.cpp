@@ -4,35 +4,35 @@
 #include <QMainWindow>
 #include <QPushButton>
 
-class Form : public QMainWindow {
+class Window1 : public QMainWindow {
 public:
-  Form() {
-    this->button.setText("Color...");
-    this->button.move(10, 10);
-    this->connect(&this->button, &QPushButton::clicked, [&]() {
+  Window1() {
+    button.setText("Color...");
+    button.move(10, 10);
+    connect(&button, &QPushButton::clicked, [&]() {
       QColorDialog colorDialog;
-      colorDialog.setCurrentColor(this->palette().color(QPalette::Background));
+      colorDialog.setCurrentColor(palette().color(QPalette::Background));
       if (colorDialog.exec() == QDialog::Accepted) {
         QPalette palette;
         palette.setColor(QPalette::Background, colorDialog.selectedColor());
-        this->setPalette(palette);
-        this->update();
+        setPalette(palette);
+        update();
       }
     });
 
-    this->setCentralWidget(&this->panel);
-    this->setWindowTitle("ColorDialog example");
-    this->resize(300, 300);
+    setCentralWidget(&panel);
+    setWindowTitle("ColorDialog example");
+    resize(300, 300);
   }
 
 private:
   QFrame panel;
-  QPushButton button {&this->panel};
+  QPushButton button {&panel};
 };
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Form form;
+  Window1 form;
   form.show();
   return application.exec();
 }

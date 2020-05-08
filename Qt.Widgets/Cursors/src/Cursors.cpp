@@ -4,9 +4,9 @@
 #include <QListWidget>
 #include <QMainWindow>
 
-class Form : public QMainWindow {
+class Window1 : public QMainWindow {
 public:
-  Form() {
+  Window1() {
     listWidgetCursors.move(20, 20);
     listWidgetCursors.resize(150, 200);
     listWidgetCursors.addItems({"Arrow", "Up arrow", "Cross", "Wait", "IBeam", "Size vertical", "Size horizantal", "Size top-right / bottom-left corner", "Size top-left / bottom-right corner", "Size all", "Blank", "Split vertical", "Split horizontal", "Pointing hand", "Forbidden", "What's this", "Busy", "Open hand", "Closed hand", "Drag copy", "Drag move", "Drag link"});
@@ -28,13 +28,13 @@ public:
 
 private:
   QFrame panel;
-  QListWidget listWidgetCursors {&this->panel};
-  QFrame testZone {&this->panel};
+  QListWidget listWidgetCursors {&panel};
+  QFrame testZone {&panel};
 };
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Form form;
+  Window1 form;
   form.show();
   return application.exec();
 }
