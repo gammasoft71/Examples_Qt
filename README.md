@@ -31,7 +31,7 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [RadioButton](Qt.Widgets/CommonControls/RadioButton) Shows how to create a radio button with QRadioButton.
 
-[Slider](Qt.Widgets/CommonControls/Sliderr) Shows how to create a slider with QSlider.
+[Slider](Qt.Widgets/CommonControls/Slider) Shows how to create a slider with QSlider.
 
 [ToggleButton](Qt.Widgets/CommonControls/ToggleButton) Shows how to create a toggle buttonx with QPushButton.
 
