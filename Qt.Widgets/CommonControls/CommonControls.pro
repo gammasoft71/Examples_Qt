@@ -8,4 +8,5 @@ SUBDIRS = \
     ProgressBar \
     PushButton \
     RadioButton \
+    Slider \
     ToggleButton \

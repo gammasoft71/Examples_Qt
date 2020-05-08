@@ -25,15 +25,15 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [PictureBox2](Qt.Widgets/CommonControls/PictureBox2) Shows how to create a picture box with QGraphicsPixmapItem.
 
-[ProgressBar](Qt.Widgets/ProgressBar) Shows how to create a ProgressBar with QProgress.
+[ProgressBar](Qt.Widgets/CommonControls/ProgressBar) Shows how to create a ProgressBar with QProgress.
 
 [PushButton](Qt.Widgets/CommonControls/PushButton) Shows how to create a button and Event Click with QPushButton.
 
 [RadioButton](Qt.Widgets/CommonControls/RadioButton) Shows how to create a radio button with QRadioButton.
 
-[ToggleButton](Qt.Widgets/CommonControls/ToggleButton) Shows how to create a toggle buttonx with QPushButton.
+[Slider](Qt.Widgets/CommonControls/Sliderr) Shows how to create a slider with QSlider.
 
-[TrackBar](Qt.Widgets/TrackBar) Shows how to create a TrackBar with QSlider.
+[ToggleButton](Qt.Widgets/CommonControls/ToggleButton) Shows how to create a toggle buttonx with QPushButton.
 
 ## Containers
 

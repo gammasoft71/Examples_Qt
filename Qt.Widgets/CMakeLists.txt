@@ -12,8 +12,6 @@ add_subdirectory(Application)
 # Common Controls
 add_subdirectory(CommonControls)
 
-add_subdirectory(TrackBar)
-
 add_subdirectory(LCDNumber)
 
 # Containers

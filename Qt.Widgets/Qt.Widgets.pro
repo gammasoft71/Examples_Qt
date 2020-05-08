@@ -18,4 +18,3 @@ SUBDIRS = \
     StatusBar \
     TabControl \
     Timer \
-    TrackBar
