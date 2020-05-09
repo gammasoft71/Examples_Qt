@@ -1,56 +1,35 @@
-#include <QApplication>
 #include <QFont>
 #include <QFrame>
-#include <QLabel>
 #include <QLCDNumber>
 #include <QMainWindow>
-#include <QPushButton>
-#include <QTimer>
+#include <QDoubleSpinBox>
 
 class Window1 : public QMainWindow {
+  Q_OBJECT
 public:
   Window1() {
-    label.setSegmentStyle(QLCDNumber::SegmentStyle::Flat);
-    label.display(QString("%1").number(static_cast<double>(counter) / 10, 'f', 1));
-    label.move(10, 10);
-    label.resize(210, 70);
-    label.setFont(QFont("Arial", 64, QFont::Normal, true));
-    QPalette palette;
-    palette.setColor(QPalette::WindowText, QColor::fromRgb(30, 144, 255));
-    label.setPalette(palette);
-    label.setFrameStyle(QFrame::NoFrame);
-
-    button.setText("Start");
-    button.move(10, 90);
-    connect(&button, &QPushButton::clicked, [&]() {
-      if (timer.isActive())
-        timer.stop();
-      else
-        timer.start();
-      button.setText(timer.isActive() ? "Stop" : "Start");
-     });
-
-    timer.setInterval(100);
-    connect(&timer, &QTimer::timeout, [&]() {
-      label.display(QString("%1").number(static_cast<double>(++counter) / 10, 'f', 1));
+    doubleSpinBox.move(10, 10);
+    doubleSpinBox.setDecimals(2);
+    doubleSpinBox.setRange(0, 15000000);
+    doubleSpinBox.setSingleStep(0.01);
+    doubleSpinBox.setValue(12345678.90);
+    connect(&doubleSpinBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), [&] {
+      lcdNumber.display(QString("%1").number(doubleSpinBox.value(), 'f', 2));
     });
 
-    setCentralWidget(&panel);
+    lcdNumber.setSegmentStyle(QLCDNumber::SegmentStyle::Flat);
+    lcdNumber.setDigitCount(11);
+    lcdNumber.display("12345678.90");
+    lcdNumber.move(10, 50);
+    lcdNumber.setFrameStyle(QFrame::NoFrame);
+
+    setCentralWidget(&frame);
     setWindowTitle("LCD number example");
-    resize(230, 130);
+    resize(300, 300);
   }
 
 private:
-  QFrame panel;
-  QLCDNumber label {&panel};
-  QPushButton button {&panel};
-  QTimer timer {this};
-  int counter = 0;
+  QFrame frame;
+  QDoubleSpinBox doubleSpinBox {&frame};
+  QLCDNumber lcdNumber {&frame};
 };
-
-int main(int argc, char *argv[]) {
-  QApplication application(argc, argv);
-  Window1 form;
-  form.show();
-  return application.exec();
-}

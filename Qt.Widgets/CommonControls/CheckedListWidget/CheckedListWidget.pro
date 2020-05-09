@@ -1,3 +1,3 @@
 CONFIG += c++17
 QT = widgets
-SOURCES = src/CheckedListWidget.cpp
+SOURCES = src/CheckedListWidget.cpp src/CheckedListWidget.h

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 
 # Project
-project(PictureBox)
+project(SpinBox)
 find_package(Qt5Widgets CONFIG REQUIRED)
 
 # Options
@@ -10,8 +10,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_AUTORCC ON)
 
 # Application
-add_executable(PictureBox WIN32 MACOSX_BUNDLE src/PictureBox.cpp PictureBox.qrc)
-target_link_libraries(PictureBox Qt5::Widgets)
+add_executable(SpinBox WIN32 MACOSX_BUNDLE src/SpinBox.cpp)
+target_link_libraries(SpinBox Qt5::Widgets)

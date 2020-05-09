@@ -1,3 +1,3 @@
 CONFIG += c++17
 QT = widgets
-SOURCES = src/Label.cpp
+SOURCES = src/Label.cpp src/Label.h

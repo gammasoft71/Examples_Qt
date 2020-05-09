@@ -11,4 +11,6 @@ SUBDIRS = \
     PushButton \
     RadioButton \
     Slider \
+    SpinBox \
     ToggleButton \
+    Widget \
