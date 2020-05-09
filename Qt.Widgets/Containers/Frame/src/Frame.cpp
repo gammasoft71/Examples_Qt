@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "Panel.h"
+#include "Frame.h"
 
 using namespace examples;
 
