@@ -6,6 +6,7 @@
 
 namespace examples {
   class Window1 : public QMainWindow {
+    Q_OBJECT
   public:
     Window1() {
       button.setText("Close");
@@ -19,7 +20,7 @@ namespace examples {
 
     void closeEvent(QCloseEvent *event) override {
       event->ignore();
-      if (QMessageBox::question(this, "Close Window", "Are you sure you want exit?", QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
+      if (QMessageBox::question(this, "Close Window", "Are you sure you want exit?", QMessageBox::Yes|QMessageBox::No) == QMessageBox::Yes)
         QMainWindow::closeEvent(event);
     }
 
