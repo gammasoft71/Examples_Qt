@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(DarkMode WIN32 MACOSX_BUNDLE src/DarkMode.cpp)
+add_executable(DarkMode WIN32 MACOSX_BUNDLE src/DarkMode.cpp src/DarkMode.h)
 target_link_libraries(DarkMode Qt5::Widgets)
