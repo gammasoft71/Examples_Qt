@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(Widget WIN32 MACOSX_BUNDLE src/Widget.cpp)
+add_executable(Widget WIN32 MACOSX_BUNDLE src/Widget.cpp src/Widget.h)
 target_link_libraries(Widget Qt5::Widgets)

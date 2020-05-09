@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(RadioButton WIN32 MACOSX_BUNDLE src/RadioButton.cpp)
+add_executable(RadioButton WIN32 MACOSX_BUNDLE src/RadioButton.cpp src/RadioButton.h)
 target_link_libraries(RadioButton Qt5::Widgets)

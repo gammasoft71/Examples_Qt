@@ -1,3 +1,3 @@
 CONFIG += c++17
 QT = widgets
-SOURCES = src/Widget.cpp
+SOURCES = src/Widget.cpp src/Widget.h

@@ -2,6 +2,7 @@ TEMPLATE = subdirs
 SUBDIRS = \
     CheckBox \
     CheckedListWidget \
+    DoubleSpinBox \
     Label \
     LCDNumber \
     LineEdit \

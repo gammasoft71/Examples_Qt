@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(Slider WIN32 MACOSX_BUNDLE src/Slider.cpp)
+add_executable(Slider WIN32 MACOSX_BUNDLE src/Slider.cpp src/Slider.h)
 target_link_libraries(Slider Qt5::Widgets)

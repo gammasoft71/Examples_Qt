@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(SpinBox WIN32 MACOSX_BUNDLE src/SpinBox.cpp)
+add_executable(SpinBox WIN32 MACOSX_BUNDLE src/SpinBox.cpp src/SpinBox.h)
 target_link_libraries(SpinBox Qt5::Widgets)

@@ -13,5 +13,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTORCC ON)
 
 # Application
-add_executable(PictureBox2 WIN32 MACOSX_BUNDLE src/PictureBox2.cpp PictureBox2.qrc)
+add_executable(PictureBox2 WIN32 MACOSX_BUNDLE src/PictureBox2.cpp src/PictureBox2.h PictureBox2.qrc)
 target_link_libraries(PictureBox2 Qt5::Widgets)

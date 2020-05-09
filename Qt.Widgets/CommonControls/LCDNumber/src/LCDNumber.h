@@ -14,7 +14,7 @@ public:
     doubleSpinBox.setSingleStep(0.01);
     doubleSpinBox.setValue(12345678.90);
     connect(&doubleSpinBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), [&] {
-      lcdNumber.display(QString("%1").number(doubleSpinBox.value(), 'f', 2));
+      lcdNumber.display(QString::number(doubleSpinBox.value(), 'f', 2));
     });
 
     lcdNumber.setSegmentStyle(QLCDNumber::SegmentStyle::Flat);

@@ -9,7 +9,7 @@
 class Window1 : public QMainWindow {
 public:
   Window1() {
-    label.setText(QString("%1").number(static_cast<double>(counter) / 10, 'f', 1));
+    label.setText(QString::number(static_cast<double>(counter) / 10, 'f', 1));
     label.move(10, 10);
     label.resize(210, 70);
     label.setFont(QFont("Arial", 64, QFont::Normal, true));
@@ -29,7 +29,7 @@ public:
 
     timer.setInterval(100);
     connect(&timer, &QTimer::timeout, [&]() {
-      label.setText(QString("%1").number(static_cast<double>(++counter) / 10, 'f', 1));
+      label.setText(QString::number(static_cast<double>(++counter) / 10, 'f', 1));
     });
 
     setCentralWidget(&panel);
