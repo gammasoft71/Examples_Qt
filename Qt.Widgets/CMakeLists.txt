@@ -3,18 +3,13 @@ cmake_minimum_required(VERSION 3.2)
 # Solution
 project(Qt.Widgets)
 
-# Hello World
 add_subdirectory(HelloWorld)
-
-# Application
 add_subdirectory(Application)
-
-# Common Controls
 add_subdirectory(CommonControls)
+add_subdirectory(Containers)
 
 # Containers
 #add_subdirectory(ColoredTabPages)
-add_subdirectory(Form)
 add_subdirectory(Panel)
 add_subdirectory(GroupBox)
 add_subdirectory(TabControl)

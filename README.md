@@ -51,7 +51,7 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 ## Containers
 
-[Form](Qt.Widgets/Form) Shows how to create a Form with QWindow.
+[Window](Qt.Widgets/Containers/Window) Shows how to create a window with QMainWindow.
 
 [GroupBox](Qt.Widgets/GroupBox) Shows how to create a GroupBox with QGroupBox.
 

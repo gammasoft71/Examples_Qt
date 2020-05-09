@@ -3,12 +3,12 @@ SUBDIRS = \
     HelloWorld \
     Application \
     CommonControls \
+    Containers \
     Others\
     ColorDialog \
     Cursors \
     FolderBrowserDialog \
     FontDialog \
-    Form \
     GroupBox \
     MainMenu \
     MessageBox \
