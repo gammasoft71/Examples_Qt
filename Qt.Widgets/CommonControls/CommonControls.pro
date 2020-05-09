@@ -13,5 +13,6 @@ SUBDIRS = \
     RadioButton \
     Slider \
     SpinBox \
+    SpinButton \
     ToggleButton \
     Widget \

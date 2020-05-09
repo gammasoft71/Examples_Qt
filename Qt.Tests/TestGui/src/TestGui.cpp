@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <QDebug>
 #include <QFrame>
 #include <QMainWindow>
 #include <QPushButton>
@@ -11,12 +12,12 @@ int main(int argc, char *argv[]) {
   form.setWindowTitle("Main form");
   form.show();
 
-  QFrame panel;
-  form.setCentralWidget(&panel);
+  QFrame frame;
+  form.setCentralWidget(&frame);
 
   QPushButton button;
   button.move(10, 10);
-  button.setParent(&panel);
+  button.setParent(&frame);
   button.setText("Close");
   button.connect(&button, &QPushButton::clicked, &form, &QMainWindow::close);
 
