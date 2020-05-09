@@ -67,6 +67,8 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 ## Components
 
+[Cursors](Qt.Widgets/Cursors) Shows how to associate cursor to widget with QCursor.
+
 [Timer](Qt.Widgets/Timer) Shows how to create a Timer with QTimer.
 
 ## Dialogs
