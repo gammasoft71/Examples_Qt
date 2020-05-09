@@ -18,15 +18,15 @@ public:
     labelDialogResult.move(10, 50);
     labelDialogResult.resize(280, 20);
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("MessageBox example");
     resize(300, 300);
   }
 
 private:
-  QFrame panel;
-  QPushButton buttonShowMessage {&panel};
-  QLabel labelDialogResult {&panel};
+  QFrame frame;
+  QPushButton buttonShowMessage {&frame};
+  QLabel labelDialogResult {&frame};
 };
 
 int main(int argc, char *argv[]) {

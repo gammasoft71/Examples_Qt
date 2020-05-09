@@ -12,14 +12,14 @@ public:
     tabControl1.addTab(&tabPage2, "tabPage2");
     tabControl1.addTab(&tabPage3, "tabPage3");
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("TabControl example");
     resize(390, 270);
   }
 
 private:
-  QFrame panel;
-  QTabWidget tabControl1 {&panel};
+  QFrame frame;
+  QTabWidget tabControl1 {&frame};
   QFrame tabPage1;
   QFrame tabPage2;
   QFrame tabPage3;

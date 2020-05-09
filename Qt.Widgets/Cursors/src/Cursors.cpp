@@ -21,15 +21,15 @@ public:
     testZone.setAutoFillBackground(true);
     testZone.setPalette({listWidgetCursors.palette().color(QPalette::Base)});
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("Cursor example");
     resize(360, 240);
   }
 
 private:
-  QFrame panel;
-  QListWidget listWidgetCursors {&panel};
-  QFrame testZone {&panel};
+  QFrame frame;
+  QListWidget listWidgetCursors {&frame};
+  QFrame testZone {&frame};
 };
 
 int main(int argc, char *argv[]) {

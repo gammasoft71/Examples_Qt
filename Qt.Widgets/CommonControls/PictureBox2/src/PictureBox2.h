@@ -17,15 +17,15 @@ namespace examples {
       item.setPixmap(QPixmap(":/Logo"));
       scene.addItem(&item);
 
-      setCentralWidget(&panel);
+      setCentralWidget(&frame);
       setWindowTitle("Picture box 2 example");
       resize(300, 300);
     }
 
   private:
-    QFrame panel;
+    QFrame frame;
     QGraphicsScene scene;
-    QGraphicsView view {&scene, &panel};
+    QGraphicsView view {&scene, &frame};
     QGraphicsPixmapItem item;
   };
 }

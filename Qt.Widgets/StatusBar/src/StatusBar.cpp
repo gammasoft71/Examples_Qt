@@ -9,13 +9,13 @@ public:
     QStatusBar* statusBar = this->statusBar();
     statusBar->showMessage("Status bar...");
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("Label example");
     resize(300, 300);
   }
 
 private:
-  QFrame panel;
+  QFrame frame;
 };
 
 int main(int argc, char *argv[]) {

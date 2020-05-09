@@ -20,14 +20,14 @@ public:
       }
     });
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("ColorDialog example");
     resize(300, 300);
   }
 
 private:
-  QFrame panel;
-  QPushButton button {&panel};
+  QFrame frame;
+  QPushButton button {&frame};
 };
 
 int main(int argc, char *argv[]) {

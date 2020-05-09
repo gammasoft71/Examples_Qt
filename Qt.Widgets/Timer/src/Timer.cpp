@@ -32,15 +32,15 @@ public:
       label.setText(QString::number(static_cast<double>(++counter) / 10, 'f', 1));
     });
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("Timer example");
     resize(230, 130);
   }
 
 private:
-  QFrame panel;
-  QLabel label {&panel};
-  QPushButton button {&panel};
+  QFrame frame;
+  QLabel label {&frame};
+  QPushButton button {&frame};
   QTimer timer {this};
   int counter = 0;
 };

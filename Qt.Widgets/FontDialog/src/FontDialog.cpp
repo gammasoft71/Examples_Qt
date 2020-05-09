@@ -33,15 +33,15 @@ public:
     label.resize(380, 340);
     label.setAlignment(Qt::AlignTop);
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("FontDialog example");
     resize(400, 400);
   }
 
 private:
-  QFrame panel;
-  QPushButton button {&panel};
-  QLabel label {&panel};
+  QFrame frame;
+  QPushButton button {&frame};
+  QLabel label {&frame};
 };
 
 int main(int argc, char *argv[]) {

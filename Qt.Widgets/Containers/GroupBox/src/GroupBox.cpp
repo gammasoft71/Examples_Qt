@@ -15,15 +15,15 @@ public:
     groupBox2.move(325, 10);
     groupBox2.resize(305, 460);
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("Label example");
     resize(640, 480);
   }
 
 private:
-  QFrame panel;
-  QGroupBox groupBox1 {&panel};
-  QGroupBox groupBox2 {&panel};
+  QFrame frame;
+  QGroupBox groupBox1 {&frame};
+  QGroupBox groupBox2 {&frame};
 };
 
 int main(int argc, char *argv[]) {

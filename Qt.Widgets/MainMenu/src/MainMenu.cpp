@@ -31,7 +31,7 @@ public:
     QMenu* menuHelp = menuBar()->addMenu("&Help");
     menuHelp->addAction("&About", this, &Window1::OnMenuHelpAboutClick);
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("MainMenu example");
     resize(300, 300);
   }
@@ -49,7 +49,7 @@ private:
   void OnMenuEditSelectAllClick() {qDebug() << "MainMenu/Edit/SelectAll";}
   void OnMenuHelpAboutClick() {QMessageBox::about(this, "About", "MainMenu example.\nVersion 1.0.0\n\n@ 2019 by Gammasoft.");}
 
-  QFrame panel;
+  QFrame frame;
   //QLabel label1 {&panel};
 };
 

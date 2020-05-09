@@ -14,15 +14,15 @@ public:
     panel2.move(325, 10);
     panel2.resize(305, 460);
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("Panel example");
     resize(640, 480);
   }
 
 private:
-  QFrame panel;
-  QFrame panel1 {&panel};
-  QFrame panel2 {&panel};
+  QFrame frame;
+  QFrame panel1 {&frame};
+  QFrame panel2 {&frame};
 };
 
 int main(int argc, char *argv[]) {

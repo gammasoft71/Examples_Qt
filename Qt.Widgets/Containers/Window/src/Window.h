@@ -13,7 +13,7 @@ namespace examples {
       button.move(10, 10);
       connect(&button, &QPushButton::clicked, this, &Window1::close);
 
-      setCentralWidget(&panel);
+      setCentralWidget(&frame);
       setWindowTitle("Window");
       resize(640, 480);
     }
@@ -25,7 +25,7 @@ namespace examples {
     }
 
   private:
-    QFrame panel;
-    QPushButton button {&panel};
+    QFrame frame;
+    QPushButton button {&frame};
   };
 }

@@ -26,13 +26,13 @@ namespace examples {
       label1.move(5, 100);
       resize(290, 100);
 
-      setCentralWidget(&panel);
+      setCentralWidget(&frame);
       setWindowTitle("Hello world (label)");
       resize(300, 300);
     }
 
   private:
-    QFrame panel;
-    QLabel label1 {&panel};
+    QFrame frame;
+    QLabel label1 {&frame};
   };
 }

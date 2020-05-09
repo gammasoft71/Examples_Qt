@@ -25,15 +25,15 @@ public:
     label.move(10, 50);
     label.resize(280, 20);
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("FolderBrowserDialog example");
     resize(300, 300);
   }
 
 private:
-  QFrame panel;
-  QPushButton buttonFolderBrowser {&panel};
-  QLabel label {&panel};
+  QFrame frame;
+  QPushButton buttonFolderBrowser {&frame};
+  QLabel label {&frame};
 };
 
 int main(int argc, char *argv[]) {

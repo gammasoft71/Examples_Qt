@@ -23,15 +23,15 @@ public:
     label.resize(280, 20);
     label.setText("File = ");
 
-    setCentralWidget(&panel);
+    setCentralWidget(&frame);
     setWindowTitle("OpenFileDialog example");
     resize(300, 300);
   }
 
 private:
-  QFrame panel;
-  QPushButton button {&panel};
-  QLabel label {&panel};
+  QFrame frame;
+  QPushButton button {&frame};
+  QLabel label {&frame};
 };
 
 int main(int argc, char *argv[]) {
