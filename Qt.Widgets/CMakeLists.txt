@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.2)
 project(Qt.Widgets)
 
 # Hello World
-add_subdirectory(HelloWorldForm)
+add_subdirectory(HelloWorld)
 
 # Application
 add_subdirectory(Application)

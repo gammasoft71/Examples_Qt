@@ -1,6 +1,8 @@
 #include <QApplication>
 #include "ProgressBar.h"
 
+using namespace examples;
+
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
   Window1 form;

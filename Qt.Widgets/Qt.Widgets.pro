@@ -1,14 +1,15 @@
 TEMPLATE = subdirs
 SUBDIRS = \
+    HelloWorld \
     Application \
     CommonControls \
+    Others\
     ColorDialog \
     Cursors \
     FolderBrowserDialog \
     FontDialog \
     Form \
     GroupBox \
-    HelloWorldForm \
     MainMenu \
     MessageBox \
     OpenFileDialog \
@@ -17,4 +18,3 @@ SUBDIRS = \
     StatusBar \
     TabControl \
     Timer \
-    Others\

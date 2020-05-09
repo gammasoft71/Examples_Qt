@@ -5,7 +5,7 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 ## Hello World
 
-["Hello World"](Qt.Widgets/HelloWorldForm) The classic first application HelloWorld with QLabel.
+["HelloWorldLabel"](Qt.Widgets/HelloWorld/HelloWorldLabel) The classic first application "Hello, world!" with QLabel.
 
 ## Application and messages
 

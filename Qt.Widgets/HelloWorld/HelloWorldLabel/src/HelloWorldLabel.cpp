@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "RadioButton.h"
+#include "HelloWorldLabel.h"
 
 using namespace examples;
 
