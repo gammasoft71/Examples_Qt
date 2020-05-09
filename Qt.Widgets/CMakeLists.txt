@@ -7,12 +7,7 @@ add_subdirectory(HelloWorld)
 add_subdirectory(Application)
 add_subdirectory(CommonControls)
 add_subdirectory(Containers)
-
-# Containers
-#add_subdirectory(ColoredTabPages)
-add_subdirectory(Panel)
-add_subdirectory(GroupBox)
-add_subdirectory(TabControl)
+add_subdirectory(Others)
 
 # Menus and Toolbars
 add_subdirectory(MainMenu)
@@ -29,6 +24,3 @@ add_subdirectory(FontDialog)
 add_subdirectory(MessageBox)
 add_subdirectory(OpenFileDialog)
 add_subdirectory(SaveFileDialog)
-
-# Others
-add_subdirectory(Others)
