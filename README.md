@@ -51,13 +51,13 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 ## Containers
 
-[Window](Qt.Widgets/Containers/Window) Shows how to create a window with QMainWindow.
-
 [GroupBox](Qt.Widgets/Containers/GroupBox) Shows how to create a GroupBox with QGroupBox.
 
 [Panel](Qt.Widgets/Containers/Panel) Shows how to create a Panel with QFrame.
 
 [TabControl](Qt.Widgets/Containers/TabControl) Shows how to create a TabControl with TabPages with QTabWidget.
+
+[Window](Qt.Widgets/Containers/Window) Shows how to create a window with QMainWindow.
 
 ## Menus and toolbars
 
