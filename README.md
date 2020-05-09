@@ -114,7 +114,7 @@ Set "CMAKE_PREFIX_PATH" with Qt5 install path.
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./CocoaExamples.xcodeproj
+open ./Qt.Examples.xcodeproj
 ```
 
 
