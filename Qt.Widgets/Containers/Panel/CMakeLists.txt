@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(Panel WIN32 MACOSX_BUNDLE src/Panel.cpp)
+add_executable(Panel WIN32 MACOSX_BUNDLE src/Panel.cpp src/Panel.h)
 target_link_libraries(Panel Qt5::Widgets)

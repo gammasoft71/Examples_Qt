@@ -12,7 +12,7 @@ namespace examples {
     Window1() {
       view.move(10, 10);
       view.resize(280, 280);
-      view.setFrameStyle(QFrame::Box | QFrame::Plain);
+      view.setFrameStyle(QFrame::StyledPanel|QFrame::Plain);
       view.setAlignment(Qt::AlignCenter);
       item.setPixmap(QPixmap(":/Logo"));
       scene.addItem(&item);

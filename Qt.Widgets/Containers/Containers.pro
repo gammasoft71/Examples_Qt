@@ -2,5 +2,5 @@ TEMPLATE = subdirs
 SUBDIRS = \
     GroupBox
     Panel \
-    TabControl \
+    TabWidget \
     Window \

@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "Panel.h"
+#include "TabWidget.h"
 
 using namespace examples;
 

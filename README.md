@@ -55,7 +55,7 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [Panel](Qt.Widgets/Containers/Panel) Shows how to create a Panel with QFrame.
 
-[TabControl](Qt.Widgets/Containers/TabControl) Shows how to create a TabControl with TabPages with QTabWidget.
+[TabWidget](Qt.Widgets/Containers/TabWidget) Shows how to create a tab widget with QTabWidget.
 
 [Window](Qt.Widgets/Containers/Window) Shows how to create a window with QMainWindow.
 

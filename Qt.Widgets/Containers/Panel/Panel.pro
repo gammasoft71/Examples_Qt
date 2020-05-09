@@ -1,3 +1,3 @@
 CONFIG += c++17
 QT = widgets
-SOURCES = src/Panel.cpp
+SOURCES = src/Panel.cpp src/Panel.h

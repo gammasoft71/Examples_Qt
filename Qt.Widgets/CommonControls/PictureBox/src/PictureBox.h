@@ -1,6 +1,5 @@
 #include <QFrame>
 #include <QLabel>
-#include <QLineEdit>
 #include <QMainWindow>
 #include <QPixmap>
 
@@ -13,9 +12,8 @@ namespace examples {
     Window1() {
       pictureBox1.move(10, 10);
       pictureBox1.resize(280, 280);
-      pictureBox1.setFrameStyle(QFrame::Box|QFrame::Plain);
+      pictureBox1.setFrameStyle(QFrame::StyledPanel|QFrame::Plain);
       pictureBox1.setAutoFillBackground(true);
-      pictureBox1.setPalette({QLineEdit().palette().color(QPalette::Base)});
       pictureBox1.setAlignment (Qt::AlignCenter);
       pictureBox1.setPixmap(QPixmap(":/Logo"));
 

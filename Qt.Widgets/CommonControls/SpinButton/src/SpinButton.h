@@ -5,6 +5,7 @@
 
 namespace examples {
   class SpinButton : public QSpinBox {
+    Q_OBJECT
   public:
     SpinButton(QWidget* parent = nullptr) : QSpinBox(parent) {
       // Hack of QSpinBox :
