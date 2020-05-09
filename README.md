@@ -21,9 +21,11 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [ComboBox](Qt.Widgets/CommonControls/ComboBox) Shows how to create a combo box with QComboBox.
 
-[Label](Qt.Widgets/CommonControls/Label) Shows how to create a label with QLabel.
+[DoubleSpinBox](Qt.Widgets/CommonControls/DoubleSpinBox) Shows how to create a double spin box with QDoubleSpinBox.
 
 [LCDNumber](Qt.Widgets/CommonControls/LCDNumber) Shows how to create a LCD number with QLCDNumber.
+
+[Label](Qt.Widgets/CommonControls/Label) Shows how to create a label with QLabel.
 
 [LineEdit](Qt.Widgets/CommonControls/LineEdit) Shows how to create a line edit with QLineEdit.
 
@@ -39,7 +41,13 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [Slider](Qt.Widgets/CommonControls/Slider) Shows how to create a slider with QSlider.
 
-[ToggleButton](Qt.Widgets/CommonControls/ToggleButton) Shows how to create a toggle buttonx with QPushButton.
+[SpinBox](Qt.Widgets/CommonControls/SpinBox) Shows how to create a spin box with QSpinBox.
+
+[SpinButton](Qt.Widgets/CommonControls/SpinButton) Shows how to create a spin button with QSpinBox.
+
+[ToggleButton](Qt.Widgets/CommonControls/ToggleButton) Shows how to create a toggle button with QPushButton.
+
+[Widget](Qt.Widgets/CommonControls/ToggleButton) Shows how to create a widget with QWidget.
 
 ## Containers
 
