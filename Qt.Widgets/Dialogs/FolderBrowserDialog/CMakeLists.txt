@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(FolderBrowserDialog WIN32 MACOSX_BUNDLE src/FolderBrowserDialog.cpp)
+add_executable(FolderBrowserDialog WIN32 MACOSX_BUNDLE src/FolderBrowserDialog.cpp src/FolderBrowserDialog.h)
 target_link_libraries(FolderBrowserDialog Qt5::Widgets)

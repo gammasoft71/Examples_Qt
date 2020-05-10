@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(FontDialog WIN32 MACOSX_BUNDLE src/FontDialog.cpp)
+add_executable(FontDialog WIN32 MACOSX_BUNDLE src/FontDialog.cpp src/FontDialog.h)
 target_link_libraries(FontDialog Qt5::Widgets)

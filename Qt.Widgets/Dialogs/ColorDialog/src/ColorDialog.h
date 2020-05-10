@@ -12,15 +12,12 @@ namespace Examples {
       connect(&button, &QPushButton::clicked, [&]() {
         QColorDialog colorDialog;
         colorDialog.setCurrentColor(palette().color(QPalette::Window));
-        if (colorDialog.exec() == QDialog::Accepted) {
-          QPalette palette;
-          palette.setColor(QPalette::Window, colorDialog.selectedColor());
-          setPalette(palette);
-        }
+        if (colorDialog.exec() == QDialog::Accepted)
+          setPalette({colorDialog.selectedColor()});
       });
 
       setCentralWidget(&frame);
-      setWindowTitle("ColorDialog example");
+      setWindowTitle("Color dialog example");
       resize(300, 300);
     }
 

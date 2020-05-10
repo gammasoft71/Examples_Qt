@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(MessageBox WIN32 MACOSX_BUNDLE src/MessageBox.cpp)
+add_executable(MessageBox WIN32 MACOSX_BUNDLE src/MessageBox.cpp src/MessageBox.h)
 target_link_libraries(MessageBox Qt5::Widgets)
