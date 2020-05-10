@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(Cursors WIN32 MACOSX_BUNDLE src/Cursors.cpp)
+add_executable(Cursors WIN32 MACOSX_BUNDLE src/Cursors.cpp src/Cursors.h)
 target_link_libraries(Cursors Qt5::Widgets)
