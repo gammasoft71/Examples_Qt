@@ -1,3 +1,4 @@
 CONFIG += c++17
 QT = widgets
-SOURCES = src/PushButton.cpp src/PushButton.h
+SOURCES = src/PushButton.cpp
+HEADERS = src/PushButton.h

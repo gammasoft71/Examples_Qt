@@ -1,3 +1,4 @@
 CONFIG += c++17
 QT = widgets
-SOURCES = src/GroupBox.cpp src/GroupBox.h
+SOURCES = src/GroupBox.cpp
+HEADERS = src/GroupBox.h

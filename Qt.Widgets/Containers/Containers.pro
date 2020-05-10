@@ -1,6 +1,7 @@
 TEMPLATE = subdirs
 SUBDIRS = \
     Frame \
-    GroupBox
+    GroupBox \
     TabWidget \
     Window \
+    

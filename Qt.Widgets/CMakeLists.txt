@@ -6,21 +6,8 @@ project(Qt.Widgets)
 add_subdirectory(HelloWorld)
 add_subdirectory(Application)
 add_subdirectory(CommonControls)
+add_subdirectory(Components)
 add_subdirectory(Containers)
+add_subdirectory(Dialogs)
+add_subdirectory(MenusAndToolbars)
 add_subdirectory(Others)
-
-# Menus and Toolbars
-add_subdirectory(MainMenu)
-add_subdirectory(StatusBar)
-
-# Components
-add_subdirectory(Cursors)
-add_subdirectory(Timer)
-
-# Dialogs
-add_subdirectory(ColorDialog)
-add_subdirectory(FolderBrowserDialog)
-add_subdirectory(FontDialog)
-add_subdirectory(MessageBox)
-add_subdirectory(OpenFileDialog)
-add_subdirectory(SaveFileDialog)

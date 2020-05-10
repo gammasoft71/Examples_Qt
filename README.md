@@ -61,29 +61,29 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 ## Menus and toolbars
 
-[MainMenu](Qt.Widgets/MainMenu) Shows how to create a main menu with QMenu and QAction.
+[MainMenu](Qt.Widgets/MenusAndToolbarsinMenu) Shows how to create a main menu with QMenu and QAction.
 
-[StatusBar](Qt.Widgets/StatusBar) Shows how to create a status bar with QStatusBar.
+[StatusBar](Qt.Widgets/MenusAndToolbars/StatusBar) Shows how to create a status bar with QStatusBar.
 
 ## Components
 
-[Cursors](Qt.Widgets/Cursors) Shows how to associate cursor to widget with QCursor.
+[Cursors](Qt.Widgets/Components/Cursors) Shows how to associate cursor to widget with QCursor.
 
-[Timer](Qt.Widgets/Timer) Shows how to create a Timer with QTimer.
+[Timer](Qt.Widgets/Components/Timer) Shows how to create a Timer with QTimer.
 
 ## Dialogs
 
-[ColorDialog](Qt.Widgets/ColorDialog) Shows how to create a ColorDialog with QColorDalog.
+[ColorDialog](Qt.Widgets/Dialogs/ColorDialog) Shows how to create a ColorDialog with QColorDalog.
 
-[FolderBrowserDialog](Qt.Widgets/FolderBrowserDialog) Shows how to create a FolderBrowserDialog with QFileDialog.
+[FolderBrowserDialog](Qt.Widgets/Dialogs/FolderBrowserDialog) Shows how to create a FolderBrowserDialog with QFileDialog.
 
-[FontDialog](Qt.Widgets/FontDialog) Shows how to create a FontDialog with Qfontdialog.
+[FontDialog](Qt.Widgets/Dialogs/FontDialog) Shows how to create a FontDialog with Qfontdialog.
 
-[OpenFileDialog](Qt.Widgets/OpenFileDialog) Shows how to create an OpenFileDialog with QFileDialog.
+[OpenFileDialog](Qt.Widgets/Dialogs/OpenFileDialog) Shows how to create an OpenFileDialog with QFileDialog.
 
-[MessageBox](Qt.Widgets/MessageBox) Shows how to create a MessageBox with QMessageBox.
+[MessageBox](Qt.Widgets/Dialogs/MessageBox) Shows how to create a MessageBox with QMessageBox.
 
-[SaveFileDialog](Qt.Widgets/SaveFileDialog) Shows how to create an SaveFileDialog with QFileDialog.
+[SaveFileDialog](Qt.Widgets/Dialogs/SaveFileDialog) Shows how to create an SaveFileDialog with QFileDialog.
 
 ## Others
 
@@ -92,7 +92,7 @@ Shows how to use Qt widgets only by programming code (c++17).
 ## Download
 
 ``` shell
-git clone https://github.com/gammasoft71/QtExamples QtExamples
+git clone https://github.com/gammasoft71/Examples_Qt.git
 
 ```
 
@@ -108,6 +108,15 @@ To build this project, open "Terminal" and type following lines:
 
 Set "CMAKE_PREFIX_PATH" with Qt5 install path.
 
+#### Windows :
+
+``` cmake
+mkdir build
+cd build
+cmake ..
+start ./Qt.Examples.sln
+```
+
 #### macOS :
 
 ``` cmake
@@ -116,7 +125,6 @@ cd build
 cmake .. -G "Xcode"
 open ./Qt.Examples.xcodeproj
 ```
-
 
 #### Linux :
 

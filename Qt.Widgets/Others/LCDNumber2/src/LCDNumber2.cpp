@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "LCDNumber.h"
+#include "LCDNumber2.h"
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);

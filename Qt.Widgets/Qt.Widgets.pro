@@ -3,16 +3,8 @@ SUBDIRS = \
     HelloWorld \
     Application \
     CommonControls \
+    Components \
     Containers \
+    Dialogs \
+    MenusAndToolbars \
     Others\
-    \
-    ColorDialog \
-    Cursors \
-    FolderBrowserDialog \
-    FontDialog \
-    MainMenu \
-    MessageBox \
-    OpenFileDialog \
-    SaveFileDialog \
-    StatusBar \
-    Timer \
