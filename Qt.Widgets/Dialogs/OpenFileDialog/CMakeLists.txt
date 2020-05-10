@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(OpenFileDialog WIN32 MACOSX_BUNDLE src/OpenFileDialog.cpp)
+add_executable(OpenFileDialog WIN32 MACOSX_BUNDLE src/OpenFileDialog.cpp src/OpenFileDialog.h)
 target_link_libraries(OpenFileDialog Qt5::Widgets)
