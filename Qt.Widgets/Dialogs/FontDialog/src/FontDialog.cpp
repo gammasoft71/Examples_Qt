@@ -34,7 +34,7 @@ public:
     label.setAlignment(Qt::AlignTop);
 
     setCentralWidget(&frame);
-    setWindowTitle("FontDialog example");
+    setWindowTitle("Font dialog example");
     resize(400, 400);
   }
 

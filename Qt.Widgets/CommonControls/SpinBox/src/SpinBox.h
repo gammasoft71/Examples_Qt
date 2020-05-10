@@ -3,7 +3,7 @@
 #include <QMainWindow>
 #include <QSpinBox>
 
-namespace examples {
+namespace Examples {
   class Window1 : public QMainWindow {
     Q_OBJECT
   public:

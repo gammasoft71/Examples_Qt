@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(ColorDialog WIN32 MACOSX_BUNDLE src/ColorDialog.cpp)
+add_executable(ColorDialog WIN32 MACOSX_BUNDLE src/ColorDialog.cpp src/ColorDialog.h)
 target_link_libraries(ColorDialog Qt5::Widgets)

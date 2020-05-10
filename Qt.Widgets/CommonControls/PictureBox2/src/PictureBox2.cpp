@@ -1,7 +1,7 @@
 #include <QApplication>
 #include "PictureBox2.h"
 
-using namespace examples;
+using namespace Examples;
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);

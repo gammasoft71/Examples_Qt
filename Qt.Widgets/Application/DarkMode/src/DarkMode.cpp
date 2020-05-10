@@ -1,6 +1,6 @@
 #include "DarkMode.h"
 
-using namespace examples;
+using namespace Examples;
 
 int main(int argc, char *argv[]) {
   Application application(argc, argv);

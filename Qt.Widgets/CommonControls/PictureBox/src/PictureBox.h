@@ -3,7 +3,7 @@
 #include <QMainWindow>
 #include <QPixmap>
 
-namespace examples {
+namespace Examples {
   using PictureBox = QLabel;
 
   class Window1 : public QMainWindow {

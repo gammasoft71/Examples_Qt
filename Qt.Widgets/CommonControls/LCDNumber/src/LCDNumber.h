@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QDoubleSpinBox>
 
-namespace examples {
+namespace Examples {
   class Window1 : public QMainWindow {
     Q_OBJECT
   public:

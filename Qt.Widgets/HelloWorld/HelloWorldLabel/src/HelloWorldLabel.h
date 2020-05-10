@@ -4,7 +4,7 @@
 #include <QLabel>
 #include <QScreen>
 
-namespace examples {
+namespace Examples {
   #if defined(__APPLE__)
   int pointsToNativeFontGraphicsUntit(int size) {
     return static_cast<float>(size) /QApplication::primaryScreen()->logicalDotsPerInch() * 96.0f;  // font is in pixels and not in points

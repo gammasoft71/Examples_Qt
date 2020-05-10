@@ -3,7 +3,7 @@
 #include <QMainWindow>
 #include <QSpinBox>
 
-namespace examples {
+namespace Examples {
   class SpinButton : public QSpinBox {
     Q_OBJECT
   public:

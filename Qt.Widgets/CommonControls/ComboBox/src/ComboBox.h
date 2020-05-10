@@ -2,7 +2,7 @@
 #include <QFrame>
 #include <QMainWindow>
 
-namespace examples {
+namespace Examples {
   class Window1 : public QMainWindow {
     Q_OBJECT
   public:

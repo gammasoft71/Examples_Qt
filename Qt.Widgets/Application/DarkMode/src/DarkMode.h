@@ -7,7 +7,7 @@
 #include <QPushButton>
 #include <QRadioButton>
 
-namespace examples {
+namespace Examples {
   class Application : public QApplication {
   public:
     Application(int &argc, char **argv) : QApplication(argc, argv) {
