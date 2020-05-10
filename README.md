@@ -77,11 +77,11 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [FolderBrowserDialog](Qt.Widgets/Dialogs/FolderBrowserDialog) Shows how to create a FolderBrowserDialog with QFileDialog.
 
-[FontDialog](Qt.Widgets/Dialogs/FontDialog) Shows how to create a FontDialog with Qfontdialog.
-
-[OpenFileDialog](Qt.Widgets/Dialogs/OpenFileDialog) Shows how to create an OpenFileDialog with QFileDialog.
+[FontDialog](Qt.Widgets/Dialogs/FontDialog) Shows how to create a FontDialog with QFontDialog.
 
 [MessageBox](Qt.Widgets/Dialogs/MessageBox) Shows how to create a MessageBox with QMessageBox.
+
+[OpenFileDialog](Qt.Widgets/Dialogs/OpenFileDialog) Shows how to create an OpenFileDialog with QFileDialog.
 
 [SaveFileDialog](Qt.Widgets/Dialogs/SaveFileDialog) Shows how to create an SaveFileDialog with QFileDialog.
 
