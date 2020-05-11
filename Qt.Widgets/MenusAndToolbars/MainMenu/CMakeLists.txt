@@ -12,5 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(MainMenu WIN32 MACOSX_BUNDLE src/MainMenu.cpp)
+add_executable(MainMenu WIN32 MACOSX_BUNDLE src/MainMenu.cpp src/MainMenu.h)
 target_link_libraries(MainMenu Qt5::Widgets)
