@@ -6,6 +6,7 @@ SUBDIRS = \
     Label \
     LCDNumber \
     LineEdit \
+    ListWidget |
     PictureBox \
     PictureBox2 \
     ProgressBar \
