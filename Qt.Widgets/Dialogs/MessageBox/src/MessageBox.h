@@ -12,8 +12,8 @@ namespace Examples {
       buttonShowMessage.setText("Message...");
       buttonShowMessage.move(10, 10);
       connect(&buttonShowMessage, &QPushButton::clicked, [&]() {
-        QMessageBox::StandardButton result = QMessageBox::information(this, "Message", "Hello, World!", QMessageBox::Ok | QMessageBox::Cancel);
-        labelStandardButton.setText(QString("StandardButton = %1").arg(result == QMessageBox::Ok ? "QMessageBox::Ok" : "QMessageBox::Cancel"));
+        QMessageBox::StandardButton result = QMessageBox::information(this, "Message", "Hello, World!", QMessageBox::StandardButton::Ok|QMessageBox::StandardButton::Cancel);
+        labelStandardButton.setText(QString("StandardButton = %1").arg(result == QMessageBox::StandardButton::Ok ? "QMessageBox::Ok" : "QMessageBox::Cancel"));
         labelStandardButton.resize(labelStandardButton.sizeHint());
        });
 

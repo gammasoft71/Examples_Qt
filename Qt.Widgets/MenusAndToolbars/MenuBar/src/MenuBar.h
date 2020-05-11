@@ -48,7 +48,7 @@ namespace Examples {
     void OnMenuEditPasteClick() {qDebug() << "MainMenu/Edit/Paste";}
     void OnMenuEditDeletaClick() {qDebug() << "MainMenu/Edit/delete";}
     void OnMenuEditSelectAllClick() {qDebug() << "MainMenu/Edit/SelectAll";}
-    void OnMenuHelpAboutClick() {QMessageBox::about(this, "About", "MainMenu example.\nVersion 1.0.0\n\n@ 2019 by Gammasoft.");}
+    void OnMenuHelpAboutClick() {QMessageBox::about(this, "About", "MainMenu example.\nVersion 1.0.0\n\n@ 2020 by Gammasoft.");}
 
     QFrame frame;
     //QLabel label1 {&panel};

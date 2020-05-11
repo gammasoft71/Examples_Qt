@@ -20,7 +20,7 @@ namespace Examples {
 
     void closeEvent(QCloseEvent *event) override {
       event->ignore();
-      if (QMessageBox::question(this, "Close Window", "Are you sure you want exit?", QMessageBox::Yes|QMessageBox::No) == QMessageBox::Yes)
+      if (QMessageBox::question(this, "Close Window", "Are you sure you want exit?", QMessageBox::StandardButton::Yes|QMessageBox::StandardButton::No) == QMessageBox::StandardButton::Yes)
         QMainWindow::closeEvent(event);
     }
 

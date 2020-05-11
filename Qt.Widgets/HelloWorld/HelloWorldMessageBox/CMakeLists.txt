@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.1)
+
+# Project
+project(HelloWorldMessageBox)
+find_package(Qt5Widgets CONFIG REQUIRED)
+
+# Options
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Application
+add_executable(HelloWorldMessageBox WIN32 MACOSX_BUNDLE src/HelloWorldMessageBox.cpp src/HelloWorldMessageBox.h)
+target_link_libraries(HelloWorldMessageBox Qt5::Widgets)
