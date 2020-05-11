@@ -34,7 +34,7 @@ protected:
       for (auto i = 0; i < text.size(); ++i) {
         auto index = (step + i) % sins.size();
         painter.setPen(QColor::fromHsv(360.0f / sins.size() * index, 255, 191));
-        painter.drawText(pos - QPoint {0,  (sins[index] * metrics.height()) / 400},  QString(text[i]));
+        painter.drawText(pos - QPoint {0, (sins[index] * metrics.height()) / 400},  QString(text[i]));
         pos.setX(pos.x() + metrics.horizontalAdvance(text[i]));
       }
     }
