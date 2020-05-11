@@ -9,9 +9,7 @@ namespace Examples {
     Q_OBJECT
   public:
     SpinButton(QWidget* parent = nullptr) : QSpinBox(parent) {
-      // Hack of QSpinBox :
-      // (child[0] : line-edit and child[1] validator...
-      // remove focus , hide line-edit (child 0) and resize without line-edit width.
+      // Hack of QSpinBox (child[0] : line-edit and child[1] validator...) : remove focus , hide line-edit (child 0) and resize without line-edit width.
       setFocusPolicy(Qt::FocusPolicy::NoFocus);
       auto lineEdit = dynamic_cast<QWidget*>(children().at(0));
       if (lineEdit) {
