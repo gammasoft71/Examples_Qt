@@ -61,7 +61,7 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 ## Menus and toolbars
 
-[MainMenu](Qt.Widgets/MenusAndToolbarsinMenu) Shows how to create a main menu with QMenu and QAction.
+[MenuBar](Qt.Widgets/MenusAndToolbars/MenuBar) Shows how to create a menu bar with QMenu and QAction.
 
 [StatusBar](Qt.Widgets/MenusAndToolbars/StatusBar) Shows how to create a status bar with QStatusBar.
 
