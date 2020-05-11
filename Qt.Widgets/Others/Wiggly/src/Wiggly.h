@@ -26,10 +26,10 @@ public slots:
     void setText(const QString &newText) {text = newText;}
 
 protected:
-    void paintEvent(QPaintEvent *) override {
+    void paintEvent(QPaintEvent* event) override {
       static const std::vector sins = {0, 38, 71, 92, 100, 92, 71, 38, 0, -38, -71, -92, -100, -92, -71, -38};
       QFontMetrics metrics(font());
-      auto pos = QPoint {(width() - metrics.horizontalAdvance(text)) / 2, (height() + metrics.ascent() - metrics.descent()) / 2};
+      auto pos = QPoint {(event->rect().width() - metrics.horizontalAdvance(text)) / 2, (event->rect().height() + metrics.ascent() - metrics.descent()) / 2};
       QPainter painter(this);
       for (auto i = 0; i < text.size(); ++i) {
         auto index = (step + i) % sins.size();
@@ -39,7 +39,7 @@ protected:
       }
     }
 
-    void timerEvent(QTimerEvent *event) override {
+    void timerEvent(QTimerEvent* event) override {
       if (event->timerId() == timer.timerId()) {
         ++step;
         update();
