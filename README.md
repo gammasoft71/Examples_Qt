@@ -35,6 +35,8 @@ shows how to use Qt widgets only by programming code (c++17).
 
 [LineEdit](Qt.Widgets/CommonControls/LineEdit) shows how to create a line edit with QLineEdit.
 
+[ListWidget](Qt.Widgets/CommonControls/ListWidget) shows how to create a list widget with QListWidget.
+
 [PictureBox](Qt.Widgets/CommonControls/PictureBox) shows how to create a picture box with QLabel.
 
 [PictureBox2](Qt.Widgets/CommonControls/PictureBox2) shows how to create a picture box with QGraphicsPixmapItem.
