@@ -11,7 +11,7 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 [HelloWorldMessageBox](Qt.Widgets/HelloWorld/HelloWorldMessageBox) The classic first application "Hello, world!" with QMessageBox.
 
-[HelloWorldPaint](Qt.Widgets/HelloWorld/HelloWorldPaint) The classic first application "Hello, world!" with drawing.
+[HelloWorldPaint](Qt.Widgets/HelloWorld/HelloWorldPaint) The classic first application "Hello, world!" with QPainter.
 
 ## Application and messages
 
