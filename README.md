@@ -1,7 +1,7 @@
 
 # Qt Examples
 
-Shows how to use Qt widgets only by programming code (c++17).
+shows how to use Qt widgets only by programming code (c++17).
 
 ## Hello World
 
@@ -15,85 +15,87 @@ Shows how to use Qt widgets only by programming code (c++17).
 
 ## Application and messages
 
-[Application](Qt.Widgets/Application/Application) Shows how to create an application with QApplication.
+[Application](Qt.Widgets/Application/Application) shows how to create an application with QApplication.
 
-[DarkMode](Qt.Widgets/Application/DarkMode) Shows how to create a dark mode application.
+[DarkMode](Qt.Widgets/Application/DarkMode) shows how to create a dark mode application.
 
 ## Common Controls
 
-[CheckBox](Qt.Widgets/CommonControls/CheckBox) Shows how to create a check box with QCheckBox.
+[CheckBox](Qt.Widgets/CommonControls/CheckBox) shows how to create a check box with QCheckBox.
 
-[CheckedListWidget](Qt.Widgets/CommonControls/CheckedListWidget) Shows how to create a checked list widget with QListWidget.
+[CheckedListWidget](Qt.Widgets/CommonControls/CheckedListWidget) shows how to create a checked list widget with QListWidget.
 
-[ComboBox](Qt.Widgets/CommonControls/ComboBox) Shows how to create a combo box with QComboBox.
+[ComboBox](Qt.Widgets/CommonControls/ComboBox) shows how to create a combo box with QComboBox.
 
-[DoubleSpinBox](Qt.Widgets/CommonControls/DoubleSpinBox) Shows how to create a double spin box with QDoubleSpinBox.
+[DoubleSpinBox](Qt.Widgets/CommonControls/DoubleSpinBox) shows how to create a double spin box with QDoubleSpinBox.
 
-[LCDNumber](Qt.Widgets/CommonControls/LCDNumber) Shows how to create a LCD number with QLCDNumber.
+[LCDNumber](Qt.Widgets/CommonControls/LCDNumber) shows how to create a LCD number with QLCDNumber.
 
-[Label](Qt.Widgets/CommonControls/Label) Shows how to create a label with QLabel.
+[Label](Qt.Widgets/CommonControls/Label) shows how to create a label with QLabel.
 
-[LineEdit](Qt.Widgets/CommonControls/LineEdit) Shows how to create a line edit with QLineEdit.
+[LineEdit](Qt.Widgets/CommonControls/LineEdit) shows how to create a line edit with QLineEdit.
 
-[PictureBox](Qt.Widgets/CommonControls/PictureBox) Shows how to create a picture box with QLabel.
+[PictureBox](Qt.Widgets/CommonControls/PictureBox) shows how to create a picture box with QLabel.
 
-[PictureBox2](Qt.Widgets/CommonControls/PictureBox2) Shows how to create a picture box with QGraphicsPixmapItem.
+[PictureBox2](Qt.Widgets/CommonControls/PictureBox2) shows how to create a picture box with QGraphicsPixmapItem.
 
-[ProgressBar](Qt.Widgets/CommonControls/ProgressBar) Shows how to create a ProgressBar with QProgress.
+[ProgressBar](Qt.Widgets/CommonControls/ProgressBar) shows how to create a ProgressBar with QProgress.
 
-[PushButton](Qt.Widgets/CommonControls/PushButton) Shows how to create a button and Event Click with QPushButton.
+[PushButton](Qt.Widgets/CommonControls/PushButton) shows how to create a button and Event Click with QPushButton.
 
-[RadioButton](Qt.Widgets/CommonControls/RadioButton) Shows how to create a radio button with QRadioButton.
+[RadioButton](Qt.Widgets/CommonControls/RadioButton) shows how to create a radio button with QRadioButton.
 
-[Slider](Qt.Widgets/CommonControls/Slider) Shows how to create a slider with QSlider.
+[Slider](Qt.Widgets/CommonControls/Slider) shows how to create a slider with QSlider.
 
-[SpinBox](Qt.Widgets/CommonControls/SpinBox) Shows how to create a spin box with QSpinBox.
+[SpinBox](Qt.Widgets/CommonControls/SpinBox) shows how to create a spin box with QSpinBox.
 
-[SpinButton](Qt.Widgets/CommonControls/SpinButton) Shows how to create a spin button with QSpinBox.
+[SpinButton](Qt.Widgets/CommonControls/SpinButton) shows how to create a spin button with QSpinBox.
 
-[ToggleButton](Qt.Widgets/CommonControls/ToggleButton) Shows how to create a toggle button with QPushButton.
+[ToggleButton](Qt.Widgets/CommonControls/ToggleButton) shows how to create a toggle button with QPushButton.
 
-[Widget](Qt.Widgets/CommonControls/ToggleButton) Shows how to create a widget with QWidget.
+[Widget](Qt.Widgets/CommonControls/ToggleButton) shows how to create a widget with QWidget.
 
 ## Containers
 
-[Frame](Qt.Widgets/Containers/Frame) Shows how to create a frame with QFrame.
+[Frame](Qt.Widgets/Containers/Frame) shows how to create a frame with QFrame.
 
-[GroupBox](Qt.Widgets/Containers/GroupBox) Shows how to create a group box with QGroupBox.
+[GroupBox](Qt.Widgets/Containers/GroupBox) shows how to create a group box with QGroupBox.
 
-[TabWidget](Qt.Widgets/Containers/TabWidget) Shows how to create a tab widget with QTabWidget.
+[TabWidget](Qt.Widgets/Containers/TabWidget) shows how to create a tab widget with QTabWidget.
 
-[Window](Qt.Widgets/Containers/Window) Shows how to create a window with QMainWindow.
+[Window](Qt.Widgets/Containers/Window) shows how to create a window with QMainWindow.
 
 ## Menus and toolbars
 
-[MenuBar](Qt.Widgets/MenusAndToolbars/MenuBar) Shows how to create a menu bar with QMenu and QAction.
+[MenuBar](Qt.Widgets/MenusAndToolbars/MenuBar) shows how to create a menu bar with QMenu and QAction.
 
-[StatusBar](Qt.Widgets/MenusAndToolbars/StatusBar) Shows how to create a status bar with QStatusBar.
+[StatusBar](Qt.Widgets/MenusAndToolbars/StatusBar) shows how to create a status bar with QStatusBar.
 
 ## Components
 
-[Cursors](Qt.Widgets/Components/Cursors) Shows how to associate cursor to widget with QCursor.
+[Cursors](Qt.Widgets/Components/Cursors) shows how to associate cursor to widget with QCursor.
 
-[Timer](Qt.Widgets/Components/Timer) Shows how to create a Timer with QTimer.
+[Timer](Qt.Widgets/Components/Timer) shows how to create a Timer with QTimer.
 
 ## Dialogs
 
-[ColorDialog](Qt.Widgets/Dialogs/ColorDialog) Shows how to create a ColorDialog with QColorDalog.
+[ColorDialog](Qt.Widgets/Dialogs/ColorDialog) shows how to create a ColorDialog with QColorDalog.
 
-[FolderBrowserDialog](Qt.Widgets/Dialogs/FolderBrowserDialog) Shows how to create a FolderBrowserDialog with QFileDialog.
+[FolderBrowserDialog](Qt.Widgets/Dialogs/FolderBrowserDialog) shows how to create a FolderBrowserDialog with QFileDialog.
 
-[FontDialog](Qt.Widgets/Dialogs/FontDialog) Shows how to create a FontDialog with QFontDialog.
+[FontDialog](Qt.Widgets/Dialogs/FontDialog) shows how to create a FontDialog with QFontDialog.
 
-[MessageBox](Qt.Widgets/Dialogs/MessageBox) Shows how to create a MessageBox with QMessageBox.
+[MessageBox](Qt.Widgets/Dialogs/MessageBox) shows how to create a MessageBox with QMessageBox.
 
-[OpenFileDialog](Qt.Widgets/Dialogs/OpenFileDialog) Shows how to create an OpenFileDialog with QFileDialog.
+[OpenFileDialog](Qt.Widgets/Dialogs/OpenFileDialog) shows how to create an OpenFileDialog with QFileDialog.
 
-[SaveFileDialog](Qt.Widgets/Dialogs/SaveFileDialog) Shows how to create an SaveFileDialog with QFileDialog.
+[SaveFileDialog](Qt.Widgets/Dialogs/SaveFileDialog) shows how to create an SaveFileDialog with QFileDialog.
 
 ## Others
 
-[LCDNumber2](Qt.Widgets/Others/LCDNumber2) Shows how to create a LCD number with QLCDNumber.
+[LCDNumber2](Qt.Widgets/Others/LCDNumber2) shows how to create a LCD number with QLCDNumber.
+
+[Wiggly](Qt.Widgets/Others/Wiggly) shows how to animate a user control using QBasicTimer and timerEvent(). In addition, the example demonstrates how to use QFontMetrics to determine the size of text on screen.
 
 ## Download
 

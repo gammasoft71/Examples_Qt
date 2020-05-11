@@ -1,3 +1,4 @@
+#pragma once
 #include <QFrame>
 #include <QGroupBox>
 #include <QMainWindow>

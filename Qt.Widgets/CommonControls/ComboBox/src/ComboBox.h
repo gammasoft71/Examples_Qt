@@ -1,3 +1,4 @@
+#pragma once
 #include <QComboBox>
 #include <QFrame>
 #include <QMainWindow>

@@ -1,3 +1,4 @@
+#pragma once
 #include <QFrame>
 #include <QMainWindow>
 #include <QRadioButton>

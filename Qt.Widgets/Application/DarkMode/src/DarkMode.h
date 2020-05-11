@@ -1,3 +1,4 @@
+#pragma once
 #include <QApplication>
 #include <QCheckBox>
 #include <QFrame>

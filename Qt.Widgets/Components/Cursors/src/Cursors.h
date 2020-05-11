@@ -1,3 +1,4 @@
+#pragma once
 #include <QCursor>
 #include <QFrame>
 #include <QListWidget>

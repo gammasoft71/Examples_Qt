@@ -5,3 +5,4 @@ project(Others)
 
 # Others
 add_subdirectory(LCDNumber2)
+add_subdirectory(Wiggly)

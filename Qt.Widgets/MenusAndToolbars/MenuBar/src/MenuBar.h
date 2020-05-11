@@ -1,6 +1,7 @@
 #include <QAction>
 #include <QDebug>
 #include <QFrame>
+#pragma once
 #include <QMainWindow>
 #include <QMenu>
 #include <QMessageBox>

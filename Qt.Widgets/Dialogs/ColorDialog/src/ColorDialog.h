@@ -1,3 +1,4 @@
+#pragma once
 #include <QColorDialog>
 #include <QFrame>
 #include <QMainWindow>

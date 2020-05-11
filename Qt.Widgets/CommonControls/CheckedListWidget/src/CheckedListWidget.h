@@ -1,3 +1,4 @@
+#pragma once
 #include <QDebug>
 #include <QFrame>
 #include <QMainWindow>

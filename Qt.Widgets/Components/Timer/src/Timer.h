@@ -1,3 +1,4 @@
+#pragma once
 #include <QFont>
 #include <QFrame>
 #include <QLabel>

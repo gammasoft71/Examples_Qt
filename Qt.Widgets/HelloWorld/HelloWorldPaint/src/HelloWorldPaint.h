@@ -1,3 +1,4 @@
+#pragma once
 #include <QApplication>
 #include <QFrame>
 #include <QMainWindow>
@@ -7,11 +8,11 @@
 
 namespace Examples {
   #if defined(__APPLE__)
-  int pointsToNativeFontGraphicsUntit(int size) {
+  inline int pointsToNativeFontGraphicsUntit(int size) {
     return static_cast<float>(size) /QApplication::primaryScreen()->logicalDotsPerInch() * 96.0f;  // font is in pixels and not in points
   }
   #else
-  int pointsToNativeFontGraphicsUntit(int size) {
+  inline int pointsToNativeFontGraphicsUntit(int size) {
     return size;  // font is in points
   }
   #endif

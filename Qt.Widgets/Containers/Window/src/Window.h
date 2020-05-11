@@ -1,3 +1,4 @@
+#pragma once
 #include <QCloseEvent>
 #include <QFrame>
 #include <QMainWindow>

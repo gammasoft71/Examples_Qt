@@ -1,3 +1,4 @@
+#pragma once
 #include <QFileDialog>
 #include <QFrame>
 #include <QLabel>
