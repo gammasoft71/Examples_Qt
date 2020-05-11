@@ -4,4 +4,5 @@ cmake_minimum_required(VERSION 3.2)
 project(HelloWorld)
 
 # Common Controls
+add_subdirectory(HelloWorldEmoticons)
 add_subdirectory(HelloWorldLabel)

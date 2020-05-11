@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "MenuBar.h"
+#include "HelloWorldEmoticons.h"
 
 using namespace Examples;
 

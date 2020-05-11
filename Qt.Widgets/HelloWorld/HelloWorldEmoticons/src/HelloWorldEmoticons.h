@@ -18,17 +18,13 @@ namespace Examples {
   class Window1 : public QMainWindow {
   public:
     Window1() {
-      label1.setText("Hello, World!");
-      QPalette palette;
-      palette.setColor(QPalette::WindowText, Qt::GlobalColor::darkGreen);
-      label1.setPalette(palette);
-      label1.setFont({label1.font().family(), pointsToNativeFontGraphicsUntit(34), QFont::Bold, true});
-      label1.move(5, 100);
+      label1.setText("\U0001F44B, \U0001F30E\U00002757");
+      label1.setFont({label1.font().family(), pointsToNativeFontGraphicsUntit(72)});
       label1.resize(label1.sizeHint());
 
       setCentralWidget(&frame);
-      setWindowTitle("Hello world (label)");
-      resize(300, 300);
+      setWindowTitle("Hello world (emoticons)");
+      resize(label1.sizeHint());
     }
 
   private:
