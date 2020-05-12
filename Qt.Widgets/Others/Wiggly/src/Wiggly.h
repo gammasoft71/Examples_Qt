@@ -27,7 +27,7 @@ public slots:
 
 protected:
     void paintEvent(QPaintEvent* event) override {
-      static const std::vector sins = {0, 38, 71, 92, 100, 92, 71, 38, 0, -38, -71, -92, -100, -92, -71, -38};
+      static const std::vector<int> sins = {0, 38, 71, 92, 100, 92, 71, 38, 0, -38, -71, -92, -100, -92, -71, -38};
       QFontMetrics metrics(font());
       auto pos = QPoint {(event->rect().width() - metrics.horizontalAdvance(text)) / 2, (event->rect().height() + metrics.ascent() - metrics.descent()) / 2};
       QPainter painter(this);
