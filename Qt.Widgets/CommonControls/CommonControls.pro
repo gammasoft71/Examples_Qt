@@ -6,6 +6,7 @@ SUBDIRS = \
     Label \
     LCDNumber \
     LineEdit \
+    ListView \
     ListWidget \
     PictureBox \
     PictureBox2 \
