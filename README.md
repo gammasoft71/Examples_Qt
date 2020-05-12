@@ -35,7 +35,7 @@ shows how to use Qt widgets only by programming code (c++17).
 
 [LineEdit](Qt.Widgets/CommonControls/LineEdit) shows how to create a line edit with QLineEdit.
 
-[ListView](Qt.Widgets/CommonControls/ListWidget) shows how to create a list widget with QListView.
+[ListView](Qt.Widgets/CommonControls/ListWidget) shows how to create a list view with QListView.
 
 [ListWidget](Qt.Widgets/CommonControls/ListWidget) shows how to create a list widget with QListWidget.
 
@@ -56,6 +56,10 @@ shows how to use Qt widgets only by programming code (c++17).
 [SpinButton](Qt.Widgets/CommonControls/SpinButton) shows how to create a spin button with QSpinBox.
 
 [ToggleButton](Qt.Widgets/CommonControls/ToggleButton) shows how to create a toggle button with QPushButton.
+
+[TreeView](Qt.Widgets/CommonControls/TreeView) shows how to create a three view with QTreeView.
+
+[TreeView2](Qt.Widgets/CommonControls/TreeView2) shows how to create a list view with QTreeView.
 
 [Widget](Qt.Widgets/CommonControls/ToggleButton) shows how to create a widget with QWidget.
 

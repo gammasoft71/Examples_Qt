@@ -18,6 +18,7 @@ namespace Examples {
       layout.addWidget(&listView1, 1);
       layout.addWidget(&comboBoxMode, 0);
 
+      model.setHorizontalHeaderLabels({"Name", "Type", "Size", "Comment"});
       model.appendRow({new QStandardItem(QIcon(QPixmap(aviIcon48)), "First"), new QStandardItem("Movie"), new QStandardItem("5359"), new QStandardItem("This is the first item")});
       model.appendRow({new QStandardItem(QIcon(QPixmap(aiIcon48)), "Second"), new QStandardItem("Picture"), new QStandardItem("1256"), new QStandardItem("This is the second item")});
       model.appendRow({new QStandardItem(QIcon(QPixmap(bmpIcon48)), "Third"), new QStandardItem("Picture"), new QStandardItem("4284"), new QStandardItem("This is the third item")});
