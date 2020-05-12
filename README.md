@@ -61,6 +61,8 @@ shows how to use Qt widgets only by programming code (c++17).
 
 [TreeView](Qt.Widgets/CommonControls/TreeView) shows how to create a three view with QTreeView.
 
+[TreeWidget](Qt.Widgets/CommonControls/TreeWidget) shows how to create a three widget with QTreeWidget.
+
 [Widget](Qt.Widgets/CommonControls/ToggleButton) shows how to create a widget with QWidget.
 
 ## Containers

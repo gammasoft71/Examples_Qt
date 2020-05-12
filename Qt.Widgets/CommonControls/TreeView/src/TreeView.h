@@ -1,5 +1,4 @@
 #pragma once
-#include <QComboBox>
 #include <QFrame>
 #include <QMainWindow>
 #include <QStandardItem>
@@ -7,9 +6,6 @@
 #include <QHeaderView>
 #include <QTreeView>
 #include <QVBoxLayout>
-#include "Ai16.xpm"
-#include "Avi16.xpm"
-#include "Bmp16.xpm"
 
 namespace Examples {
   class Window1 : public QMainWindow {

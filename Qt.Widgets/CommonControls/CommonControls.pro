@@ -19,4 +19,5 @@ SUBDIRS = \
     SpinButton \
     ToggleButton \
     TreeView \
+    TreeWidget \
     Widget \
