@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "TreeView2.h"
+#include "ListView2.h"
 
 using namespace Examples;
 

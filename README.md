@@ -37,6 +37,8 @@ shows how to use Qt widgets only by programming code (c++17).
 
 [ListView](Qt.Widgets/CommonControls/ListWidget) shows how to create a list view with QListView.
 
+[ListView2](Qt.Widgets/CommonControls/ListView2) shows how to create a list view with QTreeView.
+
 [ListWidget](Qt.Widgets/CommonControls/ListWidget) shows how to create a list widget with QListWidget.
 
 [PictureBox](Qt.Widgets/CommonControls/PictureBox) shows how to create a picture box with QLabel.
@@ -58,8 +60,6 @@ shows how to use Qt widgets only by programming code (c++17).
 [ToggleButton](Qt.Widgets/CommonControls/ToggleButton) shows how to create a toggle button with QPushButton.
 
 [TreeView](Qt.Widgets/CommonControls/TreeView) shows how to create a three view with QTreeView.
-
-[TreeView2](Qt.Widgets/CommonControls/TreeView2) shows how to create a list view with QTreeView.
 
 [Widget](Qt.Widgets/CommonControls/ToggleButton) shows how to create a widget with QWidget.
 

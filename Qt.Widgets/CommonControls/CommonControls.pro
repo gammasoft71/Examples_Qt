@@ -7,6 +7,7 @@ SUBDIRS = \
     LCDNumber \
     LineEdit \
     ListView \
+    ListView2 \
     ListWidget \
     PictureBox \
     PictureBox2 \
@@ -18,5 +19,4 @@ SUBDIRS = \
     SpinButton \
     ToggleButton \
     TreeView \
-    TreeView2 \
     Widget \

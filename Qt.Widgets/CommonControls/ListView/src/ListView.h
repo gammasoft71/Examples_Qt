@@ -41,7 +41,7 @@ namespace Examples {
     QFrame frame;
     QVBoxLayout layout {&frame};
     QListView listView1;
-    QStandardItemModel model;;
+    QStandardItemModel model;
     QComboBox comboBoxMode;
   };
 }

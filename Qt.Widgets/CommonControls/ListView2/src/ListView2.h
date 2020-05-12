@@ -40,6 +40,6 @@ namespace Examples {
     QFrame frame;
     QVBoxLayout layout {&frame};
     QTreeView treeView1;
-    QStandardItemModel model;;
+    QStandardItemModel model;
   };
 }
