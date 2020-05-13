@@ -15,7 +15,7 @@ namespace Examples {
       slider.setValue(100);
       slider.move(20, 50);
       slider.resize(25, 200);
-      connect(&slider, &QSlider::valueChanged, [&]() {
+      connect(&slider, &QSlider::valueChanged, [&] {
         progressBar.setValue(slider.value());
         label.setText(QString("%1").arg(slider.value()));
       });

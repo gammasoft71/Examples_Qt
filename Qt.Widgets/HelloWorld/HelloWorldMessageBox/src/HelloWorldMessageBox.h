@@ -11,7 +11,7 @@ namespace Examples {
     Window1() {
       buttonClickMe.setText("Click me");
       buttonClickMe.move(10, 10);
-      connect(&buttonClickMe, &QPushButton::clicked, [&]() {
+      connect(&buttonClickMe, &QPushButton::clicked, [&] {
         QMessageBox(QMessageBox::Icon::NoIcon, "", "Hello, World!").exec();
        });
 

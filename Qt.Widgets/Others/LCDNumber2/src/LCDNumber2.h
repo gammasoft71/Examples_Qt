@@ -48,7 +48,7 @@ public:
      });
 
     timer.setInterval(100);
-    connect(&timer, &QTimer::timeout, [&]() {
+    connect(&timer, &QTimer::timeout, [&] {
       lcdNumber.display(QString::number(static_cast<double>(++counter) / 10, 'f', 1));
     });
 

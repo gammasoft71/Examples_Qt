@@ -3,6 +3,7 @@ SUBDIRS = \
     HelloWorld \
     Application \
     CommonControls \
+    CustomControls \
     Components \
     Containers \
     Dialogs \

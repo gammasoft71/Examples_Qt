@@ -21,7 +21,7 @@ namespace Examples {
 
       button.setText("Start");
       button.move(10, 90);
-      connect(&button, &QPushButton::clicked, [&]() {
+      connect(&button, &QPushButton::clicked, [&] {
         if (timer.isActive())
           timer.stop();
         else
@@ -30,7 +30,7 @@ namespace Examples {
        });
 
       timer.setInterval(100);
-      connect(&timer, &QTimer::timeout, [&]() {
+      connect(&timer, &QTimer::timeout, [&] {
         label.setText(QString::number(static_cast<double>(++counter) / 10, 'f', 1));
       });
 

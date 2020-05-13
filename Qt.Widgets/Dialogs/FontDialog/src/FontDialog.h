@@ -13,7 +13,7 @@ public:
   Window1() {
     button.setText("Font...");
     button.move(10, 10);
-    connect(&button, &QPushButton::clicked, [&]() {
+    connect(&button, &QPushButton::clicked, [&] {
       QFontDialog fontDialog;
       fontDialog.setFont(label.font());
       QDialog::DialogCode dialogCode = static_cast<QDialog::DialogCode>(fontDialog.exec());

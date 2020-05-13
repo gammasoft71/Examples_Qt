@@ -13,7 +13,7 @@ namespace Examples {
     Window1() {
       buttonFolderBrowser.setText("Folder...");
       buttonFolderBrowser.move(10, 10);
-      connect(&buttonFolderBrowser, &QPushButton::clicked, [&]() {
+      connect(&buttonFolderBrowser, &QPushButton::clicked, [&] {
         QFileDialog folderBrowserDialog;
         folderBrowserDialog.setFileMode(QFileDialog::Directory);
         folderBrowserDialog.setOption(QFileDialog::ShowDirsOnly);

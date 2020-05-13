@@ -13,7 +13,7 @@ namespace Examples {
     Window1() {
       button.setText("Open...");
       button.move(10, 10);
-      connect(&button, &QPushButton::clicked, [&]() {
+      connect(&button, &QPushButton::clicked, [&] {
         QFileDialog openFileDialog;
         openFileDialog.setNameFilters({"Text Files (*.txt)", "All Files (*)"});
         openFileDialog.setDirectory(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));

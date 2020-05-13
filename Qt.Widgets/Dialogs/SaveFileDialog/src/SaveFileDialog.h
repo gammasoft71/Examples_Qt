@@ -13,7 +13,7 @@ namespace Examples {
     Window1() {
       button.setText("Save...");
       button.move(10, 10);
-      connect(&button, &QPushButton::clicked, [&]() {
+      connect(&button, &QPushButton::clicked, [&] {
         QFileDialog saveFileDialog;
         saveFileDialog.setNameFilters({"Text Files (*.txt)", "All Files (*)"});
         saveFileDialog.setAcceptMode(QFileDialog::AcceptSave);

@@ -36,7 +36,7 @@ namespace Examples {
       progressBar5.setTextVisible(false);
 
       timer.setInterval(50);
-      connect(&timer, &QTimer::timeout, [&]() {
+      connect(&timer, &QTimer::timeout, [&] {
         progressBar4.setValue(progressBar4.value() < progressBar4.maximum() ? progressBar4.value() + 1 : progressBar4.minimum());
       });
       timer.start();

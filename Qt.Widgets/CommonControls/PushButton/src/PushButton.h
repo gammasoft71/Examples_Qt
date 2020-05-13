@@ -11,7 +11,7 @@ namespace Examples {
     Window1() {
       pushButton1.setText("button1");
       pushButton1.move(50, 50);
-      connect(&pushButton1, &QPushButton::clicked, [&]() {
+      connect(&pushButton1, &QPushButton::clicked, [&] {
         label1.setText(QString("button1 clicked %1 times").arg(++button1Clicked));
        });
 
@@ -19,7 +19,7 @@ namespace Examples {
       pushButton2.setAutoRepeat(true);
       pushButton2.move(50, 100);
       pushButton2.resize(200, 75);
-      connect(&pushButton2, &QPushButton::clicked, [&]() {
+      connect(&pushButton2, &QPushButton::clicked, [&] {
         label2.setText(QString("button2 clicked %1 times").arg(++button2Clicked));
        });
 

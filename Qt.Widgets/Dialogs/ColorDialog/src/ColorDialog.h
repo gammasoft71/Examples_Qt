@@ -10,7 +10,7 @@ namespace Examples {
     Window1() {
       button.setText("Color...");
       button.move(10, 10);
-      connect(&button, &QPushButton::clicked, [&]() {
+      connect(&button, &QPushButton::clicked, [&] {
         QColorDialog colorDialog;
         colorDialog.setCurrentColor(palette().color(QPalette::Window));
         if (colorDialog.exec() == QDialog::Accepted)
