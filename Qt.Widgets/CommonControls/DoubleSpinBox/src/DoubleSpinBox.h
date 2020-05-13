@@ -13,7 +13,7 @@ namespace Examples {
       doubleSpinBox.setRange(10.0, 11.0);
       doubleSpinBox.setDecimals(2);
       doubleSpinBox.setSingleStep(0.01);
-      connect(&doubleSpinBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), [&] {
+      connect(&doubleSpinBox, qOverload<double>(&QDoubleSpinBox::valueChanged), [&] {
         label.setText(QString("value = %1").arg(QString::number(doubleSpinBox.value(), 'f', 2)));
       });
 

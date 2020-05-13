@@ -15,7 +15,7 @@ namespace Examples {
       doubleSpinBox.setRange(0, 15000000);
       doubleSpinBox.setSingleStep(0.01);
       doubleSpinBox.setValue(12345678.90);
-      connect(&doubleSpinBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), [&] {
+      connect(&doubleSpinBox, qOverload<double>(&QDoubleSpinBox::valueChanged), [&] {
         lcdNumber.display(QString::number(doubleSpinBox.value(), 'f', 2));
       });
 

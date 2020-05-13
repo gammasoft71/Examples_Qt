@@ -27,7 +27,7 @@ namespace Examples {
       listView1.setViewMode(QListView::ViewMode::ListMode);
 
       comboBoxMode.addItems({"List", "Icon"});
-      connect(&comboBoxMode, QOverload<int>::of(&QComboBox::currentIndexChanged), [&](int index) {
+      connect(&comboBoxMode, qOverload<int>(&QComboBox::currentIndexChanged), [&](int index) {
         listView1.setViewMode(static_cast<QListView::ViewMode>(index));
         listView1.setIconSize(listView1.viewMode() == QListView::ViewMode::IconMode ? QSize {48, 48} : QSize {16, 16});
       });

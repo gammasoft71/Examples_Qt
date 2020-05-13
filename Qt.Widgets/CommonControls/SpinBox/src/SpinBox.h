@@ -12,7 +12,7 @@ namespace Examples {
       spinBox.move(80, 50);
       spinBox.setRange(0, 100);
       spinBox.setValue(50);
-      connect(&spinBox, QOverload<int>::of(&QSpinBox::valueChanged), [&] {
+      connect(&spinBox, qOverload<int>(&QSpinBox::valueChanged), [&] {
         label.setText(QString("value = %1").arg(spinBox.value()));
       });
 

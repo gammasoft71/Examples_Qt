@@ -27,7 +27,7 @@ namespace Examples {
       spinButton.setRange(10, 20);
       spinButton.setValue(15);
       spinButton.setWrapping(true);
-      connect(&spinButton, QOverload<int>::of(&SpinButton::valueChanged), [&] {
+      connect(&spinButton, qOverload<int>(&SpinButton::valueChanged), [&] {
         label.setText(QString("value = %1").arg(spinButton.value()));
         label.resize(label.sizeHint());
       });

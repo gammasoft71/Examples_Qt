@@ -13,7 +13,7 @@ namespace Examples {
       comboBox1.addItems({"Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"});
       comboBox1.setEditable(true);
       comboBox1.setCurrentIndex(0);
-      connect(&comboBox1, QOverload<int>::of(&QComboBox::activated), [&]() {
+      connect(&comboBox1, qOverload<int>(&QComboBox::activated), [&]() {
         if (comboBox2.currentIndex() != comboBox1.currentIndex())
           comboBox2.setCurrentIndex(comboBox1.currentIndex());
       });
@@ -22,7 +22,7 @@ namespace Examples {
       comboBox2.resize(120, comboBox1.height());
       comboBox2.addItems({"Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"});
       comboBox2.setCurrentIndex(0);
-      connect(&comboBox2, QOverload<int>::of(&QComboBox::activated), [&]() {
+      connect(&comboBox2, qOverload<int>(&QComboBox::activated), [&]() {
         if (comboBox1.currentIndex() != comboBox2.currentIndex())
           comboBox1.setCurrentIndex(comboBox2.currentIndex());
       });
