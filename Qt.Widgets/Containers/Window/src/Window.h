@@ -1,4 +1,5 @@
 #pragma once
+#include <QApplication>
 #include <QCloseEvent>
 #include <QFrame>
 #include <QMainWindow>
@@ -10,9 +11,17 @@ namespace Examples {
     Q_OBJECT
   public:
     Window1() {
-      button.setText("Close");
-      button.move(10, 10);
-      connect(&button, &QPushButton::clicked, this, &Window1::close);
+      buttonClose.setText("Close");
+      buttonClose.move(10, 10);
+      connect(&buttonClose, &QPushButton::clicked, this, &Window1::close);
+
+      buttonExit.setText("Exit");
+      buttonExit.move(100, 10);
+      connect(&buttonExit, &QPushButton::clicked, &QApplication::exit);
+
+      buttonQuit.setText("Quit");
+      buttonQuit.move(190, 10);
+      connect(&buttonQuit, &QPushButton::clicked, &QApplication::quit);
 
       setCentralWidget(&frame);
       setWindowTitle("Window");
@@ -27,6 +36,8 @@ namespace Examples {
 
   private:
     QFrame frame;
-    QPushButton button {&frame};
+    QPushButton buttonClose {&frame};
+    QPushButton buttonExit {&frame};
+    QPushButton buttonQuit {&frame};
   };
 }
