@@ -65,6 +65,10 @@ shows how to use Qt widgets only by programming code (c++17).
 
 [Widget](Qt.Widgets/CommonControls/ToggleButton) shows how to create a widget with QWidget.
 
+## Custom Controls
+
+[Line](Qt.Widgets/CustomControls/Line) shows how to create a custom widget line with QFrame.
+
 ## Containers
 
 [Frame](Qt.Widgets/Containers/Frame) shows how to create a frame with QFrame.
