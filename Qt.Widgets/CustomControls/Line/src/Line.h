@@ -7,9 +7,7 @@ namespace Examples {
   class ColoredLine : public QFrame {
     Q_OBJECT
   public:
-    ColoredLine(QWidget* parent = nullptr) : QFrame(parent) {
-      setAutoFillBackground(true);
-    }
+    ColoredLine(QWidget* parent = nullptr) : QFrame(parent) {setAutoFillBackground(true);}
 
     QColor color() const {return palette().color(QPalette::Window);}
     void setColor(const QColor& color) {return setPalette(color);}
