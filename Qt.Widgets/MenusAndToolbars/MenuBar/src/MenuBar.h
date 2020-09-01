@@ -25,7 +25,7 @@ namespace Examples {
       menuFile->addAction(QIcon::fromTheme("document-print"), "&Print", this, &Window1::OnMenuFileSaveClick, QKeySequence(Qt::CTRL + Qt::Key_P));
       menuFile->addAction(QIcon::fromTheme("document-print-preview"), "Print preview");
       menuFile->addSeparator();
-       menuFile->addAction("&Exit", this, &Window1::OnMenuFileCloseClick, QKeySequence(Qt::ALT + Qt::Key_F4));
+      menuFile->addAction("&Exit", this, &Window1::OnMenuFileCloseClick, QKeySequence(Qt::ALT + Qt::Key_F4));
 
       QMenu* menuEdit = menuBar()->addMenu("&Edit");
       menuEdit->addAction("&Undo", this, &Window1::OnMenuEditUndoClick, QKeySequence(Qt::CTRL + Qt::Key_Z));
