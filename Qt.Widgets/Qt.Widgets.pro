@@ -6,6 +6,6 @@ SUBDIRS = \
     CustomControls \
     Components \
     Containers \
-    Dialogs \
+    CommonDialogs \
     MenusAndToolbars \
     Others\
