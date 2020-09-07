@@ -1,6 +1,6 @@
 TEMPLATE = subdirs
 SUBDIRS = \
-    MAboutBox \
+    AboutBox \
     ColorDialog \
     FolderBrowserDialog \
     FontDialog \
