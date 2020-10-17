@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 SUBDIRS = \
-    HelloWorld \
-    Application \
+    HelloWorlds \
+    Applications \
     CommonControls \
     CustomControls \
     Components \

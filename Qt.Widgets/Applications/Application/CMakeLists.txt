@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(Application WIN32 MACOSX_BUNDLE src/Application.cpp)
 target_link_libraries(Application Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Applications")

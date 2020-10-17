@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(ProgressBar WIN32 MACOSX_BUNDLE src/ProgressBar.cpp src/ProgressBar.h)
 target_link_libraries(ProgressBar Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")

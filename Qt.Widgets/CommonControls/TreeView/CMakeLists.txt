@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(TreeView WIN32 MACOSX_BUNDLE src/TreeView.cpp src/TreeView.h)
 target_link_libraries(TreeView Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")

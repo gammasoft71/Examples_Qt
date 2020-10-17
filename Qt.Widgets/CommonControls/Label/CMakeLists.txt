@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(Label WIN32 MACOSX_BUNDLE src/Label.cpp src/Label.h)
 target_link_libraries(Label Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")

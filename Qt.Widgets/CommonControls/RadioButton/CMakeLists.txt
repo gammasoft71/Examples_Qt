@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(RadioButton WIN32 MACOSX_BUNDLE src/RadioButton.cpp src/RadioButton.h)
 target_link_libraries(RadioButton Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")

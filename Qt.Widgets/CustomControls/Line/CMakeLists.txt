@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(Line WIN32 MACOSX_BUNDLE src/Line.cpp src/Line.h)
 target_link_libraries(Line Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CustomControls")

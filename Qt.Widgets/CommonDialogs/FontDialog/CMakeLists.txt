@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(FontDialog WIN32 MACOSX_BUNDLE src/FontDialog.cpp src/FontDialog.h)
 target_link_libraries(FontDialog Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonDialogs")

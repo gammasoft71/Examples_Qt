@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 
 # Solution
-project(Application)
+project(Applications)
 
 # Application and messages
 add_subdirectory(Application)

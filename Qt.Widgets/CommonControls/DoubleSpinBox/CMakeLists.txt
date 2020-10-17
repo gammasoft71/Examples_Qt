@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(DoubleSpinBox WIN32 MACOSX_BUNDLE src/DoubleSpinBox.cpp src/DoubleSpinBox.h)
 target_link_libraries(DoubleSpinBox Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")

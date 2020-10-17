@@ -14,4 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(Wiggly WIN32 MACOSX_BUNDLE src/Wiggly.cpp src/Wiggly.h)
 target_link_libraries(Wiggly Qt5::Widgets)
-
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Others")

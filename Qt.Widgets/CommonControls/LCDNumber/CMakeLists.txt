@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(LCDNumber WIN32 MACOSX_BUNDLE src/LCDNumber.cpp src/LCDNumber.h)
 target_link_libraries(LCDNumber Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")

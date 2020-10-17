@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(CheckedListWidget WIN32 MACOSX_BUNDLE src/CheckedListWidget.cpp src/CheckedListWidget.h)
 target_link_libraries(CheckedListWidget Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")

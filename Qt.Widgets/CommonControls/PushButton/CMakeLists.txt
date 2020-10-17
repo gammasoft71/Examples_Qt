@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(PushButton WIN32 MACOSX_BUNDLE src/PushButton.cpp src/PushButton.h)
 target_link_libraries(PushButton Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")

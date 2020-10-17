@@ -4,6 +4,7 @@ SUBDIRS = \
     ColorDialog \
     FolderBrowserDialog \
     FontDialog \
+    InputDialog \
     MessageBox \
     OpenFileDialog \
     SaveFileDialog \

@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(HelloWorldPaint WIN32 MACOSX_BUNDLE src/HelloWorldPaint.cpp src/HelloWorldPaint.h)
 target_link_libraries(HelloWorldPaint Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "HelloWorlds")

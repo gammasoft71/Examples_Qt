@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(GroupBox WIN32 MACOSX_BUNDLE src/GroupBox.cpp src/GroupBox.h)
 target_link_libraries(GroupBox Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Containers")

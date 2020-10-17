@@ -14,3 +14,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(HelloWorldMessageBox WIN32 MACOSX_BUNDLE src/HelloWorldMessageBox.cpp src/HelloWorldMessageBox.h)
 target_link_libraries(HelloWorldMessageBox Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "HelloWorlds")

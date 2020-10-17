@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.2)
 # Solution
 project(Qt.Widgets)
 
-add_subdirectory(HelloWorld)
-add_subdirectory(Application)
+add_subdirectory(HelloWorlds)
+add_subdirectory(Applications)
 add_subdirectory(CommonControls)
 add_subdirectory(CommonDialogs)
 add_subdirectory(CustomControls)
