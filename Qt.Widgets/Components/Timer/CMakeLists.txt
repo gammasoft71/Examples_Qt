@@ -12,6 +12,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(Timer WIN32 MACOSX_BUNDLE src/Timer.cpp src/Timer.h)
-target_link_libraries(Timer Qt5::Widgets)
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE src/Timer.cpp src/Timer.h)
+target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Components")
