@@ -53,14 +53,14 @@ int main() {
     out << logo[index];
     out << foregroundReset;
     out << backgroundReset;
-    out << endl;
+    out << Qt::endl;
   }
 
   out << foregroundDarkBlue;
-  out << "                                    Gammasoft                                   " << endl;
+  out << "                                    Gammasoft                                   " << Qt::endl;
   out << foregroundDarkGray;
-  out << " More than thirty years of passion for high technology especially in development" << endl;
-  out << " (c++, c#, objective-c, ...)." << endl;
+  out << " More than thirty years of passion for high technology especially in development" << Qt::endl;
+  out << " (c++, c#, objective-c, ...)." << Qt::endl;
   out << foregroundReset;
 }
 
