@@ -5,7 +5,7 @@ SUBDIRS = \
     CommonControls \
     CustomControls \
     Components \
-    Containers \
+    ContainerControls \
     CommonDialogs \
     MenusAndToolbars \
     Others\
