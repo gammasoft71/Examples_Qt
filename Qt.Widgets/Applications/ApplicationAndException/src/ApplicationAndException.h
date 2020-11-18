@@ -2,6 +2,7 @@
 #include <stdexcept>
 #include <QFrame>
 #include <QMainWindow>
+#include <QMessageBox>
 #include <QPushButton>
 
 namespace Examples {
@@ -16,24 +17,22 @@ namespace Examples {
       generateHandledExceptionButton.move(10, 10);
       connect(&generateHandledExceptionButton, &QPushButton::clicked, [&] {
         try {
-          throw std::invalid_argument("Not a valid argument");
+          throw std::invalid_argument("Exception handled generated");
         } catch(const std::exception& e) {
-          // do something on exception...
+          QMessageBox::information(this, "Exception handled", e.what());
         }
       });
 
       generateExceptionButton.setText("Generate exception");
-      generateExceptionButton.setAutoRepeat(true);
       generateExceptionButton.move(10, 40);
       connect(&generateExceptionButton, &QPushButton::clicked, [&] {
-        throw std::invalid_argument("Not a valid argument");
+        throw std::invalid_argument("Exception generated");
       });
 
       generateUnknownExceptionButton.setText("Generate unknown exception");
-      generateUnknownExceptionButton.setAutoRepeat(true);
       generateUnknownExceptionButton.move(10, 70);
       connect(&generateUnknownExceptionButton, &QPushButton::clicked, [&] {
-        throw "throw unknown type exception";
+        throw "Unknown exception generated";
       });
 
       setCentralWidget(&frame);

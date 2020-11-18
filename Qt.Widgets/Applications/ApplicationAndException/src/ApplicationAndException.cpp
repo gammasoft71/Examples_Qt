@@ -12,11 +12,12 @@ public:
     try {
       return QApplication::notify(object, event);
     } catch(const std::exception& e) {
-      QMessageBox::critical(nullptr, "Exception occured", QString("Message: %1").arg(e.what()), QMessageBox::StandardButton::Ok);
+      if (QMessageBox::critical(nullptr, "Exception occured", QString("Unhandled exception occured in your application. If you click OK, the application will ignore this error and attempt to continue. If you click Cancel, the application will close immediately.\n\n%1").arg(e.what()), QMessageBox::StandardButton::Ok|QMessageBox::StandardButton::Cancel) == QMessageBox::StandardButton::Cancel)
+        QApplication::quit();
     } catch(...) {
-      QMessageBox::critical(nullptr, "Unknown exception occured", "Message: (none)", QMessageBox::StandardButton::Ok);
+      if (QMessageBox::critical(nullptr, "Unknown exception occured", "Unhandled exception occured in your application. If you click OK, the application will ignore this error and attempt to continue. If you click Cancel, the application will close immediately.\n\n(Unknown exception)", QMessageBox::StandardButton::Ok|QMessageBox::StandardButton::Cancel) == QMessageBox::StandardButton::Cancel)
+        QApplication::quit();
     }
-   QApplication::quit(); // Rermove or comment this line to continue
    return true;
   }
 };
@@ -28,11 +29,9 @@ int main(int argc, char *argv[]) {
     window1.show();
     return application.exec();
   } catch(const std::exception& e) {
-    qDebug() << "Exception occured";
-    qDebug() << QString("Message: %1").arg(e.what());
+    qDebug() << QString("Exception: %1").arg(e.what());
   } catch(...) {
     qDebug() << "Unknown exception occured";
-    qDebug() << "Message: (%1)none)";
   }
 }
 
