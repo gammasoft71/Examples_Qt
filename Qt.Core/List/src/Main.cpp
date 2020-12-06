@@ -4,11 +4,11 @@
 
 int main() {
     QTextStream out(stdout);
-    out << "Hello, World!" << endl;
+    out << "Hello, World!" << Qt::endl;
 
     QList<QString> dinosaurs;
 
-    out << QString("\ncount: %1").arg(dinosaurs.count()) << endl;
+    out << QString("\ncount: %1").arg(dinosaurs.count()) << Qt::endl;
 
     dinosaurs.append("Tyrannosaurus");
     dinosaurs.append("Amargasaurus");
