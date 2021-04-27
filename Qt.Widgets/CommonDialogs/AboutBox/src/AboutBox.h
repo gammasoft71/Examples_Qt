@@ -13,7 +13,7 @@ namespace Examples {
       buttonShowAbout.setText("About...");
       buttonShowAbout.move(10, 10);
       connect(&buttonShowAbout, &QPushButton::clicked, [&] {
-        QMessageBox::about(this, "About dialog", "About dialog\n\nversion 1.0.0 (1.0)\n\nAbout dialog description.\n\nCopyright © 2020 Gammasoft.\nAll rights reserved.");
+        QMessageBox::about(this, "About AboutBox", AboutString("AboutBox", "About dialog description", "1.0.0", "Copyright © 2020 Gammasoft.\nAll rights reserved."));
        });
 
       buttonShowAboutQt.setText("AboutQt...");
@@ -28,6 +28,7 @@ namespace Examples {
     }
 
   private:
+    static QString AboutString(const QString& name, const QString& description, const QString& version, const QString& copyright) {return QString("%1\n%2\n\n%3\n%4\n%5\n%6").arg(name).arg(version).arg(QString(86, ' ')).arg(copyright).arg(description).arg(QString(86, ' '));}
     QFrame frame;
     QPushButton buttonShowAbout {&frame};
     QPushButton buttonShowAboutQt {&frame};
