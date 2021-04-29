@@ -3,6 +3,8 @@
 
 shows how to use Qt widgets only by programming code (c++17).
 
+[![qt](docs/Pictures/qt_header.png)](https://gammasoft71.wixsite.com/gammasoft/qt)
+
 ## Hello World
 
 [HelloWorldEmoticons](Qt.Widgets/HelloWorld/HelloWorldEmoticons) The classic first application "Hello, world!" with QLabel and emoticons.
