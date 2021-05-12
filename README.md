@@ -17,9 +17,9 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## Application and messages
 
-[Application](Qt.Widgets/Application/Application) shows how to create an application with QApplication.
+[Application](Qt.Widgets/Applications/Application) shows how to create an application with QApplication.
 
-[DarkMode](Qt.Widgets/Application/DarkMode) shows how to create a dark mode application.
+[DarkMode](Qt.Widgets/Applications/DarkMode) shows how to create a dark mode application.
 
 ## Common Controls
 
