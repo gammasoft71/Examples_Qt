@@ -7,13 +7,13 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## Hello World
 
-[HelloWorldEmoticons](Qt.Widgets/HelloWorld/HelloWorldEmoticons) The classic first application "Hello, world!" with QLabel and emoticons.
+[HelloWorldEmoticons](Qt.Widgets/HelloWorlds/HelloWorldEmoticons) The classic first application "Hello, world!" with QLabel and emoticons.
 
-[HelloWorldLabel](Qt.Widgets/HelloWorld/HelloWorldLabel) The classic first application "Hello, world!" with QLabel.
+[HelloWorldLabel](Qt.Widgets/HelloWorlds/HelloWorldLabel) The classic first application "Hello, world!" with QLabel.
 
-[HelloWorldMessageBox](Qt.Widgets/HelloWorld/HelloWorldMessageBox) The classic first application "Hello, world!" with QMessageBox.
+[HelloWorldMessageBox](Qt.Widgets/HelloWorlds/HelloWorldMessageBox) The classic first application "Hello, world!" with QMessageBox.
 
-[HelloWorldPaint](Qt.Widgets/HelloWorld/HelloWorldPaint) The classic first application "Hello, world!" with QPainter.
+[HelloWorldPaint](Qt.Widgets/HelloWorlds/HelloWorldPaint) The classic first application "Hello, world!" with QPainter.
 
 ## Application and messages
 
