@@ -6,3 +6,4 @@ project(MenusAndToolbars)
 # MenusAndToolbars
 add_subdirectory(MenuBar)
 add_subdirectory(StatusBar)
+add_subdirectory(ToolBar)

@@ -3,6 +3,7 @@ SUBDIRS = \
     CheckBox \
     CheckedListWidget \
     DoubleSpinBox \
+    Dial \
     Label \
     LCDNumber \
     LineEdit \
