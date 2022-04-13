@@ -9,13 +9,13 @@ int main() {
   QString result = "";
   for(auto c : str)
     result += QString("%1 ").arg(c);
-  out << result << endl;
+  out << result << Qt::endl;
 
   // Remarks : the koala character (\U0001F428) is splitted into two utf16...
   result = "";
   for(auto c : str)
     result += QString("\\u%1").arg(c.unicode(), 4, 16, QChar('0'));
-  out << result << endl;
+  out << result << Qt::endl;
 }
 
 // This code produces the following output:
