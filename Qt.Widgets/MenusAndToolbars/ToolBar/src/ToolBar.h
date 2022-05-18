@@ -41,7 +41,7 @@ namespace Examples {
         qDebug() << "ToolBar/Print";
       });
 
-      connect(&comboBox, &QComboBox::currentIndexChanged, [&] {
+      connect(&comboBox, &QComboBox::currentTextChanged, [&] {
         qDebug() << comboBox.currentText();
       });
 
