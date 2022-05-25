@@ -6,6 +6,7 @@
 #include <QPixmap>
 #include <QProgressBar>
 #include <QStatusBar>
+#include <qtimer.h>
 
 namespace Examples {
   class Window1 : public QMainWindow {
@@ -29,7 +30,11 @@ namespace Examples {
       label4.setFrameStyle(QFrame::Panel | QFrame::Sunken);
       label4.setText("Status three");
 
-      progressBar1.setValue(50);
+      timer.setInterval(50);
+      connect(&timer, &QTimer::timeout, [&] {
+        progressBar1.setValue(progressBar1.value() < progressBar1.maximum() ? progressBar1.value() + 1 : progressBar1.minimum());
+      });
+      timer.start();
 
       setCentralWidget(&frame);
       setStatusBar(&statusBar1);
@@ -53,7 +58,8 @@ namespace Examples {
     QLabel label1;
     QLabel label2;
     QLabel label3;
-    QProgressBar progressBar1;
     QLabel label4;
+    QProgressBar progressBar1;
+    QTimer timer {this};
   };
 }
