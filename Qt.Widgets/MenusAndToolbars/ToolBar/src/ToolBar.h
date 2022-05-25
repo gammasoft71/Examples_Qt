@@ -49,7 +49,7 @@ namespace Examples {
       toolBar2.setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
       addToolBar(&toolBar);
-      addToolBar(&toolBar2);
+      addToolBar(Qt::BottomToolBarArea, &toolBar2);
       setCentralWidget(&frame);
       setUnifiedTitleAndToolBarOnMac(true);
       setWindowTitle("Tool bar example");
