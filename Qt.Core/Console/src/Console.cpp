@@ -1,10 +1,12 @@
 #include <QString>
 #include <QTextStream>
 
+using namespace Qt;
+
 int main() {
   QTextStream out(stdout);
   out << "Hello ";
-  out << "World!" << Qt::endl;
+  out << "World!" << endl;
   out << "Enter your name: ";
   out.flush();
   QTextStream in(stdin);
@@ -12,5 +14,5 @@ int main() {
   in >> name;
   out << "Good day, ";
   out << name;
-  out << "!" << Qt::endl;
+  out << "!" << endl;
 }

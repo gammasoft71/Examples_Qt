@@ -1,13 +1,15 @@
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QString>
 #include <QTextStream>
 
+using namespace Qt;
+
 int main() {
-  auto strings = QString("One Two Three Four\nFive").split(QRegExp("(\x9|\xA|\xB|\xC|\xD|\x20)+"));
+  auto strings = QString("One Two Three Four\nFive").split(QRegularExpression("(\x9|\xA|\xB|\xC|\xD|\x20)+"));
 
   QTextStream out(stdout);
   out << QString("strings.count() = %1").arg(strings.count()) << endl;
-  for (auto s : strings)
+  for (auto& s : strings)
     out << s << endl;
 }
 

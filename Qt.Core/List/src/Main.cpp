@@ -2,13 +2,15 @@
 #include <QString>
 #include <QTextStream>
 
+using namespace Qt;
+
 int main() {
     QTextStream out(stdout);
-    out << "Hello, World!" << Qt::endl;
+    out << "Hello, World!" << endl;
 
     QList<QString> dinosaurs;
 
-    out << QString("\ncount: %1").arg(dinosaurs.count()) << Qt::endl;
+    out << QString("\ncount: %1").arg(dinosaurs.count()) << endl;
 
     dinosaurs.append("Tyrannosaurus");
     dinosaurs.append("Amargasaurus");
@@ -24,12 +26,12 @@ int main() {
 
     out << QString("\ncontains(\"Deinonychus\"): %1").arg(dinosaurs.contains("Deinonychus") ? "True" : "False") << endl;
 
-    out << "\ninsert(2, \"Compsognathus\")" <<endl;
+    out << "\ninsert(2, \"Compsognathus\")" << endl;
     dinosaurs.insert(2, "Compsognathus");
 
     out << endl;
     for (QString dinosaur : dinosaurs)
-      out << dinosaur <<endl;
+      out << dinosaur << endl;
 
     out << QString("\ndinosaurs[3]: %1").arg(dinosaurs[3]) << endl;
 

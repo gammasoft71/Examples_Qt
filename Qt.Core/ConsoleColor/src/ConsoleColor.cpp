@@ -2,6 +2,8 @@
 #include <QTextStream>
 #include <QVector>
 
+using namespace Qt;
+
 int main() {
   const QVector<QString> logo = {
     "████████████████████████████████████████████████████████████",
@@ -53,14 +55,14 @@ int main() {
     out << logo[index];
     out << foregroundReset;
     out << backgroundReset;
-    out << Qt::endl;
+    out << endl;
   }
 
   out << foregroundDarkBlue;
-  out << "                                    Gammasoft                                   " << Qt::endl;
+  out << "                                    Gammasoft                                   " << endl;
   out << foregroundDarkGray;
-  out << " More than thirty years of passion for high technology especially in development" << Qt::endl;
-  out << " (c++, c#, objective-c, ...)." << Qt::endl;
+  out << " More than thirty years of passion for high technology especially in development" << endl;
+  out << " (c++, c#, objective-c, ...)." << endl;
   out << foregroundReset;
 }
 
