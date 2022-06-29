@@ -15,13 +15,13 @@ namespace Examples {
       buttonClose.move(10, 10);
       connect(&buttonClose, &QPushButton::clicked, this, &Window1::close);
 
-      buttonExit.setText("Exit");
-      buttonExit.move(100, 10);
-      connect(&buttonExit, &QPushButton::clicked, &QApplication::exit);
-
       buttonQuit.setText("Quit");
-      buttonQuit.move(190, 10);
+      buttonQuit.move(100, 10);
       connect(&buttonQuit, &QPushButton::clicked, &QApplication::quit);
+
+      buttonExit.setText("Exit");
+      buttonExit.move(190, 10);
+      connect(&buttonExit, &QPushButton::clicked, &QApplication::exit);
 
       setCentralWidget(&frame);
       setWindowTitle("Window");
