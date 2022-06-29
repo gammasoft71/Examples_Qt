@@ -16,16 +16,17 @@ int main(int argc, char *argv[]) {
   QFrame frame;
   form.setCentralWidget(&frame);
 
-  /*
+  QMainWindow dialog;
+  dialog.resize(350, 100);
+  dialog.setWindowTitle("dialog");
+
   QPushButton closeButton;
   closeButton.move(10, 10);
   closeButton.setParent(&frame);
   closeButton.setText("Close");
-  closeButton.connect(&closeButton, &QPushButton::clicked, &form, &QMainWindow::close);
-
-  QMainWindow dialog;
-  dialog.resize(350, 100);
-  dialog.setWindowTitle("dialog");
+  closeButton.connect(&closeButton, &QPushButton::clicked, &form, [&]{
+    dialog.close();
+  });
 
   QPushButton showButton;
   showButton.move(10, 40);
@@ -42,14 +43,6 @@ int main(int argc, char *argv[]) {
   hideButton.connect(&hideButton, &QPushButton::clicked, &form, [&]{
     dialog.hide();
   });
-  */
-
-  QComboBox comboBox;
-  comboBox.move(10, 10);
-  comboBox.setParent(&frame);
-  //comboBox.setEditable(true);
-  comboBox.addItems({"red", "green", "blue", "yellow", "magenta", "cyan", "white", "black", "redorange", "teal", "aqua", "dodger"});
-
 
   return application.exec();
 }
