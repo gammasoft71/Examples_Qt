@@ -22,8 +22,8 @@ shows how to use Qt widgets only by programming code (c++17).
 * [CheckBox](Qt.Widgets/CommonControls/CheckBox) shows how to create a check box with QCheckBox.
 * [CheckedListWidget](Qt.Widgets/CommonControls/CheckedListWidget) shows how to create a checked list widget with QListWidget.
 * [ComboBox](Qt.Widgets/CommonControls/ComboBox) shows how to create a combo box with QComboBox.
-* [DoubleSpinBox](Qt.Widgets/CommonControls/DoubleSpinBox) shows how to create a double spin box with QDoubleSpinBox.
 * [Dial](Qt.Widgets/CommonControls/Dial) shows how to create a dialx with QDial.
+* [DoubleSpinBox](Qt.Widgets/CommonControls/DoubleSpinBox) shows how to create a double spin box with QDoubleSpinBox.
 * [LCDNumber](Qt.Widgets/CommonControls/LCDNumber) shows how to create a LCD number with QLCDNumber.
 * [Label](Qt.Widgets/CommonControls/Label) shows how to create a label with QLabel.
 * [LineEdit](Qt.Widgets/CommonControls/LineEdit) shows how to create a line edit with QLineEdit.
