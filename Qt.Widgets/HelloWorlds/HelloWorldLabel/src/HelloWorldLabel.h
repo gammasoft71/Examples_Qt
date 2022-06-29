@@ -24,16 +24,15 @@ namespace Examples {
       palette.setColor(QPalette::WindowText, Qt::GlobalColor::darkGreen);
       label1.setPalette(palette);
       label1.setFont({label1.font().family(), pointsToNativeFontGraphicsUntit(34), QFont::Bold, true});
-      label1.move(5, 100);
-      label1.resize(label1.sizeHint());
+      label1.setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
+      label1.setWordWrap(true);
 
-      setCentralWidget(&frame);
+      setCentralWidget(&label1);
       setWindowTitle("Hello world (label)");
       resize(300, 300);
     }
 
   private:
-    QFrame frame;
-    QLabel label1 {&frame};
+    QLabel label1 {this};
   };
 }
