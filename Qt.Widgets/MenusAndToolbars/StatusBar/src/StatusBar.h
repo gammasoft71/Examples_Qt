@@ -14,10 +14,11 @@ namespace Examples {
   public:
     Window1() {
       statusBar1.addPermanentWidget(&label1, 0);
-      statusBar1.addPermanentWidget(&label2, 1);
-      statusBar1.addPermanentWidget(&label3, 1);
-      statusBar1.addPermanentWidget(&label4, 4);
-      statusBar1.addPermanentWidget(&progressBar1, 1);
+      statusBar1.addPermanentWidget(&label2, 0);
+      statusBar1.addPermanentWidget(&label3, 0);
+      statusBar1.addPermanentWidget(&label4, 1);
+      statusBar1.addPermanentWidget(&progressBar1, 0);
+      statusBar1.setSizeGripEnabled(true);
 
       label1.setPixmap(createPixmap(QColorConstants::DarkGreen));
 
