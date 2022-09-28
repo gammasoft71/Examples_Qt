@@ -5,11 +5,9 @@
 using namespace Qt;
 
 int main() {
-    QTextStream out(stdout);
-    out << "Hello, World!" << endl;
-
     QList<QString> dinosaurs;
 
+    QTextStream out(stdout);
     out << QString("\ncount: %1").arg(dinosaurs.count()) << endl;
 
     dinosaurs.append("Tyrannosaurus");
