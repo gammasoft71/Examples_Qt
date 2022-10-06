@@ -3,7 +3,7 @@
 #include <QFrame>
 #include <QMainWindow>
 #include <QPushButton>
-#include <QComboBox>>
+#include <QComboBox>
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
