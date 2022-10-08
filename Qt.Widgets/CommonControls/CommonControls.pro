@@ -2,6 +2,7 @@ TEMPLATE = subdirs
 SUBDIRS = \
     CheckBox \
     CheckedListWidget \
+    ComboBox \
     DoubleSpinBox \
     Dial \
     Label \
