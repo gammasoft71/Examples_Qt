@@ -14,7 +14,7 @@ namespace Examples {
       button1.setStyleSheet(buttonStyleSheets);
 
       setCentralWidget(&frame);
-      setWindowTitle("Label example");
+      setWindowTitle("Button with style sheet example");
       resize(300, 300);
     }
 
