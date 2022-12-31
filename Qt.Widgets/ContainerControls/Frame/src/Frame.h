@@ -7,7 +7,7 @@ namespace Examples {
     Q_OBJECT
   public:
     Window1() {
-      frame1.setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
+      frame1.setFrameStyle(QFrame::StyledPanel | QFrame::Raised);
       frame1.move(10, 10);
       frame1.resize(305, 460);
 
