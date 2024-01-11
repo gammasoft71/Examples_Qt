@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 # Solution
-project(CommonControls)
+project(Controls)
 
 # Common Controls
 add_subdirectory(CheckBox)

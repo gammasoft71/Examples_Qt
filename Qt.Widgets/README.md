@@ -18,29 +18,29 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## Common Controls
 
-* [CheckBox](CommonControls/CheckBox) shows how to create a check box with QCheckBox.
-* [CheckedListWidget](CommonControls/CheckedListWidget) shows how to create a checked list widget with QListWidget.
-* [ComboBox](CommonControls/ComboBox) shows how to create a combo box with QComboBox.
-* [Dial](CommonControls/Dial) shows how to create a dial with QDial.
-* [DoubleSpinBox](CommonControls/DoubleSpinBox) shows how to create a double spin box with QDoubleSpinBox.
-* [LCDNumber](CommonControls/LCDNumber) shows how to create a LCD number with QLCDNumber.
-* [Label](CommonControls/Label) shows how to create a label with QLabel.
-* [LineEdit](CommonControls/LineEdit) shows how to create a line edit with QLineEdit.
-* [ListView](CommonControls/ListWidget) shows how to create a list view with QListView.
-* [ListView2](CommonControls/ListView2) shows how to create a list view with QTreeView.
-* [ListWidget](CommonControls/ListWidget) shows how to create a list widget with QListWidget.
-* [PictureBox](CommonControls/PictureBox) shows how to create a picture box with QLabel.
-* [PictureBox2](CommonControls/PictureBox2) shows how to create a picture box with QGraphicsPixmapItem.
-* [ProgressBar](CommonControls/ProgressBar) shows how to create a ProgressBar with QProgress.
-* [PushButton](CommonControls/PushButton) shows how to create a button and Event Click with QPushButton.
-* [RadioButton](CommonControls/RadioButton) shows how to create a radio button with QRadioButton.
-* [Slider](CommonControls/Slider) shows how to create a slider with QSlider.
-* [SpinBox](CommonControls/SpinBox) shows how to create a spin box with QSpinBox.
-* [SpinButton](CommonControls/SpinButton) shows how to create a spin button with QSpinBox.
-* [ToggleButton](CommonControls/ToggleButton) shows how to create a toggle button with QPushButton.
-* [TreeView](CommonControls/TreeView) shows how to create a three view with QTreeView.
-* [TreeWidget](CommonControls/TreeWidget) shows how to create a three widget with QTreeWidget.
-* [Widget](CommonControls/ToggleButton) shows how to create a widget with QWidget.
+* [CheckBox](Controls/CheckBox) shows how to create a check box with QCheckBox.
+* [CheckedListWidget](Controls/CheckedListWidget) shows how to create a checked list widget with QListWidget.
+* [ComboBox](Controls/ComboBox) shows how to create a combo box with QComboBox.
+* [Dial](Controls/Dial) shows how to create a dial with QDial.
+* [DoubleSpinBox](Controls/DoubleSpinBox) shows how to create a double spin box with QDoubleSpinBox.
+* [LCDNumber](Controls/LCDNumber) shows how to create a LCD number with QLCDNumber.
+* [Label](Controls/Label) shows how to create a label with QLabel.
+* [LineEdit](Controls/LineEdit) shows how to create a line edit with QLineEdit.
+* [ListView](Controls/ListWidget) shows how to create a list view with QListView.
+* [ListView2](Controls/ListView2) shows how to create a list view with QTreeView.
+* [ListWidget](Controls/ListWidget) shows how to create a list widget with QListWidget.
+* [PictureBox](Controls/PictureBox) shows how to create a picture box with QLabel.
+* [PictureBox2](Controls/PictureBox2) shows how to create a picture box with QGraphicsPixmapItem.
+* [ProgressBar](Controls/ProgressBar) shows how to create a ProgressBar with QProgress.
+* [PushButton](Controls/PushButton) shows how to create a button and Event Click with QPushButton.
+* [RadioButton](Controls/RadioButton) shows how to create a radio button with QRadioButton.
+* [Slider](Controls/Slider) shows how to create a slider with QSlider.
+* [SpinBox](Controls/SpinBox) shows how to create a spin box with QSpinBox.
+* [SpinButton](Controls/SpinButton) shows how to create a spin button with QSpinBox.
+* [ToggleButton](Controls/ToggleButton) shows how to create a toggle button with QPushButton.
+* [TreeView](Controls/TreeView) shows how to create a three view with QTreeView.
+* [TreeWidget](Controls/TreeWidget) shows how to create a three widget with QTreeWidget.
+* [Widget](Controls/ToggleButton) shows how to create a widget with QWidget.
 
 ## Custom Controls
 
