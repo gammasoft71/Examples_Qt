@@ -6,7 +6,7 @@ using namespace Qt;
 int main() {
   QTextStream out(stdout);
   out << "Hello ";
-  out << "World!" << endl;
+  out << "World!" << Qt::endl;
   out << "Enter your name: ";
   out.flush();
   QTextStream in(stdin);
@@ -14,5 +14,5 @@ int main() {
   in >> name;
   out << "Good day, ";
   out << name;
-  out << "!" << endl;
+  out << "!" << Qt::endl;
 }
