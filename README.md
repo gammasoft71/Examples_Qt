@@ -28,7 +28,7 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## Windows
 
-* [MainWindow](Qt.Widgets/Windowd/MainWindow) shows how to create a window with QMainWindow.
+* [MainWindow](Qt.Widgets/Windows/MainWindow) shows how to create a window with QMainWindow.
 
 ## Menus and toolbars
 
