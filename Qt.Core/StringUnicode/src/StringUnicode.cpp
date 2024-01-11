@@ -17,17 +17,17 @@ int main() {
   QString russian = u8"\u0420\u0443\u0441\u0441\u043A\u0438\u0439 \u044F\u0437\u044B\u043A";
 
   QTextStream out(stdout);
-  out << QString("Arabic:         %1").arg(arabic) << endl;
-  out << QString("Trad. Chinese:  %1").arg(tradChinese) << endl;
-  out << QString("Simpl. Chinese: %1").arg(simplChinese) << endl;
-  out << QString("French:         %1").arg(french) << endl;
-  out << QString("Greek:          %1").arg(greek) << endl;
-  out << QString("Hebrew:         %1").arg(hebrew) << endl;
-  out << QString("Hindi:          %1").arg(hindi) << endl;
-  out << QString("Icelandic:      %1").arg(icelandic) << endl;
-  out << QString("Japanese:       %1").arg(japanese) << endl;
-  out << QString("Korean:         %1").arg(korean) << endl;
-  out << QString("Russian:        %1").arg(russian) << endl;
+  out << QString("Arabic:         %1").arg(arabic) << Qt::endl;
+  out << QString("Trad. Chinese:  %1").arg(tradChinese) << Qt::endl;
+  out << QString("Simpl. Chinese: %1").arg(simplChinese) << Qt::endl;
+  out << QString("French:         %1").arg(french) << Qt::endl;
+  out << QString("Greek:          %1").arg(greek) << Qt::endl;
+  out << QString("Hebrew:         %1").arg(hebrew) << Qt::endl;
+  out << QString("Hindi:          %1").arg(hindi) << Qt::endl;
+  out << QString("Icelandic:      %1").arg(icelandic) << Qt::endl;
+  out << QString("Japanese:       %1").arg(japanese) << Qt::endl;
+  out << QString("Korean:         %1").arg(korean) << Qt::endl;
+  out << QString("Russian:        %1").arg(russian) << Qt::endl;
 }
 
 

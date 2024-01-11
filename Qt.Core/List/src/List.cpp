@@ -8,7 +8,7 @@ int main() {
     QList<QString> dinosaurs;
 
     QTextStream out(stdout);
-    out << QString("\ncount: %1").arg(dinosaurs.count()) << endl;
+    out << QString("\ncount: %1").arg(dinosaurs.count()) << Qt::endl;
 
     dinosaurs.append("Tyrannosaurus");
     dinosaurs.append("Amargasaurus");
@@ -16,35 +16,35 @@ int main() {
     dinosaurs.append("Deinonychus");
     dinosaurs.append("Compsognathus");
 
-    out << endl;
+    out << Qt::endl;
     for (QString dinosaur : dinosaurs)
-      out << dinosaur << endl;
+      out << dinosaur << Qt::endl;
 
     out << QString("\ncount: %1").arg(dinosaurs.count());
 
-    out << QString("\ncontains(\"Deinonychus\"): %1").arg(dinosaurs.contains("Deinonychus") ? "True" : "False") << endl;
+    out << QString("\ncontains(\"Deinonychus\"): %1").arg(dinosaurs.contains("Deinonychus") ? "True" : "False") << Qt::endl;
 
-    out << "\ninsert(2, \"Compsognathus\")" << endl;
+    out << "\ninsert(2, \"Compsognathus\")" << Qt::endl;
     dinosaurs.insert(2, "Compsognathus");
 
-    out << endl;
+    out << Qt::endl;
     for (QString dinosaur : dinosaurs)
-      out << dinosaur << endl;
+      out << dinosaur << Qt::endl;
 
-    out << QString("\ndinosaurs[3]: %1").arg(dinosaurs[3]) << endl;
+    out << QString("\ndinosaurs[3]: %1").arg(dinosaurs[3]) << Qt::endl;
 
-    out << "\nremoveOne(\"Compsognathus\")" << endl;
+    out << "\nremoveOne(\"Compsognathus\")" << Qt::endl;
     dinosaurs.removeOne("Compsognathus");
 
-    out << endl;
+    out << Qt::endl;
     for (QString dinosaur : dinosaurs)
-      out << dinosaur << endl;
+      out << dinosaur << Qt::endl;
 
-    out << QString("\ncount: %1").arg(dinosaurs.count()) << endl;
+    out << QString("\ncount: %1").arg(dinosaurs.count()) << Qt::endl;
 
     dinosaurs.clear();
-    out << "\nclear()" << endl;
-    out << QString("count: %1").arg(dinosaurs.count()) << endl;
+    out << "\nclear()" << Qt::endl;
+    out << QString("count: %1").arg(dinosaurs.count()) << Qt::endl;
 }
 
 // This code example produces the following output:

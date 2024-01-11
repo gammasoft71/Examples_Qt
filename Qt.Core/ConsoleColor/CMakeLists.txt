@@ -11,4 +11,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(ConsoleColor src/ConsoleColor.cpp)
 target_link_libraries(ConsoleColor Qt5::Core)
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Core")
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Core/Console")
