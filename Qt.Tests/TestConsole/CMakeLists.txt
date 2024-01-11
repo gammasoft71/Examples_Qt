@@ -11,3 +11,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(TestConsole src/main.cpp)
 target_link_libraries(TestConsole Qt5::Core Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Core/tests")

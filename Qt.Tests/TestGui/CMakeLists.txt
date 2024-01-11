@@ -11,3 +11,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Application
 add_executable(TestGui WIN32 MACOSX_BUNDLE src/TestGui.cpp)
 target_link_libraries(TestGui Qt5::Widgets)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Widgets/tests")

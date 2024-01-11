@@ -15,4 +15,4 @@ set(CMAKE_AUTORCC ON)
 # Application
 add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE src/PictureBox.cpp src/PictureBox.h PictureBox.qrc)
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CommonControls")
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Widgets/Controls")
