@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.20)
 
 project(StringUnicode2)
 find_package(Qt5Widgets CONFIG REQUIRED)
