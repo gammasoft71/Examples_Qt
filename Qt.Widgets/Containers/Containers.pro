@@ -3,5 +3,4 @@ SUBDIRS = \
     Frame \
     GroupBox \
     TabWidget \
-    Window \
     

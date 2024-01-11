@@ -1,11 +1,11 @@
 #include <QApplication>
-#include "Window.h"
+#include "MainWindow.h"
 
 using namespace Examples;
 
 int main(int argc, char *argv[]) {
   QApplication application(argc, argv);
-  Window1 window1;
-  window1.show();
+  MainWindow1 mainWindow1;
+  mainWindow1.show();
   return application.exec();
 }

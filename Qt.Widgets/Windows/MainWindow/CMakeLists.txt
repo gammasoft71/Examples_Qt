@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 # Project
-project(Window)
+project(MainWindow)
 find_package(Qt5Widgets CONFIG REQUIRED)
 
 # Options
@@ -12,6 +12,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE src/Window.cpp src/Window.h)
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE src/MainWindow.cpp src/MainWindow.h)
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Widgets/Containers")
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Widgets/Windows")

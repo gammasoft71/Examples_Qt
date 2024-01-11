@@ -5,6 +5,7 @@ project(Qt.Widgets)
 
 add_subdirectory(HelloWorlds)
 add_subdirectory(Applications)
+add_subdirectory(Windows)
 add_subdirectory(Dialogs)
 add_subdirectory(MenusAndToolbars)
 add_subdirectory(Containers)

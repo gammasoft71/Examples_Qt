@@ -2,6 +2,7 @@ TEMPLATE = subdirs
 SUBDIRS = \
     HelloWorlds \
     Applications \
+    Windows \
     Dialogs \
     MenusAndToolbars \
     Containers \

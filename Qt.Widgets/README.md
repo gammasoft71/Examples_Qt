@@ -11,10 +11,35 @@ shows how to use Qt widgets only by programming code (c++17).
 * [HelloWorldMessageBox](HelloWorlds/HelloWorldMessageBox) The classic first application "Hello, world!" with QMessageBox.
 * [HelloWorldPaint](HelloWorlds/HelloWorldPaint) The classic first application "Hello, world!" with QPainter.
 
-## Application and messages
+## Application
 
 * [Application](Applications/Application) shows how to create an application with QApplication.
 * [DarkMode](Applications/DarkMode) shows how to create a dark mode application.
+
+## Dialogs
+
+* [ColorDialog](Dialogs/ColorDialog) shows how to create a ColorDialog with QColorDalog.
+* [FolderBrowserDialog](FolderBrowserDialog) shows how to create a FolderBrowserDialog with QFileDialog.
+* [FontDialog](Dialogs/FontDialog) shows how to create a FontDialog with QFontDialog.
+* [MessageBox](Dialogs/MessageBox) shows how to create a MessageBox with QMessageBox.
+* [OpenFileDialog](Dialogs/OpenFileDialog) shows how to create an OpenFileDialog with QFileDialog.
+* [SaveFileDialog](Dialogs/SaveFileDialog) shows how to create an SaveFileDialog with QFileDialog.
+
+## Windows
+
+* [MainWindow](Windows/MainWindow) shows how to create a window with QMainWindow.
+
+## Menus and toolbars
+
+* [MenuBar](MenusAndToolbars/MenuBar) shows how to create a menu bar with QMenu and QAction.
+* [StatusBar](MenusAndToolbars/StatusBar) shows how to create a status bar with QStatusBar.
+* [ToolBar](MenusAndToolbars/ToolBar) shows how to create a toolbar bar with QToolsBar.
+
+## Containers
+
+* [Frame](Containers/Frame) shows how to create a frame with QFrame.
+* [GroupBox](Containers/GroupBox) shows how to create a group box with QGroupBox.
+* [TabWidget](Containers/TabWidget) shows how to create a tab widget with QTabWidget.
 
 ## Controls
 
@@ -42,36 +67,14 @@ shows how to use Qt widgets only by programming code (c++17).
 * [TreeWidget](Controls/TreeWidget) shows how to create a three widget with QTreeWidget.
 * [Widget](Controls/ToggleButton) shows how to create a widget with QWidget.
 
-## Custom Controls
-
-* [Line](UserControls/Line) shows how to create a custom widget line with QFrame.
-
-## Containers
-
-* [Frame](Containers/Frame) shows how to create a frame with QFrame.
-* [GroupBox](Containers/GroupBox) shows how to create a group box with QGroupBox.
-* [TabWidget](Containers/TabWidget) shows how to create a tab widget with QTabWidget.
-* [Window](Containers/Window) shows how to create a window with QMainWindow.
-
-## Menus and toolbars
-
-* [MenuBar](MenusAndToolbars/MenuBar) shows how to create a menu bar with QMenu and QAction.
-* [StatusBar](MenusAndToolbars/StatusBar) shows how to create a status bar with QStatusBar.
-* [ToolBar](MenusAndToolbars/ToolBar) shows how to create a toolbar bar with QToolsBar.
-
 ## Components
 
 * [Cursors](Components/Cursors) shows how to associate cursor to widget with QCursor.
 * [Timer](Components/Timer) shows how to create a Timer with QTimer.
 
-## Dialogs
+## User Controls
 
-* [ColorDialog](Dialogs/ColorDialog) shows how to create a ColorDialog with QColorDalog.
-* [FolderBrowserDialog](FolderBrowserDialog) shows how to create a FolderBrowserDialog with QFileDialog.
-* [FontDialog](Dialogs/FontDialog) shows how to create a FontDialog with QFontDialog.
-* [MessageBox](Dialogs/MessageBox) shows how to create a MessageBox with QMessageBox.
-* [OpenFileDialog](Dialogs/OpenFileDialog) shows how to create an OpenFileDialog with QFileDialog.
-* [SaveFileDialog](Dialogs/SaveFileDialog) shows how to create an SaveFileDialog with QFileDialog.
+* [Line](UserControls/Line) shows how to create a custom widget line with QFrame.
 
 ## Others
 
