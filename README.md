@@ -5,7 +5,7 @@ shows how to use Qt widgets only by programming code (c++17).
 
 [![qt](docs/Pictures/qt_header.png)](https://gammasoft71.wixsite.com/gammasoft/qt)
 
-## [Hello World](HelloWorld/README.md)
+## [Hello World](Qt.Widgets/HelloWorld/README.md)
 
 * [HelloWorldEmoticons](Qt.Widgets/HelloWorlds/HelloWorldEmoticons) The classic first application "Hello, world!" with QLabel and emoticons.
 * [HelloWorldLabel](Qt.Widgets/HelloWorlds/HelloWorldLabel) The classic first application "Hello, world!" with QLabel.
