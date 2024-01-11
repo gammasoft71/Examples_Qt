@@ -7,5 +7,5 @@ SUBDIRS = \
     Containers \
     Controls \
     Components \
-    CustomControls \
+    UserControls \
     Others\

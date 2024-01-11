@@ -45,7 +45,7 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## Custom Controls
 
-* [Line](Qt.Widgets/CustomControls/Line) shows how to create a custom widget line with QFrame.
+* [Line](Qt.Widgets/UserControls/Line) shows how to create a custom widget line with QFrame.
 
 ## Containers
 
