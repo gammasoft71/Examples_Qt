@@ -5,7 +5,7 @@ shows how to use Qt widgets only by programming code (c++17).
 
 [![qt](docs/Pictures/qt_header.png)](https://gammasoft71.wixsite.com/gammasoft/qt)
 
-## Hello World
+## [Hello World](HelloWorld/README.md)
 
 * [HelloWorldEmoticons](Qt.Widgets/HelloWorlds/HelloWorldEmoticons) The classic first application "Hello, world!" with QLabel and emoticons.
 * [HelloWorldLabel](Qt.Widgets/HelloWorlds/HelloWorldLabel) The classic first application "Hello, world!" with QLabel.
@@ -108,8 +108,10 @@ Set "CMAKE_PREFIX_PATH" with Qt5 install path.
 mkdir build
 cd build
 cmake ..
-start ./Qt.Examples.sln
+start ./Qt.Widgets.sln
 ```
+
+Select any project and type Ctrl+F5 to build and run it.
 
 #### macOS :
 
@@ -117,8 +119,21 @@ start ./Qt.Examples.sln
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./Qt.Examples.xcodeproj
+open ./Qt.Widgets.xcodeproj
 ```
+
+Select any project and type Cmd+R to build and run it.
+
+#### Linux with Code::Blocks :
+
+``` cmake
+mkdir build
+cd build
+cmake .. -G "CodeBlocks - Unix Makefiles"
+xdg-open ./Qt.Widgets.cbp > /dev/null 2>&1
+```
+
+Select any project and type F10 to build and run it.
 
 #### Linux :
 
@@ -127,9 +142,5 @@ mkdir build
 cd build
 cmake .. 
 cmake --build . --config Debug
+./AnyProject
 ```
-
-
-## Remarks
-
-This project run with [Qt](https://www.qt.io) (and [CMake](https://cmake.org)).
