@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 # Solution
-project(CommonDialogs)
+project(Dialogs)
 
 # Dialogs
 add_subdirectory(AboutBox)

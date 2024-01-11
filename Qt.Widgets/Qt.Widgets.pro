@@ -2,10 +2,10 @@ TEMPLATE = subdirs
 SUBDIRS = \
     HelloWorlds \
     Applications \
-    Controls \
-    CustomControls \
-    Components \
-    ContainerControls \
-    CommonDialogs \
+    Dialogs \
     MenusAndToolbars \
+    ContainerControls \
+    Controls \
+    Components \
+    CustomControls \
     Others\
