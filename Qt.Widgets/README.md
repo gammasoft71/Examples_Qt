@@ -16,7 +16,7 @@ shows how to use Qt widgets only by programming code (c++17).
 * [Application](Applications/Application) shows how to create an application with QApplication.
 * [DarkMode](Applications/DarkMode) shows how to create a dark mode application.
 
-## Common Controls
+## Controls
 
 * [CheckBox](Controls/CheckBox) shows how to create a check box with QCheckBox.
 * [CheckedListWidget](Controls/CheckedListWidget) shows how to create a checked list widget with QListWidget.

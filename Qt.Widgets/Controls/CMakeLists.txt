@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.20)
 # Solution
 project(Controls)
 
-# Common Controls
+# Projects
 add_subdirectory(CheckBox)
 add_subdirectory(CheckedListWidget)
 add_subdirectory(ComboBox)
