@@ -48,10 +48,10 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## Containers
 
-* [Frame](ContainerControls/Frame) shows how to create a frame with QFrame.
-* [GroupBox](ContainerControls/GroupBox) shows how to create a group box with QGroupBox.
-* [TabWidget](ContainerControls/TabWidget) shows how to create a tab widget with QTabWidget.
-* [Window](ContainerControls/Window) shows how to create a window with QMainWindow.
+* [Frame](Containers/Frame) shows how to create a frame with QFrame.
+* [GroupBox](Containers/GroupBox) shows how to create a group box with QGroupBox.
+* [TabWidget](Containers/TabWidget) shows how to create a tab widget with QTabWidget.
+* [Window](Containers/Window) shows how to create a window with QMainWindow.
 
 ## Menus and toolbars
 

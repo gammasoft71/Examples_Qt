@@ -4,7 +4,7 @@ SUBDIRS = \
     Applications \
     Dialogs \
     MenusAndToolbars \
-    ContainerControls \
+    Containers \
     Controls \
     Components \
     CustomControls \
