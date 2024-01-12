@@ -8,6 +8,12 @@ The classic first application "Hello, World!" with QTextStream stream.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+```
+Hello, World!
+```
+
 ## Generate and build
 
 ### Qt Creator
@@ -55,10 +61,4 @@ cd build
 cmake .. 
 cmake --build . --config Debug
 ./HelloWorldConsole
-```
-
-## Output
-
-```
-Hello, World!
 ```
