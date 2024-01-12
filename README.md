@@ -27,6 +27,9 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## [Qt.Quick](Qt.Quick/README.md)
 
+* [HelloWorldsQuick](Qt.Quick/HelloWorldsQuick/README.md) contains Qt.Quick "Hello, world!" examples.
+* [ControlsQuick](Qt.Widgets/ControlsQuick/README.md) contains controls examples.
+
 ## [Qt.UnitTests](Qt.UnitTests/README.md)
 
 ## Download
