@@ -11,13 +11,13 @@
 
 ### Qt Creator
 
-To build these projects, open each HelloWorlds.pro file with Qt Creator.
+To build these projects, open each `HelloWorlds.pro` file with Qt Creator.
 
 ### CMake
 
 To build this project, open "Terminal" and type following lines:
 
-Set "CMAKE_PREFIX_PATH" with Qt5 install path.
+Set `CMAKE_PREFIX_PATH` with Qt5 install path.
 
 #### Windows :
 
