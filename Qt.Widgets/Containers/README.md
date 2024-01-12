@@ -1,4 +1,4 @@
-# Containers]
+# Containers
 
 [This folder](.) contains containers examples.
 
