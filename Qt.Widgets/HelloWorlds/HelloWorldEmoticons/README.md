@@ -1,6 +1,6 @@
 # HelloWorldEmoticons
 
-The classic first application "Hello, World!" with emoticons.
+The classic first application "Hello, world!" with QLabel and emoticons.
 
 ## Source
 
