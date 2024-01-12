@@ -8,22 +8,22 @@ shows how to use Qt widgets only by programming code (c++17).
 ## [Qt.Core](Qt.Core/README.md)
 
 * [HelloWorlds](Qt.Core/HelloWorlds/README.md) contains Qt.Core "Hello, World!" examples.
-* [Collections](Qt.Core/Collections/README.md) contains Qt collections examples.
-* [Console](Qt.Core/Console/README.md) contains Qt console examples.
-* [Strings](Qt.Core/Strings/README.md) contains QString examples.
+* [Collections](Qt.Core/Collections/README.md) contains collections examples.
+* [Console](Qt.Core/Console/README.md) contains console examples.
+* [Strings](Qt.Core/Strings/README.md) contains strings examples.
 
 ## [Qt.Widgets](Qt.Widgets/README.md)
 
-* [HelloWorlds](Qt.Widgets/HelloWorlds/README.md)
-* [Applications](Qt.Widgets/Applications/README.md)
-* [Dialogs](Qt.Widgets/Dialogs/README.md)
-* [Windows](Qt.Widgets/Windows/README.md)
-* [MenusAndToolbars](Qt.Widgets/MenusAndToolbars/README.md)
-* [Containers](Qt.Widgets/Containers/README.md)
-* [Controls](Qt.Widgets/Controls/README.md)
-* [Components](Qt.Widgets/Components/README.md)
-* [UserControls](Qt.Widgets/UserControls/README.md)
-* [Others](Qt.Widgets/Others/README.md)
+* [HelloWorlds](Qt.Widgets/HelloWorlds/README.md) contains Qt.Widgets "Hello, world!" examples.
+* [Applications](Qt.Widgets/Applications/README.md) contains applications examples.
+* [Dialogs](Qt.Widgets/Dialogs/README.md) contains dialogs examples.
+* [Windows](Qt.Widgets/Windows/README.md) contains windows examples.
+* [MenusAndToolbars](Qt.Widgets/MenusAndToolbars/README.md) contains menus and toolbars examples.
+* [Containers](Qt.Widgets/Containers/README.md) contains containers examples.
+* [Controls](Qt.Widgets/Controls/README.md) contains controls examples.
+* [Components](Qt.Widgets/Components/README.md) contains components examples.
+* [UserControls](Qt.Widgets/UserControls/README.md) contains user controls examples.
+* [Others](Qt.Widgets/Others/README.md) contains others examples.
 
 ## [Qt.Quick](Qt.Quick/README.md)
 
