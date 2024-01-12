@@ -2,7 +2,7 @@
 
 Shows how to use QTextStream stream with stdout and ANSI colors.
 
-## Source
+## Sources
 
 [src/ConsoleColor.cpp](src/ConsoleColor.cpp)
 
