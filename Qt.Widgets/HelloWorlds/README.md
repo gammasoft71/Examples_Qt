@@ -1,6 +1,6 @@
 # Hello World
 
-[This folder](.) contains Qt "Hello, world!" examples.
+[This folder](.) contains Qt.Widgets "Hello, world!" examples.
 
 * [HelloWorldEmoticons](HelloWorldEmoticons) The classic first application "Hello, world!" with QLabel and emoticons.
 * [HelloWorldLabel](HelloWorldLabel) The classic first application "Hello, world!" with QLabel.
