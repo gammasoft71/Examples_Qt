@@ -3,6 +3,7 @@
 [This folder](.) contains applications examples.
 
 * [Application](Application/README.md) shows how to create an application with QApplication.
+* [ApplicationAndException](ApplicationAndException/README.md) shows how to create an application with QApplication and how to manage exception.
 * [DarkMode](DarkMode/README.md) shows how to create a dark mode application.
 
 ## Generate and build
