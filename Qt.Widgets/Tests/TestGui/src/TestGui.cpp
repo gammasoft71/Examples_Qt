@@ -6,7 +6,7 @@
 #include <QComboBox>
 
 int main(int argc, char *argv[]) {
-  QApplication application(argc, argv);
+  auto application = QApplication {argc, argv};
 
   QMainWindow form;
   form.resize(300, 300);

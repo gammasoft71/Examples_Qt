@@ -6,7 +6,7 @@
 using namespace Examples;
 
 int main(int argc, char *argv[]) {
-  QApplication application(argc, argv);
+  auto application = QApplication {argc, argv};
 #if defined(Q_OS_MACOS)
   QIcon::setThemeSearchPaths(QStringList {":macos-icon-theme"});
   QIcon::setThemeName("macos-icon-theme");
@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
   QIcon::setThemeSearchPaths(QStringList {":windows-icon-theme"});
   QIcon::setThemeName("windows-icon-theme");
 #endif
-  Window1 window1;
+  auto window1 = Window1 {};
   window1.show();
   return application.exec();
 }

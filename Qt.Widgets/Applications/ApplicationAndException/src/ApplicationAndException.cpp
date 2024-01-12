@@ -25,7 +25,7 @@ public:
 int main(int argc, char *argv[]) {
   try {
     Application application(argc, argv);
-    Window1 window1;
+    auto window1 = Window1 {};
     window1.show();
     return application.exec();
   } catch(const std::exception& e) {
