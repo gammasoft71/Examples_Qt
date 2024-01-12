@@ -1,4 +1,4 @@
-# QOthers
+# Others
 
 [This folder](.) contains others examples.
 
