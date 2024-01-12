@@ -1,4 +1,4 @@
-# [HelloWorldsQuick
+# HelloWorldsQuick
 
 [This folder](.) contains Qt.Quick "Hello, world!" examples.
 
