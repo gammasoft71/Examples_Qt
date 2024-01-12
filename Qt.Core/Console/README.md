@@ -1,14 +1,15 @@
-# HelloWorlds
+# Console
 
 Contains Qt console "Hello, World!" examples.
 
-* [HelloWorldConsole](HelloWorldConsole/README.md) The classic first application "Hello, world!" with QTextStream stream.
+* [Console](Console/README.md) shows how to use QTextStream stream with stdin and stdout.
+* [ConsoleColor](ConsoleColor/README.md) shows how to use QTextStream stream with stdout and ANSI colors.
 
 ## Generate and build
 
 ### Qt Creator
 
-To build these projects, open `HelloWorlds.pro` file with Qt Creator.
+To build these projects, open `Console.pro` file with Qt Creator.
 
 ### CMake
 
@@ -22,7 +23,7 @@ Set `CMAKE_PREFIX_PATH` with Qt5 install path.
 mkdir build
 cd build
 cmake ..
-start ./HelloWorlds.sln
+start ./Console.sln
 ```
 
 #### macOS :
@@ -31,7 +32,7 @@ start ./HelloWorlds.sln
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./HelloWorlds.xcodeproj
+open ./Console.xcodeproj
 ```
 
 #### Linux with Code::Blocks :
@@ -40,7 +41,7 @@ open ./HelloWorlds.xcodeproj
 mkdir build
 cd build
 cmake .. -G "CodeBlocks - Unix Makefiles"
-xdg-open ./HelloWorlds.cbp > /dev/null 2>&1
+xdg-open ./Console.cbp > /dev/null 2>&1
 ```
 
 #### Linux :

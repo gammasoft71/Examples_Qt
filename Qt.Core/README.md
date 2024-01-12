@@ -6,12 +6,12 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## [HelloWorlds](HelloWorlds/README.md)
 
-* [HelloWorldConsole](HelloWorlds/HelloWorldConsole) The classic first application "Hello, World!" with QTextStream stream.
+* [HelloWorldConsole](HelloWorlds/HelloWorldConsole/README.md) The classic first application "Hello, World!" with QTextStream stream.
 
 ## [Console](Console/README.md)
 
-* [Console](Console/Console) shows how to use QTextStream stream with stdin and stdout.
-* [ConsoleColor](Console/ConsoleColor) shows how to use QTextStream stream with stdout and ANSI colors.
+* [Console](Console/Console/README.md) shows how to use QTextStream stream with stdin and stdout.
+* [ConsoleColor](Console/ConsoleColor/README.md) shows how to use QTextStream stream with stdout and ANSI colors.
 
 ## Generate and build
 

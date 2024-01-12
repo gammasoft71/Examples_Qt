@@ -7,8 +7,8 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## [Qt.Core](Qt.Core/README.md)
 
-* [HelloWorlds](Qt.Core/HelloWorlds/README.md)
-* [Collections](Qt.Core/Collections/README.md)
+* [HelloWorlds](Qt.Core/HelloWorlds/README.md) Contains Qt console "Hello, World!" examples.
+* [Collections](Qt.Core/Collections/README.md) 
 * [Console](Qt.Core/Console/README.md)
 * [Strings](Qt.Core/Strings/README.md)
 
