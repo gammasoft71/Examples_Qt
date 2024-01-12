@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 3.20)
 
 # Project
 project(PictureBox2)
-find_package(Qt5Widgets CONFIG REQUIRED)
+find_package(Qt6Widgets CONFIG REQUIRED)
+if (NOT Qt6_FOUND)
+  find_package(Qt5Widgets CONFIG REQUIRED)
+endif()
 
 # Options
 set(CMAKE_AUTOMOC ON)
@@ -14,5 +17,5 @@ set(CMAKE_AUTORCC ON)
 
 # Application
 add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE src/PictureBox2.cpp src/PictureBox2.h PictureBox2.qrc)
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
+target_link_libraries(${PROJECT_NAME} Qt::Widgets)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Widgets/Controls")

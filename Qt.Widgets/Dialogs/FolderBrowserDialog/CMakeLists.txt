@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 3.20)
 
 # Project
 project(FolderBrowserDialog)
-find_package(Qt5Widgets CONFIG REQUIRED)
+find_package(Qt6Widgets CONFIG REQUIRED)
+if (NOT Qt6_FOUND)
+  find_package(Qt5Widgets CONFIG REQUIRED)
+endif()
 
 # Options
 set(CMAKE_AUTOMOC ON)
@@ -13,5 +16,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
 add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE src/FolderBrowserDialog.cpp src/FolderBrowserDialog.h)
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
+target_link_libraries(${PROJECT_NAME} Qt::Widgets)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Qt.Widgets/Dialogs")

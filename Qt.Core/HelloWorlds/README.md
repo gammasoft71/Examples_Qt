@@ -14,7 +14,7 @@ To build these projects, open `HelloWorlds.pro` file with Qt Creator.
 
 To build this project, open "Terminal" and type following lines:
 
-Set `CMAKE_PREFIX_PATH` with Qt5 install path.
+Set `CMAKE_PREFIX_PATH` with Qt6 install path.
 
 #### Windows :
 
