@@ -12,7 +12,7 @@ Shows how to use Qt UnitTests only by programming code (c++17).
 
 ### Qt Creator
 
-To build these projects, open `Qt.Core.pro` file with Qt Creator.
+To build these projects, open `Qt.UnitTest.pro` file with Qt Creator.
 
 ### CMake
 
@@ -26,7 +26,7 @@ Set `CMAKE_PREFIX_PATH` with Qt6 install path.
 mkdir build
 cd build
 cmake ..
-start ./Qt.Core.sln
+start ./Qt.UnitTest.sln
 ```
 
 #### macOS :
@@ -35,7 +35,7 @@ start ./Qt.Core.sln
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./Qt.Core.xcodeproj
+open ./Qt.UnitTest.xcodeproj
 ```
 
 #### Linux with Code::Blocks :
@@ -44,7 +44,7 @@ open ./Qt.Core.xcodeproj
 mkdir build
 cd build
 cmake .. -G "CodeBlocks - Unix Makefiles"
-xdg-open ./Qt.Core.cbp > /dev/null 2>&1
+xdg-open ./Qt.UnitTest.cbp > /dev/null 2>&1
 ```
 
 #### Linux :
