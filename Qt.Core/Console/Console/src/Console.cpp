@@ -7,6 +7,7 @@ int main() {
   out << "World!" << Qt::endl;
   out << "Enter your name: ";
   out.flush();
+  
   auto in = QTextStream {stdin};
   auto name = QString {};
   in >> name;
