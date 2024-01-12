@@ -81,18 +81,11 @@ shows how to use Qt widgets only by programming code (c++17).
 * [LCDNumber2](Others/LCDNumber2/README.md) shows how to create a LCD number with QLCDNumber.
 * [Wiggly](Others/Wiggly/README.md) shows how to animate a user control using QBasicTimer and timerEvent(). In addition, the example demonstrates how to use QFontMetrics to determine the size of text on screen.
 
-## Download
-
-``` shell
-git clone https://github.com/gammasoft71/Examples_Qt.git
-
-```
-
 ## Generate and build
 
 ### Qt Creator
 
-To build these projects, open `Widgets.pro` file with Qt Creator.
+To build these projects, open `Qt.Widgets.pro` file with Qt Creator.
 
 ### CMake
 
