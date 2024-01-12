@@ -1,13 +1,12 @@
 # Console
 
-shows how to use xtd::console::in and xtd::console::out streams.
+Shows how to use QTextStream stream with stdin and stdout.
 
 ## Source
 
-[Console.cpp](src/Console.cpp)
+[src/Console.cpp](src/Console.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
-
 
 ## Generate and build
 
