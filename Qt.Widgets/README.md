@@ -19,7 +19,7 @@ shows how to use Qt widgets only by programming code (c++17).
 ## [Dialogs](Dialogs/README.md)
 
 * [ColorDialog](Dialogs/ColorDialog/README.md) shows how to create a ColorDialog with QColorDalog.
-* [FolderBrowserDialog](FolderBrowserDialog/README.md) shows how to create a FolderBrowserDialog with QFileDialog.
+* [FolderBrowserDialog](Dialogs/FolderBrowserDialog/README.md) shows how to create a FolderBrowserDialog with QFileDialog.
 * [FontDialog](Dialogs/FontDialog/README.md) shows how to create a FontDialog with QFontDialog.
 * [MessageBox](Dialogs/MessageBox/README.md) shows how to create a MessageBox with QMessageBox.
 * [OpenFileDialog](Dialogs/OpenFileDialog/README.md) shows how to create an OpenFileDialog with QFileDialog.
