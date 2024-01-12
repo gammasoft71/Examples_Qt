@@ -3,4 +3,4 @@ SUBDIRS = \
     Qt.Core \
     Qt.Tests \
     Qt.Widgets \
-    #Qt.Quick \
+    #Qt.Quick

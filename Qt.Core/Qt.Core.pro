@@ -4,3 +4,4 @@ SUBDIRS = \
     Console \
     Collections \
     Strings \
+    Tests

@@ -3,4 +3,4 @@ SUBDIRS = \
     HelloWorldEmoticons \
     HelloWorldLabel \
     HelloWorldMessageBox \
-    HelloWorldPaint \
+    HelloWorldPaint

@@ -9,4 +9,5 @@ SUBDIRS = \
     Controls \
     Components \
     UserControls \
-    Others\
+    Others \
+    Tests

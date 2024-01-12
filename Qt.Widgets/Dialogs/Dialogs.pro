@@ -7,4 +7,4 @@ SUBDIRS = \
     InputDialog \
     MessageBox \
     OpenFileDialog \
-    SaveFileDialog \
+    SaveFileDialog

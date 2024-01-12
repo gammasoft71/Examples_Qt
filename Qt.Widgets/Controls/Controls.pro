@@ -22,4 +22,4 @@ SUBDIRS = \
     ToggleButton \
     TreeView \
     TreeWidget \
-    Widget \
+    Widget
