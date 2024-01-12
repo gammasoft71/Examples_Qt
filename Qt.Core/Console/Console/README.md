@@ -2,7 +2,7 @@
 
 Shows how to use QTextStream stream with stdin and stdout.
 
-## Source
+## Sources
 
 [src/Console.cpp](src/Console.cpp)
 
