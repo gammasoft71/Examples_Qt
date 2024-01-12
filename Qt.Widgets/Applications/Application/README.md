@@ -1,6 +1,6 @@
 # Application
 
-shows how to create an application with QApplication.
+Shows how to create an application with QApplication.
 
 ## Sources
 
