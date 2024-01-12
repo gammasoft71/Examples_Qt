@@ -11,7 +11,7 @@ shows how to use Qt widgets only by programming code (c++17).
 * [HelloWorldMessageBox](HelloWorlds/HelloWorldMessageBox/README.md) The classic first application "Hello, world!" with QMessageBox.
 * [HelloWorldPaint](HelloWorlds/HelloWorldPaint/README.md) The classic first application "Hello, world!" with QPainter.
 
-## [Application](Application/README.md)
+## [Applications](Applications/README.md)
 
 * [Application](Applications/Application/README.md) shows how to create an application with QApplication.
 * [DarkMode](Applications/DarkMode/README.md) shows how to create a dark mode application.
