@@ -1,4 +1,4 @@
-# Qt Examples
+# Qt.Widgets
 
 shows how to use Qt widgets only by programming code (c++17).
 
@@ -92,13 +92,13 @@ git clone https://github.com/gammasoft71/Examples_Qt.git
 
 ### Qt Creator
 
-To build these projects, open each project.pro file with Qt Creator.
+To build these projects, open `Widgets.pro` file with Qt Creator.
 
 ### CMake
 
 To build this project, open "Terminal" and type following lines:
 
-Set "CMAKE_PREFIX_PATH" with Qt6 install path.
+Set `CMAKE_PREFIX_PATH` with Qt6 install path.
 
 #### Windows :
 
@@ -106,7 +106,7 @@ Set "CMAKE_PREFIX_PATH" with Qt6 install path.
 mkdir build
 cd build
 cmake ..
-start ./Qt.Examples.sln
+start ./Qt.Widgets.sln
 ```
 
 #### macOS :
@@ -115,7 +115,16 @@ start ./Qt.Examples.sln
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./Qt.Examples.xcodeproj
+open ./Qt.Widgets.xcodeproj
+```
+
+#### Linux with Code::Blocks :
+
+``` cmake
+mkdir build
+cd build
+cmake .. -G "CodeBlocks - Unix Makefiles"
+xdg-open ./Qt.Widgets.cbp > /dev/null 2>&1
 ```
 
 #### Linux :
@@ -125,6 +134,7 @@ mkdir build
 cd build
 cmake .. 
 cmake --build . --config Debug
+./AnyProject
 ```
 
 ## Remarks
