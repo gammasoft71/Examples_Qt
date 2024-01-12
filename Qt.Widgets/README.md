@@ -127,7 +127,6 @@ cmake ..
 cmake --build . --config Debug
 ```
 
-
 ## Remarks
 
 This project run with [Qt](https://www.qt.io) (and [CMake](https://cmake.org)).
