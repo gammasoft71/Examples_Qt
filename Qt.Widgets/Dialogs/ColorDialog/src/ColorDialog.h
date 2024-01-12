@@ -13,6 +13,8 @@ namespace Examples {
       connect(&button, &QPushButton::clicked, [&] {
         QColorDialog colorDialog;
         colorDialog.setCurrentColor(palette().color(QPalette::Window));
+        colorDialog.setOption(QColorDialog::ShowAlphaChannel);
+        colorDialog.setParent(this);
         if (colorDialog.exec() == QDialog::Accepted)
           setPalette({colorDialog.selectedColor()});
       });
