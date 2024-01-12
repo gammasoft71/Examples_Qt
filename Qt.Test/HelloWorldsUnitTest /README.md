@@ -1,6 +1,6 @@
 # HelloWorldsUnitTest
 
-[This folder](.) contains Qt.UnitTest "Hello, world!" examples.
+[This folder](.) contains Qt.Test "Hello, world!" examples.
 
 * [HelloWorldUnitTest](HelloWorldUnitTest/README.md) The classic first application "Hello, World!".
 

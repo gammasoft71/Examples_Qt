@@ -30,9 +30,9 @@ shows how to use Qt widgets only by programming code (c++17).
 * [HelloWorldsQuick](Qt.Quick/HelloWorldsQuick/README.md) contains Qt.Quick "Hello, world!" examples.
 * [ControlsQuick](Qt.Quick/ControlsQuick/README.md) contains controls examples.
 
-## [Qt.UnitTests](Qt.UnitTests/README.md)
+## [Qt.Test](Qt.Test/README.md)
 
-* [HelloWorldsUnitTest](Qt.UnitTests/HelloWorldsUnitTest/README.md) contains Qt.UnitTest "Hello, world!" examples.
+* [HelloWorldsUnitTest](Qt.Test/HelloWorldsUnitTest/README.md) contains Qt.Test "Hello, world!" examples.
 
 ## Download
 

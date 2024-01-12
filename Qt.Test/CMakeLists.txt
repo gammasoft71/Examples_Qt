@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 # Solution
-project(Qt.UnitTests)
+project(Qt.Test)
 
 # Projects
 #add_subdirectory(TestConsole)
