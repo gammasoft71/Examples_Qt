@@ -16,26 +16,26 @@ namespace Examples {
   public:
     Window1() {
       QMenu* menuFile = menuBar()->addMenu("&File");
-      menuFile->addAction(style()->standardIcon(QStyle::StandardPixmap::SP_FileIcon), "&New", this, &Window1::OnMenuFileNewClick, QKeySequence(Qt::CTRL | Qt::Key_N));
-      menuFile->addAction(style()->standardIcon(QStyle::StandardPixmap::SP_DirOpenIcon), "&Open", this, &Window1::OnMenuFileOpenClick, QKeySequence(Qt::CTRL | Qt::Key_O));
+      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_FileIcon), "&New", QKeySequence(Qt::CTRL | Qt::Key_N), this, &Window1::OnMenuFileNewClick);
+      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_DirOpenIcon), "&Open", QKeySequence(Qt::CTRL | Qt::Key_O), this, &Window1::OnMenuFileOpenClick);
       menuFile->addSeparator();
-      menuFile->addAction(style()->standardIcon(QStyle::StandardPixmap::SP_DialogSaveButton), "&Save", this, &Window1::OnMenuFileSaveClick, QKeySequence(Qt::CTRL | Qt::Key_S));
+      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_DialogSaveButton), "&Save", QKeySequence(Qt::CTRL | Qt::Key_S), this, &Window1::OnMenuFileSaveClick);
       menuFile->addAction("Save &As...", this, &Window1::OnMenuFileSaveAsClick);
       menuFile->addSeparator();
-      menuFile->addAction(QIcon::fromTheme("document-print"), "&Print", this, &Window1::OnMenuFileSaveClick, QKeySequence(Qt::CTRL | Qt::Key_P));
+      menuAddAction(menuFile, QIcon::fromTheme("document-print"), "&Print", QKeySequence(Qt::CTRL | Qt::Key_P), this, &Window1::OnMenuFileSaveClick);
       menuFile->addAction(QIcon::fromTheme("document-print-preview"), "Print preview");
       menuFile->addSeparator();
-      menuFile->addAction("&Exit", this, &Window1::OnMenuFileCloseClick, QKeySequence(Qt::ALT | Qt::Key_F4));
+      menuAddAction(menuFile, "&Exit", QKeySequence(Qt::ALT | Qt::Key_F4), this, &Window1::OnMenuFileCloseClick);
 
       QMenu* menuEdit = menuBar()->addMenu("&Edit");
-      menuEdit->addAction("&Undo", this, &Window1::OnMenuEditUndoClick, QKeySequence(Qt::CTRL | Qt::Key_Z));
-      menuEdit->addAction("&Redo", this, &Window1::OnMenuEditRedoClick, QKeySequence(Qt::CTRL | Qt::Key_Y));
+      menuAddAction(menuEdit, "&Undo", QKeySequence(Qt::CTRL | Qt::Key_Z), this, &Window1::OnMenuEditUndoClick);
+      menuAddAction(menuEdit, "&Redo", QKeySequence(Qt::CTRL | Qt::Key_Y), this, &Window1::OnMenuEditRedoClick);
       menuEdit->addSeparator();
-      menuEdit->addAction(QIcon::fromTheme("edit-cut"), "&Cut", this, &Window1::OnMenuEditCutClick, QKeySequence(Qt::CTRL | Qt::Key_X));
-      menuEdit->addAction(QIcon::fromTheme("edit-copy"), "&Copy", this, &Window1::OnMenuEditCopyClick, QKeySequence(Qt::CTRL | Qt::Key_C));
-      menuEdit->addAction(QIcon::fromTheme("edit-paste"), "&Paste", this, &Window1::OnMenuEditPasteClick, QKeySequence(Qt::CTRL | Qt::Key_V));
+      menuAddAction(menuEdit, QIcon::fromTheme("edit-cut"), "&Cut", QKeySequence(Qt::CTRL | Qt::Key_X), this, &Window1::OnMenuEditCutClick);
+      menuAddAction(menuEdit, QIcon::fromTheme("edit-copy"), "&Copy", QKeySequence(Qt::CTRL | Qt::Key_C), this, &Window1::OnMenuEditCopyClick);
+      menuAddAction(menuEdit, QIcon::fromTheme("edit-paste"), "&Paste", QKeySequence(Qt::CTRL | Qt::Key_V), this, &Window1::OnMenuEditPasteClick);
       menuEdit->addSeparator();
-      menuEdit->addAction("Select &All", this, &Window1::OnMenuEditSelectAllClick, QKeySequence(Qt::CTRL | Qt::Key_A));
+      menuAddAction(menuEdit, "Select &All", QKeySequence(Qt::CTRL | Qt::Key_A), this, &Window1::OnMenuEditSelectAllClick);
 
       QMenu* menuHelp = menuBar()->addMenu("&Help");
       menuHelp->addAction("&About", this, &Window1::OnMenuHelpAboutClick);
@@ -46,6 +46,26 @@ namespace Examples {
     }
 
   private:
+#if QT_VERSION >= 0x060000
+    template<class Obj, typename Func1>
+    static void menuAddAction(QMenu* menu, const QIcon &icon, const QString &text, const QKeySequence &shortcut, const Obj *object, Func1 slot) {
+      menu->addAction(icon, text, shortcut, object, slot);
+    }
+    template<class Obj, typename Func1>
+    static void menuAddAction(QMenu* menu, const QString &text, const QKeySequence &shortcut, const Obj *object, Func1 slot) {
+      menu->addAction(text, shortcut, object, slot);
+    }
+#else
+    template<class Obj, typename Func1>
+    static void menuAddAction(QMenu* menu, const QIcon &icon, const QString &text, const QKeySequence &shortcut, const Obj *object, Func1 slot) {
+      menu->addAction(icon, text, object, slot, shortcut);
+    }
+    template<class Obj, typename Func1>
+    static void menuAddAction(QMenu* menu, const QString &text, const QKeySequence &shortcut, const Obj *object, Func1 slot) {
+      menu->addAction(text, object, slot, shortcut);
+    }
+#endif
+    
     void OnMenuFileNewClick() {qDebug() << "MainMenu/File/New";}
     void OnMenuFileOpenClick() {qDebug() << "MainMenu/File/Open";}
     void OnMenuFileSaveClick() {qDebug() << "MainMenu/File/Save";}
