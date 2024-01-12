@@ -1,6 +1,6 @@
 # Qt.UnitTest
 
-Shows how to use Qt UnitTests only by programming code (c++17).
+Contains Qt.UnitTest "Hello, world!" examples.
 
 [![qt](../docs/Pictures/qt_header.png)](https://gammasoft71.wixsite.com/gammasoft/qt)
 
