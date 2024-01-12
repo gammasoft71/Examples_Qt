@@ -2,10 +2,10 @@
 
 [This folder](.) contains Qt.Widgets "Hello, world!" examples.
 
-* [HelloWorldEmoticons](HelloWorldEmoticons) The classic first application "Hello, world!" with QLabel and emoticons.
-* [HelloWorldLabel](HelloWorldLabel) The classic first application "Hello, world!" with QLabel.
-* [HelloWorldMessageBox](HelloWorldMessageBox) The classic first application "Hello, world!" with QMessageBox.
-* [HelloWorldPaint](HelloWorldPaint) The classic first application "Hello, world!" with QPainter.
+* [HelloWorldEmoticons](HelloWorldEmoticons/README.md) The classic first application "Hello, world!" with QLabel and emoticons.
+* [HelloWorldLabel](HelloWorldLabel/README.md) The classic first application "Hello, world!" with QLabel.
+* [HelloWorldMessageBox](HelloWorldMessageBox/README.md) The classic first application "Hello, world!" with QMessageBox.
+* [HelloWorldPaint](HelloWorldPaint/README.md) The classic first application "Hello, world!" with QPainter.
 
 ## Generate and build
 
