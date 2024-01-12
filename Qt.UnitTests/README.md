@@ -1,17 +1,12 @@
-# Qt.Core
+# Qt.UnitTest
 
-shows how to use Qt widgets only by programming code (c++17).
+Shows how to use Qt UnitTests only by programming code (c++17).
 
 [![qt](../docs/Pictures/qt_header.png)](https://gammasoft71.wixsite.com/gammasoft/qt)
 
-## [HelloWorlds](HelloWorlds/README.md)
+## [HelloWorldsUnitTest](HelloWorldsUnitTest/README.md)
 
-* [HelloWorldConsole](HelloWorlds/HelloWorldConsole/README.md) The classic first application "Hello, World!" with QTextStream stream.
-
-## [Console](Console/README.md)
-
-* [Console](Console/Console/README.md) shows how to use QTextStream stream with stdin and stdout.
-* [ConsoleColor](Console/ConsoleColor/README.md) shows how to use QTextStream stream with stdout and ANSI colors.
+* [HelloWorldUnitTest](HelloWorldsUnitTest/HelloWorldUnitTest/README.md) The classic first application "Hello, World!".
 
 ## Generate and build
 
