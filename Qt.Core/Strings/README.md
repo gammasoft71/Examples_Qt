@@ -4,7 +4,7 @@ Contains string examples.
 
 * [StringSplit](StringSplit/README.md) shows how to use QString::split method.
 * [StringUnicode](StringUnicode/README.md) shows how to use QTextStream and QString with unicode.
-* [StringUnicode2](StringUnicode/README.md) shows how to use QTextStream and QString with unicode.
+* [StringUnicode2](StringUnicode2/README.md) shows how to use QTextStream and QString with unicode.
 
 ## Generate and build
 

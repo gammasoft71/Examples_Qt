@@ -17,6 +17,12 @@ shows how to use Qt widgets only by programming code (c++17).
 * [Console](Console/Console/README.md) shows how to use QTextStream stream with stdin and stdout.
 * [ConsoleColor](Console/ConsoleColor/README.md) shows how to use QTextStream stream with stdout and ANSI colors.
 
+## [Strings](Strings/README.md)
+
+* [StringSplit](Strings/StringSplit/README.md) shows how to use QString::split method.
+* [StringUnicode](Strings/StringUnicode/README.md) shows how to use QTextStream and QString with unicode.
+* [StringUnicode2](Strings/StringUnicode2/README.md) shows how to use QTextStream and QString with unicode.
+
 ## Generate and build
 
 ### Qt Creator
