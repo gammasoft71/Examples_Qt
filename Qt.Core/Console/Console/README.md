@@ -20,13 +20,13 @@ Good day, James!
 
 ### Qt Creator
 
-To build these projects, open each project.pro file with Qt Creator.
+To build these projects, open `Console.pro` file with Qt Creator.
 
 ### CMake
 
 To build this project, open "Terminal" and type following lines:
 
-Set "CMAKE_PREFIX_PATH" with Qt6 install path.
+Set `CMAKE_PREFIX_PATH` with Qt6 install path.
 
 #### Windows :
 
