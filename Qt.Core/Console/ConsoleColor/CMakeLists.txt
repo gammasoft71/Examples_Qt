@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.20)
 
 # Project
 project(ConsoleColor)
-find_package(Qt6Widgets CONFIG REQUIRED)
+find_package(Qt6Core CONFIG REQUIRED)
 if (NOT Qt6_FOUND)
-  find_package(Qt5Widgets CONFIG REQUIRED)
+  find_package(Qt5Core CONFIG REQUIRED)
 endif()
 
 # Options
