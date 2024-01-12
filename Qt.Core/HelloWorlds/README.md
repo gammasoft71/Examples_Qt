@@ -1,6 +1,6 @@
 # HelloWorlds
 
-Contains Qt console "Hello, World!" examples.
+Contains Qt.Core "Hello, World!" examples.
 
 * [HelloWorldConsole](HelloWorldConsole/README.md) The classic first application "Hello, world!" with QTextStream stream.
 
