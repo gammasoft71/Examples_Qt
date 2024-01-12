@@ -11,12 +11,12 @@ shows how to use Qt widgets only by programming code (c++17).
 * [HelloWorldMessageBox](HelloWorlds/HelloWorldMessageBox/README.md) The classic first application "Hello, world!" with QMessageBox.
 * [HelloWorldPaint](HelloWorlds/HelloWorldPaint/README.md) The classic first application "Hello, world!" with QPainter.
 
-## Application
+## [Application](Application/README.md)
 
 * [Application](Applications/Application/README.md) shows how to create an application with QApplication.
 * [DarkMode](Applications/DarkMode/README.md) shows how to create a dark mode application.
 
-## Dialogs
+## [Dialogs](Dialogs/README.md)
 
 * [ColorDialog](Dialogs/ColorDialog/README.md) shows how to create a ColorDialog with QColorDalog.
 * [FolderBrowserDialog](FolderBrowserDialog/README.md) shows how to create a FolderBrowserDialog with QFileDialog.
@@ -25,23 +25,23 @@ shows how to use Qt widgets only by programming code (c++17).
 * [OpenFileDialog](Dialogs/OpenFileDialog/README.md) shows how to create an OpenFileDialog with QFileDialog.
 * [SaveFileDialog](Dialogs/SaveFileDialog/README.md) shows how to create an SaveFileDialog with QFileDialog.
 
-## Windows
+## [Windows](Windows/README.md)
 
 * [MainWindow](Windows/MainWindow/README.md) shows how to create a window with QMainWindow.
 
-## Menus and toolbars
+## [Menus and toolbars](MenusAndToolbars/README.md)
 
 * [MenuBar](MenusAndToolbars/MenuBar/README.md) shows how to create a menu bar with QMenu and QAction.
 * [StatusBar](MenusAndToolbars/StatusBar/README.md) shows how to create a status bar with QStatusBar.
 * [ToolBar](MenusAndToolbars/ToolBar/README.md) shows how to create a toolbar bar with QToolsBar.
 
-## Containers
+## [Containers](Containers/README.md)
 
 * [Frame](Containers/Frame/README.md) shows how to create a frame with QFrame.
 * [GroupBox](Containers/GroupBox/README.md) shows how to create a group box with QGroupBox.
 * [TabWidget](Containers/TabWidget/README.md) shows how to create a tab widget with QTabWidget.
 
-## Controls
+## [Controls](Controls/README.md)
 
 * [CheckBox](Controls/CheckBox/README.md) shows how to create a check box with QCheckBox.
 * [CheckedListWidget](Controls/CheckedListWidget/README.md) shows how to create a checked list widget with QListWidget.
@@ -67,16 +67,16 @@ shows how to use Qt widgets only by programming code (c++17).
 * [TreeWidget](Controls/TreeWidget/README.md) shows how to create a three widget with QTreeWidget.
 * [Widget](Controls/ToggleButton/README.md) shows how to create a widget with QWidget.
 
-## Components
+## [Components](Components/README.md)
 
 * [Cursors](Components/Cursors/README.md) shows how to associate cursor to widget with QCursor.
 * [Timer](Components/Timer/README.md) shows how to create a Timer with QTimer.
 
-## User Controls
+## [User Controls](UserControls/README.md)
 
 * [Line](UserControls/Line/README.md) shows how to create a custom widget line with QFrame.
 
-## Others
+## [Others](Others/README.md)
 
 * [LCDNumber2](Others/LCDNumber2/README.md) shows how to create a LCD number with QLCDNumber.
 * [Wiggly](Others/Wiggly/README.md) shows how to animate a user control using QBasicTimer and timerEvent(). In addition, the example demonstrates how to use QFontMetrics to determine the size of text on screen.
