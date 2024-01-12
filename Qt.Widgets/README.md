@@ -14,6 +14,7 @@ shows how to use Qt widgets only by programming code (c++17).
 ## [Applications](Applications/README.md)
 
 * [Application](Applications/Application/README.md) shows how to create an application with QApplication.
+* [ApplicationAndException](ApplicationAndException/Application/README.md) shows how to create an application with QApplication and how to manage exception.
 * [DarkMode](Applications/DarkMode/README.md) shows how to create a dark mode application.
 
 ## [Dialogs](Dialogs/README.md)
