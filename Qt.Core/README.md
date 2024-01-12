@@ -8,6 +8,10 @@ shows how to use Qt widgets only by programming code (c++17).
 
 * [HelloWorldConsole](HelloWorlds/HelloWorldConsole/README.md) The classic first application "Hello, World!" with QTextStream stream.
 
+# [Collections](Collections/README.md)
+
+* [List](Collections/List/README.md) shows how to use QList.
+
 ## [Console](Console/README.md)
 
 * [Console](Console/Console/README.md) shows how to use QTextStream stream with stdin and stdout.
