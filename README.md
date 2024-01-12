@@ -32,8 +32,7 @@ shows how to use Qt widgets only by programming code (c++17).
 ## Download
 
 ``` shell
-git clone https://github.com/gammasoft71/Examples_Qt.git
-
+git clone https://github.com/gammasoft71/Examples_Qt
 ```
 
 ## Generate and build
