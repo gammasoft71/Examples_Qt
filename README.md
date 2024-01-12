@@ -32,6 +32,8 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## [Qt.UnitTests](Qt.UnitTests/README.md)
 
+* [HelloWorldsUnitTest](Qt.UnitTests/HelloWorldsUnitTest/README.md) contains Qt.UnitTest "Hello, world!" examples.
+
 ## Download
 
 ``` shell
