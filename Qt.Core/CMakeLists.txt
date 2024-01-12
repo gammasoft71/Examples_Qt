@@ -5,8 +5,7 @@ project(Qt.Core)
 
 # Projects
 add_subdirectory(HelloWorlds)
+add_subdirectory(Collections)
 add_subdirectory(Console)
-add_subdirectory(List)
-add_subdirectory(StringSplit)
-add_subdirectory(StringUnicode)
-add_subdirectory(StringUnicode2)
+add_subdirectory(Strings)
+add_subdirectory(Tests)
