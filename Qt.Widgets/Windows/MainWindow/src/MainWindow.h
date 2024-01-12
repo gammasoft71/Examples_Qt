@@ -37,7 +37,7 @@ namespace Examples {
   private:
     QFrame frame;
     QPushButton buttonClose {&frame};
-    QPushButton buttonExit {&frame};
     QPushButton buttonQuit {&frame};
+    QPushButton buttonExit {&frame};
   };
 }
