@@ -2,7 +2,7 @@
 
 The classic first application "Hello, World!" with QTextStream stream.
 
-## Source
+## Sources
 
 [src/HelloWorldConsole.cpp](src/HelloWorldConsole.cpp)
 
