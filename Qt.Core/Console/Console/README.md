@@ -8,6 +8,14 @@ Shows how to use QTextStream stream with stdin and stdout.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+```
+Hello World!
+Enter your name: James
+Good day, James!
+```
+
 ## Generate and build
 
 ### Qt Creator
@@ -56,13 +64,3 @@ cmake ..
 cmake --build . --config Debug
 ./Console
 ```
-
-## Output
-
-```
-Hello World!
-Enter your name: James
-Good day, James!
-```
-
-
