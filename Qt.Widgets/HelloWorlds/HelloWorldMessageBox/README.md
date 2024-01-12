@@ -4,9 +4,9 @@ The classic first application "Hello, world!" with QMessageBox.
 
 ## Sources
 
-[src/HelloWorldLabel.h](src/HelloWorldMessageBox.h)
+[src/HelloWorldMessageBox.h](src/HelloWorldMessageBox.h)
 
-[src/HelloWorldLabel.cpp](src/HelloWorldMessageBox.cpp)
+[src/HelloWorldMessageBox.cpp](src/HelloWorldMessageBox.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
