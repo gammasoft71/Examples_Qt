@@ -2,7 +2,7 @@
 
 The classic first application "Hello, world!" with QLabel and emoticons.
 
-## Source
+## Sources
 
 [src/HelloWorldEmoticons.cpp](src/HelloWorldEmoticons.cpp)
 
