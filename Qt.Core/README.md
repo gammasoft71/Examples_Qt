@@ -59,4 +59,5 @@ mkdir build
 cd build
 cmake .. 
 cmake --build . --config Debug
+./AnyProject
 ```
