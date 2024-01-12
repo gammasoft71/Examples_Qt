@@ -8,6 +8,10 @@ The classic first application "Hello, world!" with QLabel and emoticons.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![Screenshot](../../../docs/Pictures/HelloWorldEmoticons.png)
+
 ## Generate and build
 
 ### Qt Creator
@@ -56,7 +60,3 @@ cmake ..
 cmake --build . --config Debug
 ./HelloWorldEmoticons
 ```
-
-## Output
-
-![Screenshot](../../../docs/Pictures/HelloWorldEmoticons.png)
