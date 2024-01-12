@@ -1,6 +1,6 @@
 # Console
 
-Contains Qt console examples.
+Contains console examples.
 
 * [Console](Console/README.md) shows how to use QTextStream stream with stdin and stdout.
 * [ConsoleColor](ConsoleColor/README.md) shows how to use QTextStream stream with stdout and ANSI colors.
