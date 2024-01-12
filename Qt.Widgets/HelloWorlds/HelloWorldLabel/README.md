@@ -1,4 +1,4 @@
-# HelloWorldEmoticons
+# HelloWorldLabel
 
 The classic first application "Hello, world!" with QLabel.
 
