@@ -4,6 +4,8 @@ The classic first application "Hello, world!" with QLabel and emoticons.
 
 ## Sources
 
+[src/HelloWorldEmoticons.h](src/HelloWorldEmoticons.h)
+
 [src/HelloWorldEmoticons.cpp](src/HelloWorldEmoticons.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
