@@ -2,7 +2,7 @@
 
 [This folder](.) contains others examples.
 
-* [ButtonWithStyleSheets](ButtonWithStyleSheets/README.md) show how to use stylesheet with QPushButton.
+* [ButtonWithStyleSheet](ButtonWithStyleSheet/README.md) show how to use stylesheet with QPushButton.
 * [InputDialogMultiline](InputDialogMultiline/README.md) show how to use multiline input dialog with QInputDialog.
 * [InputDialogPassword](InputDialogPassword/README.md) show how to use password input dialog with QInputDialog.
 * [LCDNumber2](LCDNumber2/README.md) shows how to create a LCD number with QLCDNumber.
