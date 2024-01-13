@@ -19,12 +19,13 @@ shows how to use Qt widgets only by programming code (c++17).
 
 ## [Dialogs](Dialogs/README.md)
 
-* [ColorDialog](Dialogs/ColorDialog/README.md) shows how to create a ColorDialog with QColorDalog.
-* [FolderBrowserDialog](Dialogs/FolderBrowserDialog/README.md) shows how to create a FolderBrowserDialog with QFileDialog.
-* [FontDialog](Dialogs/FontDialog/README.md) shows how to create a FontDialog with QFontDialog.
-* [MessageBox](Dialogs/MessageBox/README.md) shows how to create a MessageBox with QMessageBox.
-* [OpenFileDialog](Dialogs/OpenFileDialog/README.md) shows how to create an OpenFileDialog with QFileDialog.
-* [SaveFileDialog](Dialogs/SaveFileDialog/README.md) shows how to create an SaveFileDialog with QFileDialog.
+* [AboutBox](Dialogs/AboutBox/README.md) shows how to create an about box with QMessageBox.
+* [ColorDialog](Dialogs/ColorDialog/README.md) shows how to create a color dialog with QColorDalog.
+* [FolderBrowserDialog](Dialogs/FolderBrowserDialog/README.md) shows how to create a folder browser dialog with QFileDialog.
+* [FontDialog](Dialogs/FontDialog/README.md) shows how to create a font dialog with QFontDialog.
+* [MessageBox](Dialogs/MessageBox/README.md) shows how to create a message box with QMessageBox.
+* [OpenFileDialog](Dialogs/OpenFileDialog/README.md) shows how to create an open file dialog with QFileDialog.
+* [SaveFileDialog](Dialogs/SaveFileDialog/README.md) shows how to create an save file dialog with QFileDialog.
 
 ## [Windows](Windows/README.md)
 
