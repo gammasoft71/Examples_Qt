@@ -49,8 +49,8 @@ shows how to use Qt widgets only by programming code (c++17).
 * [ComboBox](Controls/ComboBox/README.md) shows how to create a combo box with QComboBox.
 * [Dial](Controls/Dial/README.md) shows how to create a dial with QDial.
 * [DoubleSpinBox](Controls/DoubleSpinBox/README.md) shows how to create a double spin box with QDoubleSpinBox.
-* [LCDNumber](Controls/LCDNumber/README.md) shows how to create a LCD number with QLCDNumber.
 * [Label](Controls/Label/README.md) shows how to create a label with QLabel.
+* [LCDNumber](Controls/LCDNumber/README.md) shows how to create a LCD number with QLCDNumber.
 * [LineEdit](Controls/LineEdit/README.md) shows how to create a line edit with QLineEdit.
 * [ListView](Controls/ListWidget/README.md) shows how to create a list view with QListView.
 * [ListView2](Controls/ListView2/README.md) shows how to create a list view with QTreeView.
