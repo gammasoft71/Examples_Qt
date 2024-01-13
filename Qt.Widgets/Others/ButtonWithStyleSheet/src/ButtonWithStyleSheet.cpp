@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "ButtonWithStyleSheets.h"
+#include "ButtonWithStyleSheet.h"
 
 using namespace Examples;
 

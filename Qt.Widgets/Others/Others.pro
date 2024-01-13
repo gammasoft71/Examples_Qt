@@ -1,6 +1,6 @@
 TEMPLATE = subdirs
 SUBDIRS = \
-    ButtonWithStyleSheets \
+    ButtonWithStyleSheet \
     InputDialogMultiline \
     InputDialogPassword \
     LCDNumber2 \
