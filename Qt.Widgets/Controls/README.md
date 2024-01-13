@@ -24,7 +24,7 @@
 * [ToggleButton](ToggleButton/README.md) shows how to create a toggle button with QPushButton.
 * [TreeView](TreeView/README.md) shows how to create a three view with QTreeView.
 * [TreeWidget](TreeWidget/README.md) shows how to create a three widget with QTreeWidget.
-* [Widget](ToggleButton/README.md) shows how to create a widget with QWidget.
+* [Widget](Widget/README.md) shows how to create a widget with QWidget.
 
 ## Generate and build
 
