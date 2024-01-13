@@ -1,24 +1,24 @@
-# ButtonWithStyleSheets
+# InputDialogMultiline
 
-Show how to use stylesheet with QPushButton.
+Show how to use multiline input dialog with QInputDialog.
 
 ## Sources
 
-[src/ButtonWithStyleSheets.h](src/ButtonWithStyleSheets.h)
+[src/InputDialogMultiline.h](src/InputDialogMultiline.h)
 
-[src/ButtonWithStyleSheets.cpp](src/ButtonWithStyleSheets.cpp)
+[src/InputDialogMultiline.cpp](src/InputDialogMultiline.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Output
 
-![Screenshot](../../../docs/Pictures/ButtonWithStyleSheets.png)
+![Screenshot](../../../docs/Pictures/InputDialogMultiline.png)
 
 ## Generate and build
 
 ### Qt Creator
 
-To build these projects, open `ButtonWithStyleSheets.pro` file with Qt Creator.
+To build these projects, open `InputDialogMultiline.pro` file with Qt Creator.
 
 ### CMake
 
@@ -32,7 +32,7 @@ Set `CMAKE_PREFIX_PATH` with Qt6 install path.
 mkdir build
 cd build
 cmake ..
-start ./ButtonWithStyleSheets.sln
+start ./InputDialogMultiline.sln
 ```
 
 #### macOS :
@@ -41,7 +41,7 @@ start ./ButtonWithStyleSheets.sln
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./ButtonWithStyleSheets.xcodeproj
+open ./InputDialogMultiline.xcodeproj
 ```
 
 #### Linux with Code::Blocks :
@@ -50,7 +50,7 @@ open ./ButtonWithStyleSheets.xcodeproj
 mkdir build
 cd build
 cmake .. -G "CodeBlocks - Unix Makefiles"
-xdg-open ./ButtonWithStyleSheets.cbp > /dev/null 2>&1
+xdg-open ./InputDialogMultiline.cbp > /dev/null 2>&1
 ```
 
 #### Linux :
@@ -60,5 +60,5 @@ mkdir build
 cd build
 cmake .. 
 cmake --build . --config Debug
-./ButtonWithStyleSheets
+./InputDialogMultiline
 ```
