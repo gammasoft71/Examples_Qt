@@ -66,7 +66,7 @@ shows how to use Qt widgets only by programming code (c++17).
 * [ToggleButton](Controls/ToggleButton/README.md) shows how to create a toggle button with QPushButton.
 * [TreeView](Controls/TreeView/README.md) shows how to create a three view with QTreeView.
 * [TreeWidget](Controls/TreeWidget/README.md) shows how to create a three widget with QTreeWidget.
-* [Widget](Controls/ToggleButton/README.md) shows how to create a widget with QWidget.
+* [Widget](Controls/Widget/README.md) shows how to create a widget with QWidget.
 
 ## [Components](Components/README.md)
 
