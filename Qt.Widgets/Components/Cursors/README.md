@@ -1,24 +1,24 @@
-# Cursor
+# Cursors
 
-Shows how to associate cursor to widget with QCursor.
+Shows how to associate cursor to widget with QCursors.
 
 ## Sources
 
-[src/Cursor.h](src/Cursor.h)
+[src/Cursors.h](src/Cursors.h)
 
-[src/Cursor.cpp](src/Cursor.cpp)
+[src/Cursors.cpp](src/Cursors.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Output
 
-![Screenshot](../../../docs/Pictures/Cursor.png)
+![Screenshot](../../../docs/Pictures/Cursors.png)
 
 ## Generate and build
 
 ### Qt Creator
 
-To build these projects, open `Cursor.pro` file with Qt Creator.
+To build these projects, open `Cursors.pro` file with Qt Creator.
 
 ### CMake
 
@@ -32,7 +32,7 @@ Set `CMAKE_PREFIX_PATH` with Qt6 install path.
 mkdir build
 cd build
 cmake ..
-start ./Cursor.sln
+start ./Cursors.sln
 ```
 
 #### macOS :
@@ -41,7 +41,7 @@ start ./Cursor.sln
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./Cursor.xcodeproj
+open ./Cursors.xcodeproj
 ```
 
 #### Linux with Code::Blocks :
@@ -50,7 +50,7 @@ open ./Cursor.xcodeproj
 mkdir build
 cd build
 cmake .. -G "CodeBlocks - Unix Makefiles"
-xdg-open ./Cursor.cbp > /dev/null 2>&1
+xdg-open ./Cursors.cbp > /dev/null 2>&1
 ```
 
 #### Linux :
@@ -60,5 +60,5 @@ mkdir build
 cd build
 cmake .. 
 cmake --build . --config Debug
-./Cursor
+./Cursors
 ```
