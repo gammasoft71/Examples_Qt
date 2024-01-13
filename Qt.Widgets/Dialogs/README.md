@@ -6,6 +6,7 @@
 * [ColorDialog](ColorDialog/README.md) shows how to create a colord dialog with QColorDalog.
 * [FolderBrowserDialog](FolderBrowserDialog/README.md) shows how to create a folder browser dialog with QFileDialog.
 * [FontDialog](FontDialog/README.md) shows how to create a font dialog with QFontDialog.
+* [InputDialog](InputDialog/README.md) shows how to create an input dialog with QInputDialog.
 * [MessageBox](MessageBox/README.md) shows how to create a message box with QMessageBox.
 * [OpenFileDialog](OpenFileDialog/README.md) shows how to create an open file dialog with QFileDialog.
 * [SaveFileDialog](SaveFileDialog/README.md) shows how to create an save file dialog with QFileDialog.
