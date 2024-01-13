@@ -7,8 +7,8 @@
 * [ComboBox](ComboBox/README.md) shows how to create a combo box with QComboBox.
 * [Dial](Dial/README.md) shows how to create a dial with QDial.
 * [DoubleSpinBox](DoubleSpinBox/README.md) shows how to create a double spin box with QDoubleSpinBox.
-* [LCDNumber](LCDNumber/README.md) shows how to create a LCD number with QLCDNumber.
 * [Label](Label/README.md) shows how to create a label with QLabel.
+* [LCDNumber](LCDNumber/README.md) shows how to create a LCD number with QLCDNumber.
 * [LineEdit](LineEdit/README.md) shows how to create a line edit with QLineEdit.
 * [ListView](ListWidget/README.md) shows how to create a list view with QListView.
 * [ListView2](ListView2/README.md) shows how to create a list view with QTreeView.
