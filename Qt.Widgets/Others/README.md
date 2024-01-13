@@ -2,6 +2,9 @@
 
 [This folder](.) contains others examples.
 
+* [ButtonWithStyleSheets](ButtonWithStyleSheets/README.md) show how to use stylesheet with QPushButton.
+* [InputDialogMultiline](InputDialogMultiline/README.md) show how to use multiline input dialog with QInputDialog.
+* [InputDialogPassword](InputDialogPassword/README.md) show how to use password input dialog with QInputDialog.
 * [LCDNumber2](LCDNumber2/README.md) shows how to create a LCD number with QLCDNumber.
 * [Wiggly](Wiggly/README.md) shows how to animate a user control using QBasicTimer and timerEvent(). In addition, the example demonstrates how to use QFontMetrics to determine the size of text on screen.
 
