@@ -1,14 +1,20 @@
-# Tests
+# TestWidgets
 
-[This folder](.) contains tests examples.
+Is use to test Widgets.
 
-* [TestWidgets]([TestWidgets]/README.md) is use to test Widgets.
+## Sources
+
+[src/TestWidgets.h](src/TestWidgets.h)
+
+[src/TestWidgets.cpp](src/TestWidgets.cpp)
+
+[CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
 
 ### Qt Creator
 
-To build these projects, open `Tests.pro` file with Qt Creator.
+To build these projects, open `TestWidgets.pro` file with Qt Creator.
 
 ### CMake
 
@@ -22,7 +28,7 @@ Set `CMAKE_PREFIX_PATH` with Qt6 install path.
 mkdir build
 cd build
 cmake ..
-start ./Tests.sln
+start ./TestWidgets.sln
 ```
 
 #### macOS :
@@ -31,7 +37,7 @@ start ./Tests.sln
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./Tests.xcodeproj
+open ./TestWidgets.xcodeproj
 ```
 
 #### Linux with Code::Blocks :
@@ -40,7 +46,7 @@ open ./Tests.xcodeproj
 mkdir build
 cd build
 cmake .. -G "CodeBlocks - Unix Makefiles"
-xdg-open ./Tests.cbp > /dev/null 2>&1
+xdg-open ./TestWidgets.cbp > /dev/null 2>&1
 ```
 
 #### Linux :
@@ -50,5 +56,5 @@ mkdir build
 cd build
 cmake .. 
 cmake --build . --config Debug
-./AnyProject
+./TestWidgets
 ```
