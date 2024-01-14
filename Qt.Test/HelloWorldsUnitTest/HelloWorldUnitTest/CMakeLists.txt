@@ -5,7 +5,6 @@ project(HelloWorldUnitTest)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6Core CONFIG REQUIRED)
 find_package(Qt6 REQUIRED COMPONENTS Core Test)
 if (Qt6_FOUND)
   qt_standard_project_setup()

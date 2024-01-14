@@ -1,4 +1,3 @@
-# Application
 
 Shows how to create an application with QApplication.
 
