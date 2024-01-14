@@ -1,24 +1,22 @@
-# HelloWorldConsole
+# HelloWorldUnitTest
 
-The classic first application "Hello, World!" with QTextStream stream.
+The classic first unit test application "Hello, World!" with QTest.
 
 ## Sources
 
-[src/HelloWorldConsole.cpp](src/HelloWorldConsole.cpp)
+[src/HelloWorldUnitTest.cpp](src/HelloWorldUnitTest.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Output
 
-```
-Hello, World!
-```
+![Screenshot](../../../docs/Pictures/HelloWorldUnitTest.png)
 
 ## Generate and build
 
 ### Qt Creator
 
-To build these projects, open `HelloWorldConsole.pro` file with Qt Creator.
+To build these projects, open `HelloWorldUnitTest.pro` file with Qt Creator.
 
 ### CMake
 
@@ -32,7 +30,7 @@ Set `CMAKE_PREFIX_PATH` with Qt6 install path.
 mkdir build
 cd build
 cmake ..
-start ./HelloWorldConsole.sln
+start ./HelloWorldUnitTest.sln
 ```
 
 #### macOS :
@@ -41,7 +39,7 @@ start ./HelloWorldConsole.sln
 mkdir build
 cd build
 cmake .. -G "Xcode"
-open ./HelloWorldConsole.xcodeproj
+open ./HelloWorldUnitTest.xcodeproj
 ```
 
 #### Linux with Code::Blocks :
@@ -50,7 +48,7 @@ open ./HelloWorldConsole.xcodeproj
 mkdir build
 cd build
 cmake .. -G "CodeBlocks - Unix Makefiles"
-xdg-open ./HelloWorldConsole.cbp > /dev/null 2>&1
+xdg-open ./HelloWorldUnitTest.cbp > /dev/null 2>&1
 ```
 
 #### Linux :
@@ -60,5 +58,5 @@ mkdir build
 cd build
 cmake .. 
 cmake --build . --config Debug
-./HelloWorldConsole
+./HelloWorldUnitTest
 ```
