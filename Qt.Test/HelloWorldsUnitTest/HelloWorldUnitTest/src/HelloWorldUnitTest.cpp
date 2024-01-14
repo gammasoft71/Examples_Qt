@@ -7,8 +7,8 @@ namespace UnitTests {
   private slots:
     void CreateStringFromLiteral() {
       auto s = QString {"Hello, World!"};
-      QCOMPARE_EQ(s.size(), 13);
-      QCOMPARE_EQ(s, "Hello, World!");
+      QCOMPARE(s.size(), 13);
+      QCOMPARE(s, "Hello, World!");
     }
   };
 }
