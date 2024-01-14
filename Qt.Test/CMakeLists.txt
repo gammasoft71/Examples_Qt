@@ -4,5 +4,4 @@ cmake_minimum_required(VERSION 3.20)
 project(Qt.Test)
 
 # Projects
-#add_subdirectory(TestConsole)
-#add_subdirectory(TestGui)
+add_subdirectory(HelloWorldsUnitTest)
