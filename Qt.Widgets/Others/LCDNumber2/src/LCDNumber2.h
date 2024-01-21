@@ -1,8 +1,7 @@
 #pragma once
-#include <QMouseEvent>
-#include <QLCDNumber>
 #include <QFont>
 #include <QFrame>
+#include <QLCDNumber>
 #include <QMainWindow>
 #include <QMouseEvent>
 #include <QTimer>
@@ -12,13 +11,13 @@ class LCDNumber : public QLCDNumber {
 public:
   explicit LCDNumber(QWidget* parent = nullptr) : QLCDNumber(parent) {}
 
+signals:
+  void click(QMouseEvent* event);
+
 protected:
   void mousePressEvent(QMouseEvent* event) override {
-    emit clicked(event);
+    emit click(event);
   }
-
-signals:
-  void clicked(QMouseEvent* event);
 };
 
 class Window1 : public QMainWindow {
@@ -35,7 +34,7 @@ public:
     palette.setColor(QPalette::Window, QColor::fromRgb(0, 0, 255).darker(1500));
     palette.setColor(QPalette::WindowText, QColor::fromRgb(0, 0, 255));
     lcdNumber.setPalette(palette);
-    connect(&lcdNumber, &LCDNumber::clicked, [&](QMouseEvent* event) {
+    connect(&lcdNumber, &LCDNumber::click, [&](QMouseEvent* event) {
       if (event->button() == Qt::MouseButton::RightButton) {
         counter = 0;
         lcdNumber.display(QString::number(static_cast<double>(counter) / 10, 'f', 1));
