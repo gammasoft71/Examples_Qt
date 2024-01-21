@@ -28,6 +28,7 @@ namespace Examples {
       resize(640, 480);
     }
 
+  protected:
     void closeEvent(QCloseEvent *event) override {
       event->setAccepted(QMessageBox::question(this, "Close MainWindow", "Are you sure you want exit?", QMessageBox::StandardButton::Yes|QMessageBox::StandardButton::No) == QMessageBox::StandardButton::Yes);
     }
