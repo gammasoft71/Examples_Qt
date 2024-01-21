@@ -86,6 +86,7 @@ shows how to use Qt widgets only by programming code (c++17).
 * [InputDialogPassword](Others/InputDialogPassword/README.md) show how to use password input dialog with QInputDialog.
 * [LCDNumber2](Others/LCDNumber2/README.md) shows how to create a LCD number with QLCDNumber.
 * [Wiggly](Others/Wiggly/README.md) shows how to animate a user control using QBasicTimer and timerEvent(). In addition, the example demonstrates how to use QFontMetrics to determine the size of text on screen.
+* [WindowShowHide](Others/WindowShowHide/README.md) demonstrates the use of QMainWindow show, hide and close methods.
 
 ## Generate and build
 
