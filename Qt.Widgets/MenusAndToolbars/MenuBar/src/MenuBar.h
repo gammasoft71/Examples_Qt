@@ -16,26 +16,26 @@ namespace Examples {
   public:
     Window1() {
       QMenu* menuFile = menuBar()->addMenu("&File");
-      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_FileIcon), "&New", QKeySequence(Qt::CTRL | Qt::Key_N), this, &Window1::OnMenuFileNewClick);
-      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_DirOpenIcon), "&Open", QKeySequence(Qt::CTRL | Qt::Key_O), this, &Window1::OnMenuFileOpenClick);
+      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_FileIcon), "&New", QKeySequence(Qt::ControlModifier | Qt::Key_N), this, &Window1::OnMenuFileNewClick);
+      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_DirOpenIcon), "&Open", QKeySequence(Qt::ControlModifier | Qt::Key_O), this, &Window1::OnMenuFileOpenClick);
       menuFile->addSeparator();
-      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_DialogSaveButton), "&Save", QKeySequence(Qt::CTRL | Qt::Key_S), this, &Window1::OnMenuFileSaveClick);
+      menuAddAction(menuFile, style()->standardIcon(QStyle::StandardPixmap::SP_DialogSaveButton), "&Save", QKeySequence(Qt::ControlModifier | Qt::Key_S), this, &Window1::OnMenuFileSaveClick);
       menuFile->addAction("Save &As...", this, &Window1::OnMenuFileSaveAsClick);
       menuFile->addSeparator();
-      menuAddAction(menuFile, QIcon::fromTheme("document-print"), "&Print", QKeySequence(Qt::CTRL | Qt::Key_P), this, &Window1::OnMenuFileSaveClick);
+      menuAddAction(menuFile, QIcon::fromTheme("document-print"), "&Print", QKeySequence(Qt::ControlModifier | Qt::Key_P), this, &Window1::OnMenuFileSaveClick);
       menuFile->addAction(QIcon::fromTheme("document-print-preview"), "Print preview");
       menuFile->addSeparator();
-      menuAddAction(menuFile, "&Exit", QKeySequence(Qt::ALT | Qt::Key_F4), this, &Window1::OnMenuFileCloseClick);
+      menuAddAction(menuFile, "&Exit", QKeySequence(Qt::AltModifier | Qt::Key_F4), this, &Window1::OnMenuFileCloseClick);
 
       QMenu* menuEdit = menuBar()->addMenu("&Edit");
-      menuAddAction(menuEdit, "&Undo", QKeySequence(Qt::CTRL | Qt::Key_Z), this, &Window1::OnMenuEditUndoClick);
-      menuAddAction(menuEdit, "&Redo", QKeySequence(Qt::CTRL | Qt::Key_Y), this, &Window1::OnMenuEditRedoClick);
+      menuAddAction(menuEdit, "&Undo", QKeySequence(Qt::MetaModifier | Qt::Key_Z), this, &Window1::OnMenuEditUndoClick);
+      menuAddAction(menuEdit, "&Redo", QKeySequence(Qt::ControlModifier | Qt::Key_Y), this, &Window1::OnMenuEditRedoClick);
       menuEdit->addSeparator();
-      menuAddAction(menuEdit, QIcon::fromTheme("edit-cut"), "&Cut", QKeySequence(Qt::CTRL | Qt::Key_X), this, &Window1::OnMenuEditCutClick);
-      menuAddAction(menuEdit, QIcon::fromTheme("edit-copy"), "&Copy", QKeySequence(Qt::CTRL | Qt::Key_C), this, &Window1::OnMenuEditCopyClick);
-      menuAddAction(menuEdit, QIcon::fromTheme("edit-paste"), "&Paste", QKeySequence(Qt::CTRL | Qt::Key_V), this, &Window1::OnMenuEditPasteClick);
+      menuAddAction(menuEdit, QIcon::fromTheme("edit-cut"), "&Cut", QKeySequence(Qt::ControlModifier | Qt::Key_X), this, &Window1::OnMenuEditCutClick);
+      menuAddAction(menuEdit, QIcon::fromTheme("edit-copy"), "&Copy", QKeySequence(Qt::ControlModifier | Qt::Key_C), this, &Window1::OnMenuEditCopyClick);
+      menuAddAction(menuEdit, QIcon::fromTheme("edit-paste"), "&Paste", QKeySequence(Qt::ControlModifier | Qt::Key_V), this, &Window1::OnMenuEditPasteClick);
       menuEdit->addSeparator();
-      menuAddAction(menuEdit, "Select &All", QKeySequence(Qt::CTRL | Qt::Key_A), this, &Window1::OnMenuEditSelectAllClick);
+      menuAddAction(menuEdit, "Select &All", QKeySequence(Qt::ControlModifier | Qt::Key_A), this, &Window1::OnMenuEditSelectAllClick);
 
       QMenu* menuHelp = menuBar()->addMenu("&Help");
       menuHelp->addAction("&About", this, &Window1::OnMenuHelpAboutClick);
