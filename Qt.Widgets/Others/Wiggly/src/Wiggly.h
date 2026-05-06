@@ -5,13 +5,14 @@
 #include <QMainWindow>
 #include <QPaintEvent>
 #include <QPainter>
+#include <QTextBoundaryFinder>
 #include <QVBoxLayout>
 
-namespace Examples {
-  class WigglyWidget : public QWidget {
+namespace WigglyExamples {
+  class Wiggly : public QWidget {
     Q_OBJECT
   public:
-    WigglyWidget(QWidget *parent = nullptr) : QWidget(parent) {
+    Wiggly(QWidget *parent = nullptr) : QWidget(parent) {
       setBackgroundRole(QPalette::Midlight);
       setAutoFillBackground(true);
 
@@ -23,34 +24,37 @@ namespace Examples {
     }
 
 public slots:
-    void setText(const QString &newText) {text = newText;}
+    auto setText(const QString &newText) -> void {text = newText;}
 
 protected:
-    void paintEvent(QPaintEvent* event) override {
-      static const std::vector<int> sins = {0, 38, 71, 92, 100, 92, 71, 38, 0, -38, -71, -92, -100, -92, -71, -38};
-      QFontMetrics metrics(font());
+    auto paintEvent(QPaintEvent* event) -> void override {
+      static constexpr auto sins = std::array {0, 38, 71, 92, 100, 92, 71, 38, 0, -38, -71, -92, -100, -92, -71, -38};
+      auto metrics = QFontMetrics {font()};
       auto pos = QPoint {(event->rect().width() - metrics.horizontalAdvance(text)) / 2, (event->rect().height() + metrics.ascent() - metrics.descent()) / 2};
-      QPainter painter(this);
-      for (auto i = 0; i < text.size(); ++i) {
-        auto index = (step + i) % sins.size();
-        painter.setPen(QColor::fromHsv(360.0f / sins.size() * index, 255, 191));
-        painter.drawText(pos - QPoint {0, (sins[index] * metrics.height()) / 400}, QString(text[i]));
-        pos.setX(pos.x() + metrics.horizontalAdvance(text[i]));
+      auto painter = QPainter {this};
+      auto finder = QTextBoundaryFinder {QTextBoundaryFinder::Grapheme, text};
+      for (auto index = 0z, next = 0z, grapheme_pos = 0z; grapheme_pos < text.length(); grapheme_pos = next) {
+        auto sins_index = (step + index++) % sins.size();
+        painter.setPen(QColor::fromHsv(360.0f / sins.size() * sins_index, 255, 191));
+        next = finder.toNextBoundary();
+        auto grapheme = text.mid(grapheme_pos, next - grapheme_pos);
+        painter.drawText(pos - QPoint {0, (sins[sins_index] * metrics.height()) / 400}, grapheme);
+        pos.setX(pos.x() + metrics.horizontalAdvance(grapheme));
       }
     }
 
     void timerEvent(QTimerEvent* event) override {
-      if (event->timerId() == timer.timerId()) {
+      if (event->timerId() != timer.timerId()) QWidget::timerEvent(event);
+      else {
         ++step;
         update();
-      } else
-        QWidget::timerEvent(event);
+      }
     }
 
 private:
     QBasicTimer timer;
     QString text;
-    int step = 0;
+    std::size_t step = 0z;
   };
 
   class Window1 : public QMainWindow {
@@ -60,11 +64,11 @@ private:
       setCentralWidget(&frame);
       setWindowTitle("Wiggly");
       resize(330, 130);
-      connect(&lineEdit, &QLineEdit::textChanged, &wigglyWidget, &WigglyWidget::setText);
+      connect(&lineEdit, &QLineEdit::textChanged, &wiggly, &Wiggly::setText);
 
-      wigglyWidget.setGeometry(20, 20, 290, 60);
+      wiggly.setGeometry(20, 20, 290, 60);
 
-      layout.addWidget(&wigglyWidget);
+      layout.addWidget(&wiggly);
       layout.addWidget(&lineEdit);
       lineEdit.move(20, 90);
       lineEdit.setGeometry(20, 90, 290, lineEdit.height());
@@ -74,7 +78,7 @@ private:
   private:
     QFrame frame;
     QVBoxLayout layout {&frame};
-    WigglyWidget wigglyWidget;
+    Wiggly wiggly;
     QLineEdit lineEdit;
   };
 }
