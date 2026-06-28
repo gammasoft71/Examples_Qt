@@ -12,11 +12,13 @@ public:
     try {
       return QApplication::notify(object, event);
     } catch(const std::exception& e) {
-      if (QMessageBox::critical(nullptr, "Exception occured", QString("Unhandled exception occured in your application. If you click OK, the application will ignore this error and attempt to continue. If you click Cancel, the application will close immediately.\n\n%1").arg(e.what()), QMessageBox::StandardButton::Ok|QMessageBox::StandardButton::Cancel) == QMessageBox::StandardButton::Cancel)
-        QApplication::quit();
+      if (QMessageBox::critical(nullptr, "Exception occured", QString("Unhandled exception occured in your application. If you click OK, the application will ignore this error and attempt to continue. If you click Cancel, the application will close immediately.\n\n%1").arg(e.what()), QMessageBox::StandardButton::Ok|QMessageBox::StandardButton::Cancel) != QMessageBox::StandardButton::Cancel) return true;
+      QCoreApplication::exit(-1);
+      return false;
     } catch(...) {
-      if (QMessageBox::critical(nullptr, "Unknown exception occured", "Unhandled exception occured in your application. If you click OK, the application will ignore this error and attempt to continue. If you click Cancel, the application will close immediately.\n\n(Unknown exception)", QMessageBox::StandardButton::Ok|QMessageBox::StandardButton::Cancel) == QMessageBox::StandardButton::Cancel)
-        QApplication::quit();
+      if (QMessageBox::critical(nullptr, "Unknown exception occured", "Unhandled exception occured in your application. If you click OK, the application will ignore this error and attempt to continue. If you click Cancel, the application will close immediately.\n\n(Unknown exception)", QMessageBox::StandardButton::Ok|QMessageBox::StandardButton::Cancel) != QMessageBox::StandardButton::Cancel) return true;
+      QCoreApplication::exit(-1);
+      return false;
     }
    return true;
   }
